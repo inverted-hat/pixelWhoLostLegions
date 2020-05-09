@@ -1,0 +1,296 @@
+{
+    "settings": {
+        "showCollisions": true,
+        "showConnections": true,
+        "worldScrollX": 900,
+        "worldScrollY": 617,
+        "zoom": 400,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
+        "startX": 1,
+        "startY": 0,
+        "startDirection": "down",
+        "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
+        "playerSpriteSheetId": "11ce17ae-6561-40f7-b6d8-8160c18cb55d"
+    },
+    "scenes": [
+        {
+            "name": "Landing Scene",
+            "backgroundId": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                192,
+                57,
+                192,
+                99,
+                14,
+                4,
+                128,
+                67,
+                0,
+                160,
+                4,
+                0,
+                68,
+                0,
+                64,
+                4,
+                14,
+                68,
+                224,
+                64,
+                2,
+                14,
+                36,
+                0,
+                48,
+                6,
+                0,
+                65,
+                0,
+                48,
+                4,
+                0,
+                132,
+                1,
+                64,
+                208,
+                0,
+                7,
+                13,
+                22,
+                176,
+                96,
+                1,
+                8,
+                6
+            ],
+            "id": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
+            "x": 467,
+            "y": 185.5,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Title Scene",
+            "backgroundId": "96c7b586-29e5-43c8-80f7-05510d5b5196",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
+            "x": 267,
+            "y": 187,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "8e265bd7-b37d-4b69-bb5d-573038410a41",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "81654639-debd-448e-9e0f-f81281cc0844",
+                    "command": "EVENT_AWAIT_INPUT",
+                    "args": {
+                        "input": [
+                            "start"
+                        ]
+                    }
+                },
+                {
+                    "id": "2ab51ecc-f570-499d-8bf4-526533f99b88",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
+                        "x": 10,
+                        "y": 11,
+                        "direction": "right",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
+                    "id": "d787306e-397d-4414-907d-b975a0dced63",
+                    "command": "EVENT_END"
+                }
+            ]
+        }
+    ],
+    "_version": "1.2.0",
+    "author": "jklecka",
+    "name": "varianDisaster",
+    "variables": [],
+    "backgrounds": [
+        {
+            "id": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
+            "name": "opening",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "opening.png",
+            "_v": 1588878660185
+        },
+        {
+            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "name": "placeholder",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "placeholder.png",
+            "_v": 1588878660185
+        },
+        {
+            "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
+            "name": "title",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "title.png",
+            "_v": 1588878660185
+        }
+    ],
+    "spriteSheets": [
+        {
+            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+            "name": "actor",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "actor.png",
+            "_v": 1588878660186
+        },
+        {
+            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+            "name": "actor_animated",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "actor_animated.png",
+            "_v": 1588878660186
+        },
+        {
+            "id": "11ce17ae-6561-40f7-b6d8-8160c18cb55d",
+            "name": "doctor",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "doctor.png",
+            "_v": 1588885149249
+        },
+        {
+            "id": "51b70d41-53db-4cfb-83a4-32adf5db2ae8",
+            "name": "pressStart1",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "pressStart1.png",
+            "_v": 1588878774728
+        },
+        {
+            "id": "9245e984-d8c7-4459-a73c-3b79d77af34a",
+            "name": "pressStart2",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "pressStart2.png",
+            "_v": 1588878809399
+        },
+        {
+            "id": "eec2db64-fa54-472a-ae5f-85050563b690",
+            "name": "pressStart3",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "pressStart3.png",
+            "_v": 1588878846614
+        },
+        {
+            "id": "3bb7c796-d803-40a0-98a8-833d1d219c0b",
+            "name": "pressStart4",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "pressStart4.png",
+            "_v": 1588878883578
+        },
+        {
+            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+            "name": "static",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "static.png",
+            "_v": 1588878660186
+        },
+        {
+            "id": "89526895-b072-4d30-9fb8-1059098bb1a6",
+            "name": "test",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "test.png",
+            "_v": 1588884139237
+        },
+        {
+            "id": "b41cb9ed-8988-40f8-91b3-9a175d461884",
+            "name": "test1",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "test1.png",
+            "_v": 1588878660186
+        }
+    ],
+    "music": [
+        {
+            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
+            "name": "template",
+            "filename": "template.mod",
+            "_v": 1588878660175
+        }
+    ],
+    "customEvents": []
+}

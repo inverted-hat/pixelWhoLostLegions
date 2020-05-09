@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 900,
-        "worldScrollY": 617,
-        "zoom": 400,
+        "worldScrollX": 715,
+        "worldScrollY": 395,
+        "zoom": 256.7834188044071,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -71,8 +71,96 @@
             "id": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
             "x": 467,
             "y": 185.5,
-            "actors": [],
-            "triggers": []
+            "actors": [
+                {
+                    "spriteSheetId": "851395b0-c4d2-4c92-9886-68eb953100ee",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
+                    "x": 9,
+                    "y": 9,
+                    "name": "Jamie"
+                }
+            ],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "7cc801b7-d440-4e2a-a0ba-72729e6ca1c7",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9"
+                    }
+                },
+                {
+                    "id": "2da45790-69f6-4bb6-b1bc-57877fce4c68",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "cdb5db81-b9d3-483e-9971-df01bddba554",
+                    "command": "EVENT_CAMERA_SHAKE",
+                    "args": {
+                        "time": 1,
+                        "__comment": false
+                    }
+                },
+                {
+                    "id": "172d919b-e815-4b68-93ad-d7807e5c8538",
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "9591898f-1617-4066-b474-0aa7de029983",
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "player",
+                        "x": 11,
+                        "y": 11
+                    }
+                },
+                {
+                    "id": "429b11cc-7314-4b6a-bf88-991db09ba5a6",
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "player",
+                        "direction": "left"
+                    }
+                },
+                {
+                    "id": "6a90c1cd-0e0d-4975-8691-75143f3aa92a",
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9"
+                    }
+                },
+                {
+                    "id": "c22a035f-495d-47ab-849f-42f6cebb2dcb",
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
+                        "x": 9,
+                        "y": 11
+                    }
+                },
+                {
+                    "id": "34c5a3e0-dbfc-47dd-8356-3d4b71108dce",
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
+                        "direction": "right"
+                    }
+                },
+                {
+                    "id": "e2223603-26a1-43c4-aa5b-d3fbb207a28f",
+                    "command": "EVENT_END"
+                }
+            ]
         },
         {
             "name": "Title Scene",
@@ -154,7 +242,7 @@
                     "args": {
                         "sceneId": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
                         "x": 10,
-                        "y": 11,
+                        "y": 9,
                         "direction": "right",
                         "fadeSpeed": "2"
                     }
@@ -179,17 +267,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1588878660185
-        },
-        {
-            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
-            "name": "placeholder",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "placeholder.png",
-            "_v": 1588878660185
+            "_v": 1589057554876
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -199,89 +277,25 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1588878660185
+            "_v": 1589057554876
         }
     ],
     "spriteSheets": [
-        {
-            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-            "name": "actor",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "actor.png",
-            "_v": 1588878660186
-        },
-        {
-            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-            "name": "actor_animated",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "actor_animated.png",
-            "_v": 1588878660186
-        },
         {
             "id": "11ce17ae-6561-40f7-b6d8-8160c18cb55d",
             "name": "doctor",
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "doctor.png",
-            "_v": 1588885149249
+            "_v": 1589057554876
         },
         {
-            "id": "51b70d41-53db-4cfb-83a4-32adf5db2ae8",
-            "name": "pressStart1",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "pressStart1.png",
-            "_v": 1588878774728
-        },
-        {
-            "id": "9245e984-d8c7-4459-a73c-3b79d77af34a",
-            "name": "pressStart2",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "pressStart2.png",
-            "_v": 1588878809399
-        },
-        {
-            "id": "eec2db64-fa54-472a-ae5f-85050563b690",
-            "name": "pressStart3",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "pressStart3.png",
-            "_v": 1588878846614
-        },
-        {
-            "id": "3bb7c796-d803-40a0-98a8-833d1d219c0b",
-            "name": "pressStart4",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "pressStart4.png",
-            "_v": 1588878883578
-        },
-        {
-            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-            "name": "static",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "static.png",
-            "_v": 1588878660186
-        },
-        {
-            "id": "89526895-b072-4d30-9fb8-1059098bb1a6",
-            "name": "test",
+            "id": "851395b0-c4d2-4c92-9886-68eb953100ee",
+            "name": "jamie",
             "numFrames": 6,
             "type": "actor_animated",
-            "filename": "test.png",
-            "_v": 1588884139237
-        },
-        {
-            "id": "b41cb9ed-8988-40f8-91b3-9a175d461884",
-            "name": "test1",
-            "numFrames": 2,
-            "type": "animated",
-            "filename": "test1.png",
-            "_v": 1588878660186
+            "filename": "jamie.png",
+            "_v": 1589057554876
         }
     ],
     "music": [
@@ -289,7 +303,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1588878660175
+            "_v": 1589057554876
         }
     ],
     "customEvents": []

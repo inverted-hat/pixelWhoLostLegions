@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1271,
-        "worldScrollY": 663,
-        "zoom": 313.2714051157236,
+        "worldScrollX": 364,
+        "worldScrollY": 100,
+        "zoom": 155.46566128730774,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -178,6 +178,40 @@
                             }
                         },
                         {
+                            "id": "4954fd7c-82c0-42b4-8522-ba98dab46685",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Arminius: Halt!\nWho are you?",
+                                    "What are you\ndoing here?"
+                                ],
+                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                "__collapse": false
+                            }
+                        },
+                        {
+                            "id": "16fa0502-8dae-46be-b4fa-aca139646e07",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I am the doctor.\nAnd this here is\nmy friend Jamie.",
+                                    "We are merchants\nand seem to have\nlost the path."
+                                ],
+                                "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed"
+                            }
+                        },
+                        {
+                            "id": "36553ebe-77e3-4666-9737-399f217795aa",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Merchants this\ndeep in a\ngermanic wood?",
+                                    "I don't believe\nyou!"
+                                ],
+                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d"
+                            }
+                        },
+                        {
                             "id": "f734a024-d8a0-4498-bcd9-e9aee8311966",
                             "command": "EVENT_END"
                         }
@@ -191,7 +225,8 @@
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "player",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -199,7 +234,7 @@
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
                         "time": 1,
-                        "__comment": false,
+                        "__comment": true,
                         "__collapse": true
                     }
                 },
@@ -208,7 +243,8 @@
                     "command": "EVENT_ACTOR_SHOW",
                     "args": {
                         "actorId": "player",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -218,7 +254,8 @@
                         "actorId": "player",
                         "x": 9,
                         "y": 11,
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -227,7 +264,8 @@
                     "args": {
                         "actorId": "player",
                         "direction": "left",
-                        "__collapse": false
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -235,7 +273,9 @@
                     "command": "EVENT_ACTOR_SET_FRAME",
                     "args": {
                         "actorId": "player",
-                        "frame": 0
+                        "frame": 0,
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -243,7 +283,8 @@
                     "command": "EVENT_ACTOR_SHOW",
                     "args": {
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -253,7 +294,8 @@
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
                         "x": 7,
                         "y": 11,
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -262,7 +304,8 @@
                     "args": {
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
                         "direction": "right",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -275,7 +318,8 @@
                             "buildings you\ntold me about?"
                         ],
                         "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -289,7 +333,8 @@
                             "Let's go and\nfind out!"
                         ],
                         "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -297,7 +342,8 @@
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__comment": true
                     }
                 },
                 {
@@ -411,7 +457,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1589292203099
+            "_v": 1589294312287
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -421,17 +467,25 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1589292171255
+            "_v": 1589294312287
         }
     ],
     "spriteSheets": [
+        {
+            "id": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+            "name": "portraits/arminius",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "portraits/arminius.png",
+            "_v": 1589294312287
+        },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
             "name": "portraits/doctor",
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1589292171255
+            "_v": 1589294312287
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -439,7 +493,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1589292171255
+            "_v": 1589294312287
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -447,7 +501,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1589292171255
+            "_v": 1589294312287
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -455,7 +509,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1589292171255
+            "_v": 1589294312287
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -463,7 +517,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1589292171255
+            "_v": 1589294312287
         }
     ],
     "music": [
@@ -471,7 +525,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1589292171255
+            "_v": 1589294312287
         }
     ],
     "customEvents": []

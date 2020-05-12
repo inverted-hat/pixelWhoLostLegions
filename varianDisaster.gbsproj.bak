@@ -3,7 +3,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1271,
-        "worldScrollY": 562,
+        "worldScrollY": 663,
         "zoom": 313.2714051157236,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -127,10 +127,10 @@
                 {
                     "trigger": "walk",
                     "id": "67441de4-25e0-4f39-8e49-9724887c9a69",
-                    "x": 16,
-                    "y": 8,
+                    "x": 15,
+                    "y": 7,
                     "width": 1,
-                    "height": 4,
+                    "height": 5,
                     "script": [
                         {
                             "id": "5cf389de-b7c1-46ae-9656-a66c2a0a25be",
@@ -141,11 +141,20 @@
                             }
                         },
                         {
+                            "id": "d47deec7-075d-4a94-a0a6-1d0b597c8c45",
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "player",
+                                "emoteId": 0,
+                                "__collapse": true
+                            }
+                        },
+                        {
                             "id": "381714b4-6cba-4bf5-88e7-fb5f43437958",
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "player",
-                                "x": 15,
+                                "x": 16,
                                 "y": 10,
                                 "__collapse": true
                             }
@@ -156,14 +165,24 @@
                             "args": {
                                 "actorId": "player",
                                 "direction": "right",
-                                "__collapse": false
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "31091b4e-85f9-40b3-b097-a43ead6c975f",
+                            "command": "EVENT_ACTOR_SET_FRAME",
+                            "args": {
+                                "actorId": "player",
+                                "frame": 0,
+                                "__collapse": true
                             }
                         },
                         {
                             "id": "f734a024-d8a0-4498-bcd9-e9aee8311966",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "name": "Arminius shows up"
                 }
             ],
             "script": [
@@ -208,7 +227,15 @@
                     "args": {
                         "actorId": "player",
                         "direction": "left",
-                        "__collapse": true
+                        "__collapse": false
+                    }
+                },
+                {
+                    "id": "6f8055b6-9bdb-488d-b9cc-a021489bf44e",
+                    "command": "EVENT_ACTOR_SET_FRAME",
+                    "args": {
+                        "actorId": "player",
+                        "frame": 0
                     }
                 },
                 {

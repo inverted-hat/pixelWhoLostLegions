@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 365,
-        "worldScrollY": 148,
-        "zoom": 173.4229614213109,
+        "worldScrollX": 1088,
+        "worldScrollY": 518,
+        "zoom": 286.15211933106184,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -14,7 +14,8 @@
         "startDirection": "down",
         "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
-        "startMoveSpeed": "1"
+        "startMoveSpeed": "1",
+        "startAnimSpeed": "3"
     },
     "scenes": [
         {
@@ -82,23 +83,114 @@
                     "id": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
                     "x": 9,
                     "y": 9,
-                    "name": "Jamie"
+                    "name": "Jamie",
+                    "startScript": [
+                        {
+                            "id": "0e0a2068-94a6-4f55-8782-1954d8bb77f9",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "b78e61b7-0faf-41ca-881a-9809002fce25",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
+                    "movementType": "faceInteraction",
+                    "direction": "up",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
+                    "x": 8,
+                    "y": 17,
+                    "name": "Arminius",
+                    "startScript": [
+                        {
+                            "id": "d3635b3f-7852-4fb2-b196-485cf518084c",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "5ae4a6eb-7192-452e-b337-b4c2d4028fbc",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
-            "triggers": [],
-            "script": [
+            "triggers": [
                 {
-                    "id": "7cc801b7-d440-4e2a-a0ba-72729e6ca1c7",
-                    "command": "EVENT_ACTOR_HIDE",
-                    "args": {
-                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9"
-                    }
-                },
+                    "trigger": "walk",
+                    "id": "67441de4-25e0-4f39-8e49-9724887c9a69",
+                    "x": 8,
+                    "y": 14,
+                    "width": 5,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "5cf389de-b7c1-46ae-9656-a66c2a0a25be",
+                            "command": "EVENT_ACTOR_SHOW",
+                            "args": {
+                                "actorId": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "d8986472-5410-4f8b-b345-c3cff1d5ebd8",
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
+                                "x": 9,
+                                "y": 16,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "381714b4-6cba-4bf5-88e7-fb5f43437958",
+                            "command": "EVENT_ACTOR_MOVE_TO",
+                            "args": {
+                                "actorId": "player",
+                                "x": 11,
+                                "y": 16,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "42395b89-79a5-4765-a9f1-97cef19dbcc9",
+                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                            "args": {
+                                "actorId": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
+                                "direction": "right",
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "4b644876-31a9-49f5-a229-30481c4da30d",
+                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                            "args": {
+                                "actorId": "player",
+                                "direction": "left"
+                            }
+                        },
+                        {
+                            "id": "f734a024-d8a0-4498-bcd9-e9aee8311966",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "script": [
                 {
                     "id": "2da45790-69f6-4bb6-b1bc-57877fce4c68",
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
-                        "actorId": "player"
+                        "actorId": "player",
+                        "__collapse": true
                     }
                 },
                 {
@@ -106,14 +198,16 @@
                     "command": "EVENT_CAMERA_SHAKE",
                     "args": {
                         "time": 1,
-                        "__comment": false
+                        "__comment": false,
+                        "__collapse": true
                     }
                 },
                 {
                     "id": "172d919b-e815-4b68-93ad-d7807e5c8538",
                     "command": "EVENT_ACTOR_SHOW",
                     "args": {
-                        "actorId": "player"
+                        "actorId": "player",
+                        "__collapse": true
                     }
                 },
                 {
@@ -122,7 +216,8 @@
                     "args": {
                         "actorId": "player",
                         "x": 11,
-                        "y": 11
+                        "y": 11,
+                        "__collapse": true
                     }
                 },
                 {
@@ -130,14 +225,16 @@
                     "command": "EVENT_ACTOR_SET_DIRECTION",
                     "args": {
                         "actorId": "player",
-                        "direction": "left"
+                        "direction": "left",
+                        "__collapse": true
                     }
                 },
                 {
                     "id": "6a90c1cd-0e0d-4975-8691-75143f3aa92a",
                     "command": "EVENT_ACTOR_SHOW",
                     "args": {
-                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9"
+                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
+                        "__collapse": true
                     }
                 },
                 {
@@ -146,7 +243,8 @@
                     "args": {
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
                         "x": 9,
-                        "y": 11
+                        "y": 11,
+                        "__collapse": true
                     }
                 },
                 {
@@ -154,7 +252,8 @@
                     "command": "EVENT_ACTOR_SET_DIRECTION",
                     "args": {
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
-                        "direction": "right"
+                        "direction": "right",
+                        "__collapse": true
                     }
                 },
                 {
@@ -166,7 +265,8 @@
                             "impressive, Doc.\nWhere are all\nthe great",
                             "buildings you\ntold me about?"
                         ],
-                        "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04"
+                        "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                        "__collapse": true
                     }
                 },
                 {
@@ -176,17 +276,19 @@
                         "text": [
                             "Doctor: Well it\nseems like we've\nlanded in a",
                             "misty wood. This\nis definitely\nnot rome.",
-                            "I wonder why\ndestiny brought\nus here.",
+                            "I wonder where\nwe've landed.",
                             "Let's go and\nfind out!"
                         ],
-                        "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed"
+                        "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                        "__collapse": true
                     }
                 },
                 {
                     "id": "9fe0a772-f2ed-4cfc-a757-b8831b0a1f15",
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
-                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9"
+                        "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
+                        "__collapse": true
                     }
                 },
                 {
@@ -276,8 +378,8 @@
                         "sceneId": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
                         "x": 10,
                         "y": 9,
-                        "direction": "right",
-                        "fadeSpeed": "2"
+                        "direction": "down",
+                        "fadeSpeed": "3"
                     }
                 },
                 {
@@ -300,7 +402,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1589063885003
+            "_v": 1589227501428
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -310,7 +412,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1589063885003
+            "_v": 1589227501428
         }
     ],
     "spriteSheets": [
@@ -320,7 +422,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1589063885003
+            "_v": 1589227501429
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -328,7 +430,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1589063943238
+            "_v": 1589227501430
+        },
+        {
+            "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
+            "name": "world/arminius",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "world/arminius.png",
+            "_v": 1589227501429
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -336,7 +446,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1589063885003
+            "_v": 1589227501430
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -344,7 +454,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1589063885003
+            "_v": 1589227501430
         }
     ],
     "music": [
@@ -352,7 +462,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1589063885003
+            "_v": 1589227501422
         }
     ],
     "customEvents": []

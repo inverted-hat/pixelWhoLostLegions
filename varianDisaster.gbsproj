@@ -1263,7 +1263,19 @@
                                             "id": "04ca3456-1ad6-4b85-875e-2e76ef68bdb2",
                                             "command": "EVENT_SET_TRUE",
                                             "args": {
-                                                "variable": "2"
+                                                "variable": "2",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "f7c598a6-4d51-4c50-bcfe-5662529ff5dc",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "You have won the\ntrivia quiz!"
+                                                ],
+                                                "avatarId": "",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -1301,6 +1313,17 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "id": "b4b57ec4-2db9-4d43-831f-7b18c02bdb8f",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "You have lost the\ntrivia quiz ..."
+                                                ],
+                                                "avatarId": "",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
                                             "id": "21648abf-442e-4552-b972-a49338d30beb",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
@@ -1308,7 +1331,8 @@
                                                 "x": 0,
                                                 "y": 0,
                                                 "direction": "up",
-                                                "fadeSpeed": "2"
+                                                "fadeSpeed": "2",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -1665,7 +1689,19 @@
                                             "id": "04ca3456-1ad6-4b85-875e-2e76ef68bdb2",
                                             "command": "EVENT_SET_TRUE",
                                             "args": {
-                                                "variable": "2"
+                                                "variable": "2",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "f7c598a6-4d51-4c50-bcfe-5662529ff5dc",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "You have won the\ntrivia quiz!"
+                                                ],
+                                                "avatarId": "",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -1703,6 +1739,17 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "id": "b4b57ec4-2db9-4d43-831f-7b18c02bdb8f",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "You have lost the\ntrivia quiz ..."
+                                                ],
+                                                "avatarId": "",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
                                             "id": "21648abf-442e-4552-b972-a49338d30beb",
                                             "command": "EVENT_SWITCH_SCENE",
                                             "args": {
@@ -1710,7 +1757,8 @@
                                                 "x": 0,
                                                 "y": 0,
                                                 "direction": "up",
-                                                "fadeSpeed": "2"
+                                                "fadeSpeed": "2",
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -2150,7 +2198,19 @@
                                 "id": "04ca3456-1ad6-4b85-875e-2e76ef68bdb2",
                                 "command": "EVENT_SET_TRUE",
                                 "args": {
-                                    "variable": "2"
+                                    "variable": "2",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "f7c598a6-4d51-4c50-bcfe-5662529ff5dc",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You have won the\ntrivia quiz!"
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -2188,6 +2248,17 @@
                     "children": {
                         "true": [
                             {
+                                "id": "b4b57ec4-2db9-4d43-831f-7b18c02bdb8f",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You have lost the\ntrivia quiz ..."
+                                    ],
+                                    "avatarId": "",
+                                    "__collapse": false
+                                }
+                            },
+                            {
                                 "id": "21648abf-442e-4552-b972-a49338d30beb",
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
@@ -2195,7 +2266,8 @@
                                     "x": 0,
                                     "y": 0,
                                     "direction": "up",
-                                    "fadeSpeed": "2"
+                                    "fadeSpeed": "2",
+                                    "__collapse": false
                                 }
                             },
                             {

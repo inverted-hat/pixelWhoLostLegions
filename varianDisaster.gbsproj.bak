@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1088,
-        "worldScrollY": 518,
-        "zoom": 286.15211933106184,
+        "worldScrollX": 1271,
+        "worldScrollY": 562,
+        "zoom": 313.2714051157236,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -24,51 +24,51 @@
             "width": 20,
             "height": 18,
             "collisions": [
-                192,
-                57,
-                192,
-                99,
-                14,
-                4,
-                128,
-                67,
                 0,
-                160,
-                4,
-                0,
-                68,
-                0,
-                64,
-                4,
-                14,
-                68,
-                224,
-                64,
-                2,
-                14,
-                36,
+                76,
                 0,
                 48,
+                25,
+                176,
+                48,
+                130,
+                12,
+                32,
                 6,
                 0,
-                65,
+                17,
                 0,
-                48,
-                4,
-                0,
-                132,
+                16,
                 1,
-                64,
-                208,
-                0,
                 7,
-                13,
-                22,
-                176,
-                96,
+                19,
+                112,
+                192,
+                2,
+                7,
+                32,
+                0,
+                0,
+                2,
+                0,
+                192,
+                0,
+                192,
+                48,
+                128,
                 1,
+                98,
                 8,
-                6
+                192,
+                134,
+                0,
+                128,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
             ],
             "id": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
             "x": 467,
@@ -81,7 +81,7 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
-                    "x": 9,
+                    "x": 8,
                     "y": 9,
                     "name": "Jamie",
                     "startScript": [
@@ -101,12 +101,12 @@
                 {
                     "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
                     "movementType": "faceInteraction",
-                    "direction": "up",
+                    "direction": "left",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
-                    "x": 8,
-                    "y": 17,
+                    "x": 18,
+                    "y": 10,
                     "name": "Arminius",
                     "startScript": [
                         {
@@ -127,10 +127,10 @@
                 {
                     "trigger": "walk",
                     "id": "67441de4-25e0-4f39-8e49-9724887c9a69",
-                    "x": 8,
-                    "y": 14,
-                    "width": 5,
-                    "height": 1,
+                    "x": 16,
+                    "y": 8,
+                    "width": 1,
+                    "height": 4,
                     "script": [
                         {
                             "id": "5cf389de-b7c1-46ae-9656-a66c2a0a25be",
@@ -141,31 +141,12 @@
                             }
                         },
                         {
-                            "id": "d8986472-5410-4f8b-b345-c3cff1d5ebd8",
-                            "command": "EVENT_ACTOR_MOVE_TO",
-                            "args": {
-                                "actorId": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
-                                "x": 9,
-                                "y": 16,
-                                "__collapse": true
-                            }
-                        },
-                        {
                             "id": "381714b4-6cba-4bf5-88e7-fb5f43437958",
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "player",
-                                "x": 11,
-                                "y": 16,
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "42395b89-79a5-4765-a9f1-97cef19dbcc9",
-                            "command": "EVENT_ACTOR_SET_DIRECTION",
-                            "args": {
-                                "actorId": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
-                                "direction": "right",
+                                "x": 15,
+                                "y": 10,
                                 "__collapse": true
                             }
                         },
@@ -174,7 +155,8 @@
                             "command": "EVENT_ACTOR_SET_DIRECTION",
                             "args": {
                                 "actorId": "player",
-                                "direction": "left"
+                                "direction": "right",
+                                "__collapse": false
                             }
                         },
                         {
@@ -215,7 +197,7 @@
                     "command": "EVENT_ACTOR_MOVE_TO",
                     "args": {
                         "actorId": "player",
-                        "x": 11,
+                        "x": 9,
                         "y": 11,
                         "__collapse": true
                     }
@@ -242,7 +224,7 @@
                     "command": "EVENT_ACTOR_MOVE_TO",
                     "args": {
                         "actorId": "80af4bf0-74f5-4d2e-967a-c07fc4fdf2a9",
-                        "x": 9,
+                        "x": 7,
                         "y": 11,
                         "__collapse": true
                     }
@@ -376,7 +358,7 @@
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
                         "sceneId": "1cea7fba-1b2b-47ad-8f5d-8f594034a322",
-                        "x": 10,
+                        "x": 9,
                         "y": 9,
                         "direction": "down",
                         "fadeSpeed": "3"
@@ -402,7 +384,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1589227501428
+            "_v": 1589292203099
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -412,7 +394,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1589227501428
+            "_v": 1589292171255
         }
     ],
     "spriteSheets": [
@@ -422,7 +404,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1589227501429
+            "_v": 1589292171255
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -430,7 +412,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1589227501430
+            "_v": 1589292171255
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -438,7 +420,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1589227501429
+            "_v": 1589292171255
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -446,7 +428,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1589227501430
+            "_v": 1589292171255
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -454,7 +436,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1589227501430
+            "_v": 1589292171255
         }
     ],
     "music": [
@@ -462,7 +444,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1589227501422
+            "_v": 1589292171255
         }
     ],
     "customEvents": []

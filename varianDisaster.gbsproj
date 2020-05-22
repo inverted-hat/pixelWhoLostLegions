@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1270,
-        "worldScrollY": 1254,
-        "zoom": 320.02335793484235,
+        "worldScrollX": 137,
+        "worldScrollY": 0,
+        "zoom": 112.01506094593788,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -12,7 +12,7 @@
         "startX": 2,
         "startY": 11,
         "startDirection": "right",
-        "startSceneId": "0d6f16fb-bd7e-4ecf-8a45-76dcf81546dc",
+        "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
@@ -41,9 +41,9 @@
                 16,
                 1,
                 7,
-                19,
+                31,
                 112,
-                192,
+                0,
                 2,
                 7,
                 32,
@@ -122,6 +122,54 @@
                         }
                     ],
                     "frame": 0
+                },
+                {
+                    "spriteSheetId": "973d0e8d-8055-49ea-8abb-90b28477da54",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "22d4b838-cf41-414d-95d6-2aca87f829cc",
+                    "x": 17,
+                    "y": 8,
+                    "name": "Soilder 1",
+                    "startScript": [
+                        {
+                            "id": "e584a623-f129-4e9f-ab06-d4c7c1e7d3df",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "372757cf-9f9a-400e-954c-835d45cd6928",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "973d0e8d-8055-49ea-8abb-90b28477da54",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "30a26a95-9d68-4993-91a6-9a3721538d2c",
+                    "x": 18,
+                    "y": 8,
+                    "name": "Soilder 2",
+                    "startScript": [
+                        {
+                            "id": "b9777f2c-d508-41f7-85b4-62fe430f32ce",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "1c0825ed-c334-4a1c-9a84-0974c9c59fc2",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "triggers": [
@@ -257,7 +305,7 @@
                     "args": {
                         "variable": "2",
                         "__collapseElse": false,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -428,6 +476,100 @@
                                 }
                             },
                             {
+                                "id": "13d16f7b-4a61-493e-954e-aa3d77fed915",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Well, I'm still\nnot quite sure\nabout you.",
+                                        "But I can't let\nyou roam around\nhere. You will",
+                                        "have to come\nwith me. Varus\nshall decide!",
+                                        "Arrest them and\ntake their blue\nshed too!"
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "fd639e73-86a8-486f-ad88-46b808167b27",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "22d4b838-cf41-414d-95d6-2aca87f829cc",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "6ea2d55b-9a50-4fc7-a2c2-a28967e67757",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "22d4b838-cf41-414d-95d6-2aca87f829cc",
+                                    "x": 11,
+                                    "y": 9,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "01b54ee6-f184-4e30-b852-fc9d5a9961af",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "22d4b838-cf41-414d-95d6-2aca87f829cc",
+                                    "x": 6,
+                                    "y": 9,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "fb34e684-bc90-406e-8a9c-5a06dbdeec09",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "22d4b838-cf41-414d-95d6-2aca87f829cc",
+                                    "direction": "right",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "bedc4afc-48fe-4459-8414-bc1922805398",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "30a26a95-9d68-4993-91a6-9a3721538d2c"
+                                }
+                            },
+                            {
+                                "id": "20c3c503-77d0-4e5c-b382-9f820e5aadfa",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "30a26a95-9d68-4993-91a6-9a3721538d2c",
+                                    "x": 14,
+                                    "y": 10
+                                }
+                            },
+                            {
+                                "id": "d50959b5-89ec-4750-8fae-71a5272a08bd",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "30a26a95-9d68-4993-91a6-9a3721538d2c",
+                                    "direction": "right"
+                                }
+                            },
+                            {
+                                "id": "fa8a1405-1b6d-44a2-827b-a710b084d7f0",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "1194a6e5-6a19-43d5-ad35-d37045c25e34",
+                                    "direction": "right"
+                                }
+                            },
+                            {
+                                "id": "ad328640-12be-4f4f-a4ae-4bed568abb0a",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                }
+                            },
+                            {
                                 "id": "412d7a76-e802-4eed-ab9a-3a58aa85e058",
                                 "command": "EVENT_END"
                             }
@@ -499,6 +641,14 @@
             "triggers": [],
             "script": [
                 {
+                    "id": "89205447-3bf7-4f44-a097-daf061b9b0d8",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
+                        "loop": true
+                    }
+                },
+                {
                     "id": "8e265bd7-b37d-4b69-bb5d-573038410a41",
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
@@ -513,6 +663,11 @@
                             "start"
                         ]
                     }
+                },
+                {
+                    "id": "76c4dc8c-bf62-4ea0-ad11-562fea204ba4",
+                    "command": "EVENT_MUSIC_STOP",
+                    "args": {}
                 },
                 {
                     "id": "2ab51ecc-f570-499d-8bf4-526533f99b88",
@@ -4321,6 +4476,31 @@
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "wayToVarus",
+            "backgroundId": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "b331e805-8d76-4794-add8-6e16ce5073a7",
+            "x": 649.212364801281,
+            "y": 224.57126732905226,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "57268255-74a7-4c09-9edd-e912a3b7469d",
+                    "command": "EVENT_PLAYER_SET_SPRITE",
+                    "args": {
+                        "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                    }
+                },
+                {
+                    "id": "9480c50e-21ca-430c-a925-04067614db4f",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -4361,7 +4541,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -4371,7 +4551,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1589471364787
+            "_v": 1590154935458
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -4381,7 +4561,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         }
     ],
     "spriteSheets": [
@@ -4391,7 +4571,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -4399,7 +4579,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -4407,7 +4587,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -4415,7 +4595,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1589474342494
+            "_v": 1590154935458
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -4423,7 +4603,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1589474340746
+            "_v": 1590154935458
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -4431,7 +4611,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1589484138434
+            "_v": 1590154935458
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -4439,7 +4619,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1589484023910
+            "_v": 1590154935458
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -4447,7 +4627,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1589483562835
+            "_v": 1590154935458
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -4455,7 +4635,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1589485400690
+            "_v": 1590154935458
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -4463,7 +4643,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1589485317506
+            "_v": 1590154935458
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -4471,7 +4651,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1589485486366
+            "_v": 1590154935458
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -4479,7 +4659,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -4487,7 +4667,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -4495,15 +4675,29 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1589471063423
+            "_v": 1590154935458
+        },
+        {
+            "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
+            "name": "world/legionary",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "world/legionary.png",
+            "_v": 1590161666515
         }
     ],
     "music": [
         {
+            "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
+            "name": "openingTheme",
+            "filename": "openingTheme.mod",
+            "_v": 1590154935458
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1589471063423
+            "_v": 1590154935458
         }
     ],
     "customEvents": [

@@ -2,17 +2,17 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 137,
+        "worldScrollX": 0,
         "worldScrollY": 0,
-        "zoom": 112.01506094593788,
+        "zoom": 49.70218135416508,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 2,
-        "startY": 11,
+        "startX": 0,
+        "startY": 4,
         "startDirection": "right",
-        "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
+        "startSceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
@@ -564,7 +564,7 @@
                                 "args": {
                                     "sceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
                                     "x": 0,
-                                    "y": 0,
+                                    "y": 4,
                                     "direction": "",
                                     "fadeSpeed": "2"
                                 }
@@ -693,8 +693,8 @@
             "height": 18,
             "collisions": [],
             "id": "0d6f16fb-bd7e-4ecf-8a45-76dcf81546dc",
-            "x": 435.52286478603537,
-            "y": 405.13009385215685,
+            "x": 436.2702706173746,
+            "y": 467.9121836846517,
             "actors": [
                 {
                     "spriteSheetId": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -4390,7 +4390,7 @@
             "collisions": [],
             "id": "2727d165-1d90-40eb-b7e8-2cbf6049ffe8",
             "x": 424.5502902476537,
-            "y": 622.8006674364597,
+            "y": 692.3094097510078,
             "actors": [],
             "triggers": [],
             "script": [
@@ -4479,15 +4479,220 @@
         },
         {
             "name": "wayToVarus",
-            "backgroundId": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
-            "width": 20,
-            "height": 18,
-            "collisions": [],
+            "backgroundId": "828a5b10-e871-4a45-8536-b3187af4c4d9",
+            "width": 32,
+            "height": 32,
+            "collisions": [
+                3,
+                136,
+                0,
+                0,
+                4,
+                72,
+                0,
+                0,
+                24,
+                72,
+                24,
+                12,
+                32,
+                196,
+                36,
+                19,
+                32,
+                4,
+                195,
+                96,
+                65,
+                4,
+                3,
+                128,
+                198,
+                24,
+                48,
+                134,
+                4,
+                97,
+                240,
+                134,
+                6,
+                129,
+                13,
+                137,
+                1,
+                1,
+                2,
+                136,
+                1,
+                15,
+                0,
+                140,
+                1,
+                48,
+                0,
+                130,
+                1,
+                192,
+                63,
+                131,
+                1,
+                0,
+                192,
+                128,
+                1,
+                3,
+                0,
+                96,
+                129,
+                122,
+                27,
+                24,
+                134,
+                132,
+                36,
+                6,
+                68,
+                48,
+                195,
+                1,
+                72,
+                207,
+                60,
+                0,
+                200,
+                0,
+                64,
+                0,
+                8,
+                0,
+                128,
+                0,
+                8,
+                54,
+                134,
+                0,
+                200,
+                74,
+                70,
+                0,
+                48,
+                129,
+                73,
+                0
+            ],
             "id": "b331e805-8d76-4794-add8-6e16ce5073a7",
-            "x": 649.212364801281,
-            "y": 224.57126732905226,
+            "x": 750.3574455745763,
+            "y": 220.92639955343796,
             "actors": [],
-            "triggers": [],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "8942d4a9-19a2-4d93-b344-4e543f9a1843",
+                    "x": 20,
+                    "y": 23,
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "c2aca9b3-8202-44fe-8a9c-45d4940f14fe",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "This is not the\nway to Varus\ncamp."
+                                ],
+                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d"
+                            }
+                        },
+                        {
+                            "id": "d3fbdfe8-15c8-4831-82aa-1163a2edf621",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "3560cc03-33cc-4a8b-97b9-cae960f95613",
+                    "x": 12,
+                    "y": 0,
+                    "width": 2,
+                    "height": 1
+                },
+                {
+                    "trigger": "walk",
+                    "id": "f42cd342-8ba0-45a2-9733-c88d1b69ba72",
+                    "x": 3,
+                    "y": 8,
+                    "width": 5,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "d4ecefdb-3b82-46c3-abec-f024eab6430b",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "973c30fd-63d8-4138-87c7-87181597e851",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "397e78b9-bfda-4ee7-83bf-4c49ae415ecf",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "0f2abb30-02a1-4bd0-aead-9ef01bd59deb",
+                    "x": 19,
+                    "y": 13,
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "id": "f2bcdbfb-024b-4d8d-9328-f484ef89cfac",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "0f55aa3d-1670-47ec-b61a-0a53d028fc76",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "65815e40-ba75-4b6a-9ba6-92b4bdf75c38",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "c4ddeb9e-294f-4b18-b70d-63a7bac8b0b2",
+                    "x": 21,
+                    "y": 5,
+                    "width": 1,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "bc0916d9-a131-48cd-a41c-f61d294f21c2",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "df0fb149-6485-4cc5-a954-01dd55ab6aaa",
+                                "x": 0,
+                                "y": 0,
+                                "direction": "",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "bac08353-e945-4da0-abb9-e5ad31b838c3",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
             "script": [
                 {
                     "id": "57268255-74a7-4c09-9edd-e912a3b7469d",
@@ -4501,6 +4706,42 @@
                     "command": "EVENT_END"
                 }
             ]
+        },
+        {
+            "name": "Quiz Teuton 1",
+            "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "973c30fd-63d8-4138-87c7-87181597e851",
+            "x": 621.5093811902896,
+            "y": 464.40426649174503,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Quiz Teuton 2",
+            "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "0f55aa3d-1670-47ec-b61a-0a53d028fc76",
+            "x": 790.4129037120449,
+            "y": 463.16232882614383,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Quiz Teuton Chief",
+            "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "df0fb149-6485-4cc5-a954-01dd55ab6aaa",
+            "x": 962.72668185256,
+            "y": 462.46857964950635,
+            "actors": [],
+            "triggers": []
         }
     ],
     "_version": "1.2.0",
@@ -4541,7 +4782,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1590154935458
+            "_v": 1590223062889
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -4551,7 +4792,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1590154935458
+            "_v": 1590223062889
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -4561,7 +4802,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1590154935458
+            "_v": 1590223062889
+        },
+        {
+            "id": "828a5b10-e871-4a45-8536-b3187af4c4d9",
+            "name": "wood",
+            "width": 32,
+            "height": 24,
+            "imageWidth": 256,
+            "imageHeight": 192,
+            "filename": "wood.png",
+            "_v": 1590227944583
         }
     ],
     "spriteSheets": [
@@ -4571,7 +4822,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -4579,7 +4830,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -4587,7 +4838,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -4595,7 +4846,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -4603,7 +4854,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -4611,7 +4862,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -4619,7 +4870,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -4627,7 +4878,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -4635,7 +4886,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -4643,7 +4894,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -4651,7 +4902,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -4659,7 +4910,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -4667,7 +4918,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -4675,7 +4926,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1590154935458
+            "_v": 1590223062893
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -4683,7 +4934,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/legionary.png",
-            "_v": 1590161666515
+            "_v": 1590223062893
         }
     ],
     "music": [
@@ -4691,13 +4942,13 @@
             "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
             "name": "openingTheme",
             "filename": "openingTheme.mod",
-            "_v": 1590154935458
+            "_v": 1590223062884
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1590154935458
+            "_v": 1590223062884
         }
     ],
     "customEvents": [

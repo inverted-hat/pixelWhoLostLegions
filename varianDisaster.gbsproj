@@ -2,7 +2,7 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2366,
+        "worldScrollX": 1103,
         "worldScrollY": 622,
         "zoom": 317.13965344429016,
         "customColorsWhite": "E8F8E0",
@@ -291,6 +291,16 @@
             ],
             "script": [
                 {
+                    "id": "f6a9a211-08d5-4e9e-bf1a-a18e3c2b51aa",
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": "0",
+                        "speedOut": "0",
+                        "speed": "3",
+                        "__comment": false
+                    }
+                },
+                {
                     "id": "2da45790-69f6-4bb6-b1bc-57877fce4c68",
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
@@ -304,8 +314,8 @@
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "2",
-                        "__collapseElse": false,
-                        "__collapse": false
+                        "__collapseElse": true,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -5155,7 +5165,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1590525616157
+            "_v": 1590957510683
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -5165,7 +5175,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1590525616157
+            "_v": 1590957510683
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -5175,7 +5185,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1590525616158
+            "_v": 1590957510683
         },
         {
             "id": "828a5b10-e871-4a45-8536-b3187af4c4d9",
@@ -5185,7 +5195,7 @@
             "imageWidth": 256,
             "imageHeight": 192,
             "filename": "wood.png",
-            "_v": 1590525616158
+            "_v": 1590957510683
         }
     ],
     "spriteSheets": [
@@ -5195,7 +5205,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1590525616168
+            "_v": 1590957510687
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -5203,7 +5213,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1590525616167
+            "_v": 1590957510687
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -5211,7 +5221,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1590525616168
+            "_v": 1590957510687
         },
         {
             "id": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
@@ -5219,7 +5229,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminius.png",
-            "_v": 1590525616168
+            "_v": 1590957510687
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -5227,7 +5237,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1590525616168
+            "_v": 1590957510687
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -5235,7 +5245,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1590525616168
+            "_v": 1590957510687
         },
         {
             "id": "99aa2210-8e21-44b3-bb94-18a8b89f5b45",
@@ -5243,7 +5253,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/teuton.png",
-            "_v": 1590525616171
+            "_v": 1590957510687
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -5251,7 +5261,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1590525616171
+            "_v": 1590957510688
         },
         {
             "id": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
@@ -5259,7 +5269,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/chief.png",
-            "_v": 1590525616171
+            "_v": 1590957510688
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -5267,7 +5277,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1590525616171
+            "_v": 1590957510688
         },
         {
             "id": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
@@ -5275,7 +5285,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/teuton.png",
-            "_v": 1590525616171
+            "_v": 1590957510688
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -5283,7 +5293,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1590525616171
+            "_v": 1590957510688
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -5291,7 +5301,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1590525616171
+            "_v": 1590957510688
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -5299,7 +5309,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1590525616172
+            "_v": 1590957510688
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -5307,7 +5317,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1590525616173
+            "_v": 1590957510688
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -5315,7 +5325,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1590525616173
+            "_v": 1590957510688
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -5323,7 +5333,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1590525616173
+            "_v": 1590957510688
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -5331,7 +5341,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1590525616173
+            "_v": 1590957510688
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -5339,7 +5349,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/legionary.png",
-            "_v": 1590525616173
+            "_v": 1590957510688
         },
         {
             "id": "6bc40b5a-8acd-4020-8fa3-188d974b1781",
@@ -5347,7 +5357,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/teuton.png",
-            "_v": 1590525616173
+            "_v": 1590957510688
         }
     ],
     "music": [
@@ -5355,13 +5365,13 @@
             "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
             "name": "openingTheme",
             "filename": "openingTheme.mod",
-            "_v": 1590525616132
+            "_v": 1590957510675
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1590525616132
+            "_v": 1590957510675
         }
     ],
     "customEvents": [

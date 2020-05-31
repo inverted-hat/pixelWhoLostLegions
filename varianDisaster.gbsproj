@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2166,
-        "worldScrollY": 599,
+        "worldScrollX": 2008,
+        "worldScrollY": 369,
         "zoom": 317.13965344429016,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -12,7 +12,7 @@
         "startX": 0,
         "startY": 4,
         "startDirection": "right",
-        "startSceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
+        "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
@@ -4653,7 +4653,7 @@
                             "args": {
                                 "variable": "3",
                                 "__collapseElse": false,
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__comment": false,
                                 "__disableElse": true
                             },
@@ -4664,10 +4664,24 @@
                                         "command": "EVENT_ACTOR_GET_POSITION",
                                         "args": {
                                             "actorId": "player",
-                                            "vectorX": "L0",
-                                            "vectorY": "L1",
+                                            "vectorX": "4",
+                                            "vectorY": "5",
                                             "__collapse": true,
                                             "__comment": false
+                                        }
+                                    },
+                                    {
+                                        "id": "cb7c7acc-b13d-4f4d-81ce-d17fc3fde0be",
+                                        "command": "EVENT_VARIABLE_MATH",
+                                        "args": {
+                                            "vectorX": "5",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 2,
+                                            "minValue": "0",
+                                            "maxValue": "255",
+                                            "__collapse": true
                                         }
                                     },
                                     {
@@ -4694,8 +4708,17 @@
                                         "command": "EVENT_ACTOR_MOVE_TO_VALUE",
                                         "args": {
                                             "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
-                                            "vectorX": "L0",
-                                            "vectorY": "L1",
+                                            "vectorX": "4",
+                                            "vectorY": "5",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "eb2061bf-432d-42ac-88d8-e802156559ab",
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
+                                            "direction": "up",
                                             "__collapse": true
                                         }
                                     },
@@ -4794,7 +4817,8 @@
                     "command": "EVENT_PLAYER_SET_SPRITE",
                     "args": {
                         "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
-                        "__collapse": true
+                        "__collapse": true,
+                        "__label": "ChangeToArminius"
                     }
                 },
                 {
@@ -4804,6 +4828,87 @@
                         "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
                         "__label": "Hide Teuton1",
                         "__collapse": true
+                    }
+                },
+                {
+                    "id": "d74e7bba-1746-45c0-8bf5-6da3a4123d4b",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "3",
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__collapse": true,
+                        "__label": "beatenTeuton1"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "abd46896-9764-469e-b180-43a876d0afeb",
+                                "command": "EVENT_ACTOR_SET_POSITION_TO_VALUE",
+                                "args": {
+                                    "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
+                                    "vectorX": "4",
+                                    "vectorY": "5",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "6a4ef741-bdea-438a-b85a-ac1f38048742",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
+                                    "direction": "up",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "2eaaa64f-35a8-439d-89a8-7a49fa228876",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "76aff16b-f784-4ab6-a7dc-d7dc96b8d4bc",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "I am no traitor.\nI want to talk\nto your chief!"
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "0152600d-024c-4610-a82f-3ba32249e651",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
+                                    "x": 8,
+                                    "y": 10,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "6b53cddd-7f73-443d-9c15-203898561df5",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "80b75750-9d01-4dc0-8d43-0964a6efd0cf",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "a112b640-b45b-4f3c-8a8e-c82f3718263a",
+                                "command": "EVENT_END"
+                            }
+                        ]
                     }
                 },
                 {
@@ -8756,6 +8861,14 @@
         {
             "id": "3",
             "name": "beatenTeuton1"
+        },
+        {
+            "id": "4",
+            "name": "PlayerX"
+        },
+        {
+            "id": "5",
+            "name": "PlayerY"
         }
     ],
     "backgrounds": [

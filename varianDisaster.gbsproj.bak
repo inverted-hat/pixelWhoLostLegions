@@ -3,16 +3,16 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2166,
-        "worldScrollY": 1291,
+        "worldScrollY": 599,
         "zoom": 317.13965344429016,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 2,
-        "startY": 11,
+        "startX": 0,
+        "startY": 4,
         "startDirection": "right",
-        "startSceneId": "973c30fd-63d8-4138-87c7-87181597e851",
+        "startSceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
@@ -4666,7 +4666,8 @@
                                             "actorId": "player",
                                             "vectorX": "L0",
                                             "vectorY": "L1",
-                                            "__collapse": true
+                                            "__collapse": true,
+                                            "__comment": false
                                         }
                                     },
                                     {

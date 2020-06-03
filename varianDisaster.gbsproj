@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1845,
-        "worldScrollY": 936,
-        "zoom": 233.29519061744213,
+        "worldScrollX": 1627,
+        "worldScrollY": 1046,
+        "zoom": 241.41018763929605,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -8728,7 +8728,9 @@
                     "id": "8e28f56c-c68e-4aa5-b137-013a57666e9f",
                     "command": "EVENT_TEXT",
                     "args": {
-                        "text": "",
+                        "text": [
+                            "Which race con-\nverts human beings\ninto cyborgs?"
+                        ],
                         "avatarId": "",
                         "__label": "Question 1",
                         "__collapse": true
@@ -8739,8 +8741,8 @@
                     "command": "EVENT_CHOICE",
                     "args": {
                         "variable": "L0",
-                        "trueText": "",
-                        "falseText": "",
+                        "trueText": "Cybermen",
+                        "falseText": "Sontarans",
                         "__label": "Answer 1",
                         "__collapse": true
                     }
@@ -9331,7 +9333,9 @@
                     "id": "36665c67-b121-4823-ac8b-44ee515c6f20",
                     "command": "EVENT_TEXT",
                     "args": {
-                        "text": "",
+                        "text": [
+                            "Of what type is\nthe Doctor’s\nTARDIS?"
+                        ],
                         "avatarId": "",
                         "__label": "Question 2",
                         "__collapse": true
@@ -9342,8 +9346,8 @@
                     "command": "EVENT_CHOICE",
                     "args": {
                         "variable": "L0",
-                        "trueText": "",
-                        "falseText": "",
+                        "trueText": "100",
+                        "falseText": "40",
                         "__label": "Answer 2",
                         "__collapse": true
                     }
@@ -10055,7 +10059,9 @@
                     "id": "b3c93cc6-cb4b-490d-b867-c4a337235caf",
                     "command": "EVENT_TEXT",
                     "args": {
-                        "text": "",
+                        "text": [
+                            "Through what does\nthe TARDIS travel?"
+                        ],
                         "avatarId": "",
                         "__label": "Question 3",
                         "__collapse": true
@@ -10066,8 +10072,8 @@
                     "command": "EVENT_CHOICE",
                     "args": {
                         "variable": "L0",
-                        "trueText": "",
-                        "falseText": "",
+                        "trueText": "Time Vortex",
+                        "falseText": "Hyperspace",
                         "__label": "Answer 3",
                         "__collapse": true
                     }
@@ -10779,7 +10785,9 @@
                     "id": "09b9ca33-9cfd-4011-b69f-fe587f64bf91",
                     "command": "EVENT_TEXT",
                     "args": {
-                        "text": "",
+                        "text": [
+                            "In which story did\nthe second Doctor\nregenerate?"
+                        ],
                         "avatarId": "",
                         "__label": "Question 4",
                         "__collapse": true
@@ -10790,8 +10798,8 @@
                     "command": "EVENT_CHOICE",
                     "args": {
                         "variable": "L0",
-                        "trueText": "",
-                        "falseText": "",
+                        "trueText": "Logopolis",
+                        "falseText": "The War Games",
                         "__label": "Answer 4",
                         "__collapse": true
                     }
@@ -11504,7 +11512,9 @@
                     "id": "662c7894-c8ba-485a-a6cb-aa8207e6c9c5",
                     "command": "EVENT_TEXT",
                     "args": {
-                        "text": "",
+                        "text": [
+                            "Who played the\n11th Doctor?"
+                        ],
                         "avatarId": "",
                         "__label": "Question 5",
                         "__collapse": true
@@ -11515,8 +11525,8 @@
                     "command": "EVENT_CHOICE",
                     "args": {
                         "variable": "L0",
-                        "trueText": "",
-                        "falseText": "",
+                        "trueText": "Peter Capaldi",
+                        "falseText": "Matt Smith",
                         "__label": "Answer 5",
                         "__collapse": true
                     }
@@ -15753,7 +15763,8 @@
                         "__name": "checkWinCondition",
                         "$variable[0]$": "L1",
                         "$variable[1]$": "L2",
-                        "$variable[2]$": "7"
+                        "$variable[2]$": "7",
+                        "__collapse": true
                     },
                     "children": {
                         "script": [

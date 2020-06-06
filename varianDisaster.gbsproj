@@ -2,15 +2,15 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1627,
-        "worldScrollY": 1046,
-        "zoom": 241.41018763929605,
+        "worldScrollX": 418,
+        "worldScrollY": 75,
+        "zoom": 110.7648177742958,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 0,
-        "startY": 4,
+        "startX": 26,
+        "startY": 5,
         "startDirection": "right",
         "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -4601,9 +4601,20 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
-                    "x": 8,
-                    "y": 10,
-                    "name": "Teuton1"
+                    "x": 22,
+                    "y": 13,
+                    "name": "Teuton"
+                },
+                {
+                    "spriteSheetId": "6bc40b5a-8acd-4020-8fa3-188d974b1781",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                    "x": 17,
+                    "y": 5,
+                    "name": "Teuton Chief"
                 }
             ],
             "triggers": [
@@ -4642,10 +4653,10 @@
                 {
                     "trigger": "walk",
                     "id": "f42cd342-8ba0-45a2-9733-c88d1b69ba72",
-                    "x": 3,
-                    "y": 8,
-                    "width": 5,
-                    "height": 1,
+                    "x": 16,
+                    "y": 13,
+                    "width": 1,
+                    "height": 2,
                     "script": [
                         {
                             "id": "1aa7fcd3-e2f3-45e3-bce7-2ba680e39274",
@@ -4674,7 +4685,7 @@
                                         "id": "cb7c7acc-b13d-4f4d-81ce-d17fc3fde0be",
                                         "command": "EVENT_VARIABLE_MATH",
                                         "args": {
-                                            "vectorX": "5",
+                                            "vectorX": "4",
                                             "operation": "add",
                                             "other": "val",
                                             "vectorY": "L0",
@@ -4714,11 +4725,11 @@
                                         }
                                     },
                                     {
-                                        "id": "eb2061bf-432d-42ac-88d8-e802156559ab",
+                                        "id": "cd78f59a-c0af-4258-be8e-86a74eff81b7",
                                         "command": "EVENT_ACTOR_SET_DIRECTION",
                                         "args": {
                                             "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
-                                            "direction": "up",
+                                            "direction": "left",
                                             "__collapse": true
                                         }
                                     },
@@ -4762,31 +4773,6 @@
                 },
                 {
                     "trigger": "walk",
-                    "id": "0f2abb30-02a1-4bd0-aead-9ef01bd59deb",
-                    "x": 19,
-                    "y": 13,
-                    "width": 1,
-                    "height": 2,
-                    "script": [
-                        {
-                            "id": "f2bcdbfb-024b-4d8d-9328-f484ef89cfac",
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "0f55aa3d-1670-47ec-b61a-0a53d028fc76",
-                                "x": 2,
-                                "y": 11,
-                                "direction": "",
-                                "fadeSpeed": "2"
-                            }
-                        },
-                        {
-                            "id": "65815e40-ba75-4b6a-9ba6-92b4bdf75c38",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                },
-                {
-                    "trigger": "walk",
                     "id": "c4ddeb9e-294f-4b18-b70d-63a7bac8b0b2",
                     "x": 21,
                     "y": 5,
@@ -4794,14 +4780,98 @@
                     "height": 1,
                     "script": [
                         {
-                            "id": "bc0916d9-a131-48cd-a41c-f61d294f21c2",
-                            "command": "EVENT_SWITCH_SCENE",
+                            "id": "c208745a-2dfd-4ae6-a4aa-04e5edf2dc17",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "sceneId": "df0fb149-6485-4cc5-a954-01dd55ab6aaa",
-                                "x": 2,
-                                "y": 11,
-                                "direction": "",
-                                "fadeSpeed": "2"
+                                "variable": "6",
+                                "__collapseElse": false,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "ea87e494-e5d5-4b05-870c-f665fd0c3ec3",
+                                        "command": "EVENT_ACTOR_GET_POSITION",
+                                        "args": {
+                                            "actorId": "player",
+                                            "vectorX": "4",
+                                            "vectorY": "5",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "08692f07-f26c-4254-9e16-0a46811e97cd",
+                                        "command": "EVENT_VARIABLE_MATH",
+                                        "args": {
+                                            "vectorX": "4",
+                                            "operation": "sub",
+                                            "other": "val",
+                                            "vectorY": "L0",
+                                            "value": 2,
+                                            "minValue": "0",
+                                            "maxValue": "255",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "2ca5fba9-9d56-46f9-9c6c-909da5ad2329",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "cfcc9a9e-3b6f-42d1-aa50-e3d54e4edfec",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Teuton Chief:\nTraitor!"
+                                            ],
+                                            "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "c7b16801-f65f-4ece-b973-1de35dff2818",
+                                        "command": "EVENT_ACTOR_MOVE_TO_VALUE",
+                                        "args": {
+                                            "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                                            "vectorX": "4",
+                                            "vectorY": "5",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "8257f534-a701-47ed-89df-11136b52e936",
+                                        "command": "EVENT_SCENE_PUSH_STATE",
+                                        "args": {
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "bc0916d9-a131-48cd-a41c-f61d294f21c2",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "0f55aa3d-1670-47ec-b61a-0a53d028fc76",
+                                            "x": 2,
+                                            "y": 11,
+                                            "direction": "",
+                                            "fadeSpeed": "2",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "6d791560-da3a-453e-8744-3c75577e6196",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "538cd89c-88dd-4ecb-b255-7f71d7b849f3",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -4812,6 +4882,16 @@
                 }
             ],
             "script": [
+                {
+                    "id": "1cac7928-93df-4011-a45d-95a63fa802cd",
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": "0",
+                        "speedOut": "0",
+                        "speed": "3",
+                        "__collapse": true
+                    }
+                },
                 {
                     "id": "57268255-74a7-4c09-9edd-e912a3b7469d",
                     "command": "EVENT_PLAYER_SET_SPRITE",
@@ -4826,7 +4906,16 @@
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
-                        "__label": "Hide Teuton1",
+                        "__label": "Hide Teuton",
+                        "__collapse": true
+                    }
+                },
+                {
+                    "id": "7191bb54-2db5-48b1-9cd9-541f7b721397",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                        "__label": "Hide Teuton Chief",
                         "__collapse": true
                     }
                 },
@@ -4838,7 +4927,7 @@
                         "__collapseElse": false,
                         "__disableElse": true,
                         "__collapse": true,
-                        "__label": "beatenTeuton1"
+                        "__label": "beatenTeuton"
                     },
                     "children": {
                         "true": [
@@ -4857,7 +4946,7 @@
                                 "command": "EVENT_ACTOR_SET_DIRECTION",
                                 "args": {
                                     "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
-                                    "direction": "up",
+                                    "direction": "left",
                                     "__collapse": true
                                 }
                             },
@@ -4885,8 +4974,8 @@
                                 "command": "EVENT_ACTOR_MOVE_TO",
                                 "args": {
                                     "actorId": "0a16a9aa-d616-42eb-8fd0-e698ca18d957",
-                                    "x": 8,
-                                    "y": 10,
+                                    "x": 22,
+                                    "y": 13,
                                     "__collapse": true
                                 }
                             },
@@ -4912,13 +5001,131 @@
                     }
                 },
                 {
+                    "id": "d6647394-9bf2-4681-9a92-9653a8155985",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "6",
+                        "__collapseElse": false,
+                        "__disableElse": true,
+                        "__label": "beatenTeutonChief",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "01da949a-f617-46e7-8ce6-2ef6ad5b6121",
+                                "command": "EVENT_ACTOR_SET_POSITION_TO_VALUE",
+                                "args": {
+                                    "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                                    "vectorX": "4",
+                                    "vectorY": "5",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "2a84815e-3a03-4347-8832-c77f7a085412",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "d9b54273-fac6-4284-9a42-f6db863bb283",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "I already told\nyour warrior,\nI am no traitor!"
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__collapse": true,
+                                    "__label": "Arminius talking"
+                                }
+                            },
+                            {
+                                "id": "78172a24-eadf-42a6-a889-665e6bd054c5",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Of course you\nare a traitor!\nYou were born as",
+                                        "a Cherusci. But\nnow you are\nfighting for the",
+                                        "roman empire.\nThe enemy of all\ngermanic tribes!"
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__collapse": true,
+                                    "__label": "Chief talking"
+                                }
+                            },
+                            {
+                                "id": "b107bd61-2353-42e7-aba0-31e5366f608d",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Do you think I\nhad a choice\nas a child? That",
+                                        "I could have\ntold my father I\ndid not want to ",
+                                        "join the roman\narmy? But now I\ncan decide for",
+                                        "myself! Varus\ntrusts me. It\nwill be easy to ",
+                                        "lure his legions\ninto a trap.\nTogether we can ",
+                                        "defeat them!\nA lot of other\nchiefs already",
+                                        "joined my ranks.\nCome to the next\nthing and I will",
+                                        "explain the\ndetails of my\nplan."
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__label": "Arminius talking",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "62964880-8aa1-4a86-8660-70c9214376c5",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "I am no fully\nconvinced. But I\nwill be there."
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__collapse": true,
+                                    "__label": "Chief talking"
+                                }
+                            },
+                            {
+                                "id": "4fe625a0-c292-4a15-b2c4-c24fe7797321",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                                    "x": 17,
+                                    "y": 5,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "5922e9e3-b93e-4f27-a15c-fda819a6c3b4",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "3b79a3f7-e748-4757-9bd6-7d478aa8c64a",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "e6095666-97ed-461e-9ea5-d63bd85c16f6",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "5816556e-1c49-41ec-a128-b0a60a773dee",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
                     "id": "9480c50e-21ca-430c-a925-04067614db4f",
                     "command": "EVENT_END"
                 }
             ]
         },
         {
-            "name": "Quiz Teuton 1",
+            "name": "Quiz Teuton",
             "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
             "width": 20,
             "height": 18,
@@ -8580,7 +8787,7 @@
             ]
         },
         {
-            "name": "Quiz Teuton 2",
+            "name": "Quiz Teuton Chief",
             "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
             "width": 20,
             "height": 18,
@@ -8636,7 +8843,7 @@
                     "id": "20967803-8150-41a1-b3b2-4499e705e552",
                     "x": 16,
                     "y": 11,
-                    "name": "Teuton"
+                    "name": "Teuton Chief"
                 },
                 {
                     "spriteSheetId": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -8647,7 +8854,7 @@
                     "id": "893bd325-6e01-4bc7-aabf-5097ec0bcad4",
                     "x": 15,
                     "y": 9,
-                    "name": "TeutonHealth2"
+                    "name": "TeutonChiefHealth2"
                 },
                 {
                     "spriteSheetId": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -8658,10 +8865,10 @@
                     "id": "f4df66d9-3fa6-41ab-b247-4f71a07a140e",
                     "x": 17,
                     "y": 9,
-                    "name": "TeutonHealth1"
+                    "name": "TeutonChiefHealth1"
                 },
                 {
-                    "spriteSheetId": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
+                    "spriteSheetId": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -8671,7 +8878,7 @@
                     "y": 7
                 },
                 {
-                    "spriteSheetId": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
+                    "spriteSheetId": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -8717,7 +8924,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A Teuton Warrior\nchallenges you to\na trivia quiz!"
+                            "Teuton Chief\nchallenges you to\na trivia quiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -12241,14 +12448,14 @@
             ]
         },
         {
-            "name": "Quiz Teuton Chief",
+            "name": "Quiz ?",
             "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
             "width": 20,
             "height": 18,
             "collisions": [],
             "id": "df0fb149-6485-4cc5-a954-01dd55ab6aaa",
-            "x": 962.72668185256,
-            "y": 462.46857964950635,
+            "x": 941.6571285647582,
+            "y": 725.3799619799012,
             "actors": [
                 {
                     "spriteSheetId": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -15934,7 +16141,7 @@
         },
         {
             "id": "3",
-            "name": "beatenTeuton1"
+            "name": "beatenTeuton"
         },
         {
             "id": "4",
@@ -15958,7 +16165,7 @@
         },
         {
             "id": "6",
-            "name": "beatenTeuton2"
+            "name": "beatenTeutonChief"
         },
         {
             "id": "df0fb149-6485-4cc5-a954-01dd55ab6aaa__L1",
@@ -15974,7 +16181,7 @@
         },
         {
             "id": "7",
-            "name": "beatenTeutonChief"
+            "name": "beaten?"
         }
     ],
     "backgrounds": [

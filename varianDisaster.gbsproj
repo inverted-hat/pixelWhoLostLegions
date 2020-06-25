@@ -2,15 +2,15 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2142,
-        "worldScrollY": 268,
-        "zoom": 209.7302509173751,
+        "worldScrollX": 0,
+        "worldScrollY": 123,
+        "zoom": 114.2880250737071,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 15,
-        "startY": 30,
+        "startX": 3,
+        "startY": 13,
         "startDirection": "right",
         "startSceneId": "4d56ba39-6ff0-41fa-9b6f-c556e971d30f",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -314,8 +314,8 @@
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "2",
-                        "__collapseElse": true,
-                        "__collapse": true
+                        "__collapseElse": false,
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -423,7 +423,7 @@
                                         "Let's go and\nfind out!"
                                     ],
                                     "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__comment": false
                                 }
                             },
@@ -575,7 +575,7 @@
                                     "sceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
                                     "x": 0,
                                     "y": 4,
-                                    "direction": "",
+                                    "direction": "right",
                                     "fadeSpeed": "2"
                                 }
                             },
@@ -4656,10 +4656,10 @@
                             "args": {
                                 "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
                                 "x": 15,
-                                "y": 31,
-                                "direction": "",
+                                "y": 30,
+                                "direction": "up",
                                 "fadeSpeed": "2",
-                                "__collapse": true
+                                "__collapse": false
                             }
                         },
                         {
@@ -12472,8 +12472,8 @@
             "height": 18,
             "collisions": [],
             "id": "df0fb149-6485-4cc5-a954-01dd55ab6aaa",
-            "x": 941.6571285647582,
-            "y": 725.3799619799012,
+            "x": 933.1702036257947,
+            "y": 923.9740055516479,
             "actors": [
                 {
                     "spriteSheetId": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -16109,7 +16109,7 @@
             ]
         },
         {
-            "name": "Camp",
+            "name": "camp",
             "backgroundId": "c5b54f65-0f62-4250-adad-e5b9d751fbe4",
             "width": 32,
             "height": 32,
@@ -16291,7 +16291,7 @@
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
                     "movementType": "faceInteraction",
-                    "direction": "down",
+                    "direction": "up",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "b5561280-d1d1-4484-9f71-c45c405327f5",
@@ -16301,7 +16301,7 @@
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
                     "movementType": "faceInteraction",
-                    "direction": "down",
+                    "direction": "left",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "4c33063f-341a-46ca-8917-e81dfce59068",
@@ -16311,7 +16311,7 @@
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
                     "movementType": "faceInteraction",
-                    "direction": "down",
+                    "direction": "right",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "2e59d16e-b126-4b08-9e11-5dea20527bbb",
@@ -16326,7 +16326,24 @@
                     "x": 8,
                     "y": 7,
                     "width": 2,
-                    "height": 1
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "81bc862c-dbbd-4a96-9b4a-e72f0677ea16",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9279b28a-6e57-4255-9038-16f922262904",
+                                "x": 7,
+                                "y": 12,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "fade2751-dc46-4e32-ac21-81956b0bd535",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "trigger": "walk",
@@ -16334,7 +16351,24 @@
                     "x": 25,
                     "y": 7,
                     "width": 2,
-                    "height": 1
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "2429ea24-d597-41f5-a8ea-940f2ebba8db",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "9279b28a-6e57-4255-9038-16f922262904",
+                                "x": 27,
+                                "y": 12,
+                                "direction": "up",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "fdeb72c2-48bf-4c61-ac93-6dd84a0ab97c",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "trigger": "walk",
@@ -16717,6 +16751,230 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "campVarus",
+            "backgroundId": "bdc2aee2-a8fa-4397-8bd6-ec20ac2ba320",
+            "width": 32,
+            "height": 15,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                254,
+                15,
+                0,
+                0,
+                2,
+                56,
+                0,
+                0,
+                226,
+                35,
+                0,
+                127,
+                2,
+                32,
+                0,
+                65,
+                2,
+                32,
+                0,
+                65,
+                2,
+                32,
+                0,
+                65,
+                2,
+                32,
+                0,
+                65,
+                62,
+                62,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "9279b28a-6e57-4255-9038-16f922262904",
+            "x": 1039.5334897317625,
+            "y": 31.005700751534874,
+            "actors": [
+                {
+                    "spriteSheetId": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "4",
+                    "id": "f40e52e0-9f25-4aee-8261-732cd53e6b16",
+                    "x": 5,
+                    "y": 8,
+                    "animate": true,
+                    "name": "Fire1",
+                    "startScript": [
+                        {
+                            "id": "28f2f52d-1356-4b44-839e-ceb968f499c0",
+                            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "38fee272-a726-4627-8c3a-c965c90cd9e0",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "4",
+                    "id": "e5eb67df-f589-41fe-9008-54a68b95560a",
+                    "x": 9,
+                    "y": 8,
+                    "animate": true,
+                    "script": [
+                        {
+                            "id": "4ea0f08e-5b21-4075-b9e9-f00c2d47048f",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "id": "dea55688-6cb9-4992-a628-768c487918d1",
+                            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "602e5468-811a-41c7-be5b-a64e1791a08a",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Fire2"
+                },
+                {
+                    "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "a707eed4-b06a-4ddc-a7c6-ce89b8f16e35",
+                    "x": 7,
+                    "y": 7,
+                    "name": "Varus"
+                },
+                {
+                    "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "b654034b-fdbb-4f43-9555-5d1e1b651626",
+                    "x": 25,
+                    "y": 9
+                },
+                {
+                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
+                    "x": 28,
+                    "y": 9
+                }
+            ],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "773fcee6-e12f-4ae8-87c1-aacbd8eb6ae5",
+                    "x": 6,
+                    "y": 13,
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "d79a697a-f931-4bc4-82e6-0767f14f71ff",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
+                                "x": 8,
+                                "y": 8,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "d968aec6-14a2-4d87-9b61-40902eeb882f",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "64304baa-2f0a-4aec-9866-b21c137b8e73",
+                    "x": 26,
+                    "y": 13,
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "2f814e9a-0e4a-4372-b5a7-510f47d2614e",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
+                                "x": 25,
+                                "y": 8,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "2d007d65-c751-4877-9c2d-5c24b0f3d459",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -16825,7 +17083,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp.png",
-            "_v": 1592319633719
+            "_v": 1592642679853
         },
         {
             "id": "82aa1673-ace2-4cb1-9701-deb13319160f",
@@ -16835,7 +17093,17 @@
             "imageWidth": 256,
             "imageHeight": 232,
             "filename": "campInner.png",
-            "_v": 1592317576278
+            "_v": 1592642679853
+        },
+        {
+            "id": "bdc2aee2-a8fa-4397-8bd6-ec20ac2ba320",
+            "name": "campVarus",
+            "width": 32,
+            "height": 18,
+            "imageWidth": 256,
+            "imageHeight": 144,
+            "filename": "campVarus.png",
+            "_v": 1592642679853
         },
         {
             "id": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
@@ -16845,7 +17113,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1592317576278
+            "_v": 1592642679853
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -16855,7 +17123,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1592317576278
+            "_v": 1592642679853
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -16865,7 +17133,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1592317576278
+            "_v": 1592642679853
         },
         {
             "id": "828a5b10-e871-4a45-8536-b3187af4c4d9",
@@ -16875,7 +17143,7 @@
             "imageWidth": 256,
             "imageHeight": 192,
             "filename": "wood.png",
-            "_v": 1592317576278
+            "_v": 1592642679853
         }
     ],
     "spriteSheets": [
@@ -16885,7 +17153,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -16893,7 +17161,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -16901,7 +17169,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
@@ -16909,7 +17177,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminius.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -16917,7 +17185,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -16925,7 +17193,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "99aa2210-8e21-44b3-bb94-18a8b89f5b45",
@@ -16933,7 +17201,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/teuton.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -16941,7 +17209,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1592317576281
+            "_v": 1592642679859
         },
         {
             "id": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
@@ -16949,7 +17217,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/chief.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -16957,7 +17225,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
@@ -16965,7 +17233,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/teuton.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -16973,7 +17241,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -16981,7 +17249,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -16989,7 +17257,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -16997,7 +17265,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -17005,7 +17273,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -17013,7 +17281,15 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1592317576282
+            "_v": 1592642679859
+        },
+        {
+            "id": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
+            "name": "world/fire",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "world/fire.png",
+            "_v": 1592642679860
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -17021,7 +17297,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1592317576282
+            "_v": 1592642679861
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -17029,7 +17305,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/legionary.png",
-            "_v": 1592317576282
+            "_v": 1592642679861
         },
         {
             "id": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -17037,7 +17313,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/legionaryNoShield.png",
-            "_v": 1592317576282
+            "_v": 1592642679861
         },
         {
             "id": "6bc40b5a-8acd-4020-8fa3-188d974b1781",
@@ -17045,7 +17321,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/teuton.png",
-            "_v": 1592317576282
+            "_v": 1592642679861
         }
     ],
     "music": [
@@ -17053,13 +17329,13 @@
             "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
             "name": "openingTheme",
             "filename": "openingTheme.mod",
-            "_v": 1592317576272
+            "_v": 1592642679843
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1592317576272
+            "_v": 1592642679843
         }
     ],
     "customEvents": [

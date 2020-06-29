@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 107,
-        "worldScrollY": 144,
-        "zoom": 193.7187334432092,
+        "worldScrollX": 3311,
+        "worldScrollY": 232,
+        "zoom": 327.0834804682818,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -16948,7 +16948,7 @@
                     "name": "Fire2"
                 },
                 {
-                    "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
+                    "spriteSheetId": "702a0756-d05a-4cd6-81cf-9b4e0d4a4097",
                     "movementType": "faceInteraction",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -17760,6 +17760,14 @@
             "type": "actor_animated",
             "filename": "world/teuton.png",
             "_v": 1593281688110
+        },
+        {
+            "id": "702a0756-d05a-4cd6-81cf-9b4e0d4a4097",
+            "name": "world/varus",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "world/varus.png",
+            "_v": 1593458682762
         }
     ],
     "music": [

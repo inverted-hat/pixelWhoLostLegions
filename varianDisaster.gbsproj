@@ -2,16 +2,16 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3311,
-        "worldScrollY": 232,
-        "zoom": 327.0834804682818,
+        "worldScrollX": 660,
+        "worldScrollY": 79,
+        "zoom": 111.98109877109528,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 3,
-        "startY": 13,
-        "startDirection": "right",
+        "startX": 7,
+        "startY": 12,
+        "startDirection": "up",
         "startSceneId": "376f80e7-34b1-4352-b529-896b44b6e12a",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
@@ -16186,18 +16186,18 @@
                 0,
                 0,
                 0,
-                252,
-                255,
-                255,
-                63,
-                196,
-                15,
-                0,
-                47,
-                196,
-                15,
-                0,
-                47,
+                124,
+                248,
+                239,
+                57,
+                68,
+                8,
+                40,
+                41,
+                68,
+                8,
+                56,
+                41,
                 196,
                 12,
                 0,
@@ -16210,14 +16210,14 @@
                 24,
                 24,
                 38,
-                244,
-                60,
-                60,
-                47,
-                244,
-                60,
-                60,
-                47,
+                148,
+                36,
+                36,
+                41,
+                148,
+                36,
+                36,
+                41,
                 244,
                 60,
                 36,
@@ -16230,14 +16230,14 @@
                 24,
                 24,
                 38,
-                244,
-                60,
-                60,
-                47,
-                244,
-                60,
-                60,
-                47,
+                148,
+                36,
+                36,
+                41,
+                148,
+                36,
+                36,
+                41,
                 244,
                 36,
                 60,
@@ -16250,14 +16250,14 @@
                 24,
                 24,
                 38,
-                244,
-                60,
-                60,
-                47,
-                244,
-                60,
-                60,
-                47,
+                148,
+                36,
+                36,
+                41,
+                148,
+                36,
+                36,
+                41,
                 148,
                 60,
                 36,
@@ -16311,7 +16311,8 @@
                     "animSpeed": "3",
                     "id": "3c13caf3-2a70-469c-bb4d-07b5b923d909",
                     "x": 13,
-                    "y": 27
+                    "y": 27,
+                    "name": "GuardEntrance"
                 },
                 {
                     "spriteSheetId": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -16547,6 +16548,31 @@
                         },
                         {
                             "id": "e025550d-bc6b-4c09-afa5-8cff9dd9c758",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "612716e9-5767-4b94-9b90-0d540c09d5c2",
+                    "x": 14,
+                    "y": 31,
+                    "width": 4,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "3e93dee2-27be-4901-bb0e-bcee41d5c998",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b331e805-8d76-4794-add8-6e16ce5073a7",
+                                "x": 12,
+                                "y": 1,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "5849329a-481f-4495-9477-83a017bc9316",
                             "command": "EVENT_END"
                         }
                     ]
@@ -16961,22 +16987,24 @@
                 {
                     "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
                     "movementType": "faceInteraction",
-                    "direction": "right",
+                    "direction": "up",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "b654034b-fdbb-4f43-9555-5d1e1b651626",
-                    "x": 25,
-                    "y": 9
+                    "x": 7,
+                    "y": 12,
+                    "name": "Doctor"
                 },
                 {
                     "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
                     "movementType": "faceInteraction",
-                    "direction": "left",
+                    "direction": "up",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
-                    "x": 28,
-                    "y": 9
+                    "x": 6,
+                    "y": 12,
+                    "name": "Jamie"
                 }
             ],
             "triggers": [
@@ -17029,6 +17057,461 @@
                             "command": "EVENT_END"
                         }
                     ]
+                }
+            ],
+            "script": [
+                {
+                    "id": "6cff923b-dd1d-40ce-8e2e-3ad703dfa9dc",
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "8",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "f6528074-06dc-491f-a0f5-7116fb620093",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626",
+                                    "__label": "Hide Doctor",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "6cb2e620-651f-4835-965c-b165008f3230",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
+                                    "__label": "Hide Jamie",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "5fd78bee-278d-4426-a846-2b04cdccfc58",
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Varus&Arminius dialog",
+                                    "__collapse": true,
+                                    "__comment": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "715ed713-c95a-4a0a-ab6e-50efa27461c7",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Varus: You are\nfinally back\nfrom your patrol",
+                                                    "Tell me have you\nspotted any\nteutons?"
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "fd54fd69-44c0-4486-bc4d-a7aa8933a4d2",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 7,
+                                                "y": 9,
+                                                "__collapse": true,
+                                                "__label": "Move to varus"
+                                            }
+                                        },
+                                        {
+                                            "id": "863c7543-87f8-4cb1-a682-213c9763a6ca",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Indeed I have.\nA small group of\nthem is roaming ",
+                                                    "the woods near\nthe camp. They\neven attacked",
+                                                    "two merchants.\nFortunately we\nwere there to",
+                                                    "save them."
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__label": "Arminius talking",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "7179462c-8e88-4a83-9510-c2b614478082",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Bring them in. I\nwant to question\nthem."
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "01f4a772-dd65-4e51-916e-b721eedffa53",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "There is no need\nto deal with\nthem. They know",
+                                                    "nothing I\nhaven't already\ntold you."
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__label": "Arminius Talking",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "105dc08a-8e53-4629-b732-aca8015b4f1d",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "I said bring them\nin!"
+                                                ],
+                                                "avatarId": "",
+                                                "__label": "Varus talking",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "81521078-fc2c-4bdf-994a-9e8dd2fd9b62",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "7d798892-25cf-42b2-bdbc-109c286c83ce",
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Doc&Jamie enter",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "2e155f86-7da8-4653-afac-bbf0bc368c29",
+                                            "command": "EVENT_ACTOR_SHOW",
+                                            "args": {
+                                                "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
+                                                "__label": "show Jamie"
+                                            }
+                                        },
+                                        {
+                                            "id": "d7168070-4a37-4f2b-a6c9-1d8f27fb4b3c",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
+                                                "x": 6,
+                                                "y": 10,
+                                                "__label": "move Jamie"
+                                            }
+                                        },
+                                        {
+                                            "id": "a781d248-154c-4d6b-b9a6-4ce6266dd206",
+                                            "command": "EVENT_ACTOR_SHOW",
+                                            "args": {
+                                                "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626",
+                                                "__label": "show Doctor"
+                                            }
+                                        },
+                                        {
+                                            "id": "4a947b1f-5ee6-4542-80b5-5022c0a709e6",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 10,
+                                                "y": 9,
+                                                "__label": "move Arminius"
+                                            }
+                                        },
+                                        {
+                                            "id": "823c60cb-dcb6-4794-bef8-401c0da1ee0f",
+                                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                                            "args": {
+                                                "actorId": "player",
+                                                "direction": "left",
+                                                "__label": "Arminius face action"
+                                            }
+                                        },
+                                        {
+                                            "id": "cbc429f1-1cab-4543-9d89-3c30acb4aeaa",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626",
+                                                "x": 8,
+                                                "y": 10,
+                                                "__label": "move Doctor"
+                                            }
+                                        },
+                                        {
+                                            "id": "73273ee2-6d5f-459c-9887-6d8d94ab9213",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "583a318d-9bc3-44ca-b75d-622289a24cde",
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Varus&Doc dialog",
+                                    "__collapse": true,
+                                    "__comment": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "9eaa639b-952c-4da6-9815-3e0cddb0b32d",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "So Arminius\nsaved you from\nthe teutons?",
+                                                    "Tell me exactly\nwhat happened."
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "69e64d8f-9066-43b9-a74a-2632095a9e1f",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "We were on\nour way to Roma\nto deliver some ",
+                                                    "valuable goods\nwhen a group of\nteutons tried to",
+                                                    "mug us. Of\ncourse we\nfought back.",
+                                                    "Jamie here is\nquite a capable\nmilitant. But",
+                                                    "they easily\noutnumbered us.\nLuckily right as",
+                                                    "it started to\nlook bad for us\nArminius came",
+                                                    "along to save\nus."
+                                                ],
+                                                "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                                "__label": "Doctor talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "836dd66d-ec38-45d7-90b5-40f3217f9851",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Valuable goods\nyou say? Show\nthem a tent.",
+                                                    "I will decide\nwhat to do with\nthem later."
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "7f4a54cf-593e-41f8-9776-e8a4daf61c2f",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "715f6b16-f53d-465c-b941-86d27b292079",
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Doc&Jamie leave",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "add41da9-25f4-4e74-8ff5-b175021261ec",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
+                                                "x": 6,
+                                                "y": 13
+                                            }
+                                        },
+                                        {
+                                            "id": "a8832f2f-fcc7-4737-9d7f-8d8d629d607f",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c"
+                                            }
+                                        },
+                                        {
+                                            "id": "db2fde32-41bb-481d-a76b-260bd5b71278",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626",
+                                                "x": 8,
+                                                "y": 13
+                                            }
+                                        },
+                                        {
+                                            "id": "4290344d-9197-49db-a8f6-879df9fd2ff0",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626"
+                                            }
+                                        },
+                                        {
+                                            "id": "a3d7b6ee-eaba-4abd-9c53-ea1d33dab145",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "767544a2-310a-48e4-b5ba-ebab5f6b3a8f",
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Varus&Arminius dialog",
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "0a5d3405-c691-45b8-9036-8b34edc965e9",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 7,
+                                                "y": 11,
+                                                "__label": "move Arminius",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "a6fea50c-d84b-43fd-ba14-b06b0d3aa88b",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "There is more\nthing I need to\ntell you."
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__collapse": true,
+                                                "__label": "Arminius talking"
+                                            }
+                                        },
+                                        {
+                                            "id": "ebb73a00-e9d6-4c7f-91b6-b093b406c1d2",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Yes?"
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "5b94d570-11fa-4bda-923a-219212ba1e5b",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 7,
+                                                "y": 9,
+                                                "__label": "move Arminius",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "eaa297fb-8769-482d-986f-3c5bb497a040",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "One of the\nsaveges told me\nabout an even",
+                                                    "bigger teuton\ngroup before he\ndied. They are",
+                                                    "planning to raid\nthe area. We\nshould stop them"
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__label": "Arminius talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "d3c9f348-6dcd-4264-be85-9fc831f50ae6",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Absolutly! Do\nyou know their\nposition?"
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "b5af397f-9ca2-4553-bae1-2ce75541076b",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Roughly. There\nare in the\ndirection of our",
+                                                    "winter camp. I\ncould take some\nof my men to",
+                                                    "try spot their\nexact position\nand numbers."
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__label": "Arminius talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "31d8d967-1662-48c3-8f28-aa22481176ca",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Do it! But\nfirst tell the\ncenturio we",
+                                                    "are leaving for\nour winter camp.\nSo our army will",
+                                                    "be directly\nbehind you and\nthese babarians ",
+                                                    "have no chance\nto escape."
+                                                ],
+                                                "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
+                                                "__label": "Varus talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "8c0457ca-3681-4673-8ba7-0925fbeb7a7c",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 7,
+                                                "y": 12,
+                                                "__label": "move Arminius",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "7ce30175-319f-4238-85ed-0974e62cd9ac",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "player",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "e7f66824-3d2d-4a35-a980-4ac710222e11",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "9cb8a1d5-c872-4a13-984f-6249a7d15931",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "ad279910-00c9-47a5-8db7-8f801564d4b9",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "dab68762-2330-4a2f-b102-e472efcf1c61",
+                    "command": "EVENT_END"
                 }
             ]
         },
@@ -17354,7 +17837,7 @@
         }
     ],
     "_version": "1.2.0",
-    "author": "jklecka",
+    "author": "inverted hat",
     "name": "varianDisaster",
     "variables": [
         {
@@ -17447,7 +17930,11 @@
         },
         {
             "id": "8",
-            "name": "?"
+            "name": "varusConversation"
+        },
+        {
+            "id": "9279b28a-6e57-4255-9038-16f922262904__L0",
+            "name": "Local 0"
         }
     ],
     "backgrounds": [
@@ -17459,7 +17946,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "82aa1673-ace2-4cb1-9701-deb13319160f",
@@ -17469,7 +17956,7 @@
             "imageWidth": 256,
             "imageHeight": 232,
             "filename": "campInner.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "bdc2aee2-a8fa-4397-8bd6-ec20ac2ba320",
@@ -17479,7 +17966,7 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "campVarus.png",
-            "_v": 1593281688104
+            "_v": 1609878095122
         },
         {
             "id": "873f182b-f185-4f93-952d-c46059a5d677",
@@ -17489,7 +17976,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "face.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "e9e6cd40-dc72-4b7b-9bee-64385f9e506b",
@@ -17499,7 +17986,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "gbstudio.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "6ff9fc10-60ad-42c8-9560-baad466d6571",
@@ -17509,7 +17996,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "invertedHat.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
@@ -17519,7 +18006,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -17529,7 +18016,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -17539,7 +18026,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         },
         {
             "id": "828a5b10-e871-4a45-8536-b3187af4c4d9",
@@ -17549,7 +18036,7 @@
             "imageWidth": 256,
             "imageHeight": 192,
             "filename": "wood.png",
-            "_v": 1593281688104
+            "_v": 1609878095123
         }
     ],
     "spriteSheets": [
@@ -17559,7 +18046,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1593281688109
+            "_v": 1609878095128
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -17567,7 +18054,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1593281688107
+            "_v": 1609878095129
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -17575,7 +18062,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1593281688108
+            "_v": 1609878095129
+        },
+        {
+            "id": "de318713-1231-4b1e-89cf-6451d73afa7c",
+            "name": "portraits/varus",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "portraits/varus.png",
+            "_v": 1609878095129
         },
         {
             "id": "a4097f09-f3db-4797-80ad-c0538a6fb303",
@@ -17583,7 +18078,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart1.png",
-            "_v": 1593281688108
+            "_v": 1609878095129
         },
         {
             "id": "f2a03c1a-2d74-412b-bb47-578e06ae55ea",
@@ -17591,7 +18086,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart2.png",
-            "_v": 1593281688109
+            "_v": 1609878095129
         },
         {
             "id": "418f1fe3-4627-4f4b-8c1d-fa1221289c63",
@@ -17599,7 +18094,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart3.png",
-            "_v": 1593281688109
+            "_v": 1609878095130
         },
         {
             "id": "d302ad08-c390-4291-8eb4-d6b0ba648a71",
@@ -17607,7 +18102,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart4.png",
-            "_v": 1593281688109
+            "_v": 1609878095129
         },
         {
             "id": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
@@ -17615,7 +18110,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminius.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -17623,7 +18118,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -17631,7 +18126,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "99aa2210-8e21-44b3-bb94-18a8b89f5b45",
@@ -17639,7 +18134,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/teuton.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -17647,7 +18142,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
@@ -17655,7 +18150,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/chief.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -17663,7 +18158,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
@@ -17671,7 +18166,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/teuton.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -17679,7 +18174,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -17687,7 +18182,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -17695,7 +18190,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -17703,7 +18198,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -17711,7 +18206,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -17719,7 +18214,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
@@ -17727,7 +18222,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "world/fire.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -17735,7 +18230,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -17743,7 +18238,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/legionary.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -17751,7 +18246,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/legionaryNoShield.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "6bc40b5a-8acd-4020-8fa3-188d974b1781",
@@ -17759,7 +18254,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/teuton.png",
-            "_v": 1593281688110
+            "_v": 1609878095130
         },
         {
             "id": "702a0756-d05a-4cd6-81cf-9b4e0d4a4097",
@@ -17767,7 +18262,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/varus.png",
-            "_v": 1593458682762
+            "_v": 1609878095130
         }
     ],
     "music": [
@@ -17775,13 +18270,13 @@
             "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
             "name": "openingTheme",
             "filename": "openingTheme.mod",
-            "_v": 1593281688098
+            "_v": 1609878095116
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1593281688098
+            "_v": 1609878095116
         }
     ],
     "customEvents": [

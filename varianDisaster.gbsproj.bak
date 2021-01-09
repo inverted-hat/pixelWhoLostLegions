@@ -2,17 +2,17 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 569,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 5999,
+        "worldScrollY": 1147,
+        "zoom": 440.34445076435804,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
         "startX": 7,
-        "startY": 8,
-        "startDirection": "down",
-        "startSceneId": "376f80e7-34b1-4352-b529-896b44b6e12a",
+        "startY": 4,
+        "startDirection": "up",
+        "startSceneId": "b98ca132-00c6-462d-b0a6-7289599470b0",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
@@ -19967,7 +19967,7 @@
                             "args": {
                                 "sceneId": "b98ca132-00c6-462d-b0a6-7289599470b0",
                                 "x": 1,
-                                "y": 9,
+                                "y": 4,
                                 "direction": "right",
                                 "fadeSpeed": "2"
                             }
@@ -19987,7 +19987,7 @@
                         "variable": "L0",
                         "__collapseElse": false,
                         "__disableElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -20241,7 +20241,7 @@
                                             "args": {
                                                 "sceneId": "b98ca132-00c6-462d-b0a6-7289599470b0",
                                                 "x": 1,
-                                                "y": 9,
+                                                "y": 4,
                                                 "direction": "right",
                                                 "fadeSpeed": "2",
                                                 "__collapse": true
@@ -20341,14 +20341,6 @@
                     }
                 },
                 {
-                    "id": "01f5fde5-9891-4e2e-a9fe-9f9816d75077",
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "0",
-                        "value": 2
-                    }
-                },
-                {
                     "id": "8fd1a4c7-37d0-454b-9f26-2ea4a8693435",
                     "command": "EVENT_END"
                 }
@@ -20356,66 +20348,243 @@
         },
         {
             "name": "Wood 2.2 ",
-            "backgroundId": "83432335-fe7b-4a84-8a89-8726d7cffcf6",
+            "backgroundId": "7954b40f-73bb-4df5-b54a-2579cafac7e8",
             "width": 20,
             "height": 18,
             "collisions": [
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                224,
-                255,
-                127,
-                3,
-                0,
-                12,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                48,
-                0,
-                192,
-                254,
+                240,
                 255,
                 7,
                 0,
+                64,
                 0,
                 0,
+                4,
+                0,
+                64,
                 0,
                 0,
+                4,
+                255,
+                65,
                 0,
+                16,
+                4,
                 0,
+                67,
                 0,
+                32,
+                4,
                 0,
+                66,
                 0,
+                32,
+                4,
                 0,
-                0
+                66,
+                0,
+                32,
+                4,
+                0,
+                66,
+                0,
+                48,
+                4,
+                0,
+                65,
+                0,
+                16,
+                4
             ],
             "id": "b98ca132-00c6-462d-b0a6-7289599470b0",
             "x": 1377.8916095022385,
             "y": 238.8347287693586,
-            "actors": [],
+            "actors": [
+                {
+                    "spriteSheetId": "229f8072-54c3-41de-91fc-f854c70ac850",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "e3018f26-951e-464a-82cd-8167569c7da9",
+                    "x": 12,
+                    "y": 10,
+                    "name": "hole 1"
+                },
+                {
+                    "spriteSheetId": "229f8072-54c3-41de-91fc-f854c70ac850",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "c64037d5-0a96-4f54-a785-960c3a58df29",
+                    "x": 10,
+                    "y": 10,
+                    "name": "hole 2"
+                },
+                {
+                    "spriteSheetId": "e12d95a2-12a1-4991-b43d-edf916ebab55",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "fbbd9892-caf0-4056-9f7c-4e8bcf7df2c5",
+                    "x": 12,
+                    "y": 4,
+                    "name": "stone 1",
+                    "script": [
+                        {
+                            "id": "100d502b-0ba1-488c-b202-774a89b305d4",
+                            "command": "EVENT_IF_ACTOR_AT_POSITION",
+                            "args": {
+                                "actorId": "$self$",
+                                "x": 12,
+                                "y": 8,
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "8a976976-b80f-49d8-8982-e418223b16ad",
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "fbbd9892-caf0-4056-9f7c-4e8bcf7df2c5"
+                                        }
+                                    },
+                                    {
+                                        "id": "f0d0a33e-2748-4e5c-9984-9f5ca3411a0c",
+                                        "command": "EVENT_ACTOR_PUSH",
+                                        "args": {
+                                            "continue": false
+                                        }
+                                    },
+                                    {
+                                        "id": "3202c5b4-a169-4f45-932e-0653134a181e",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "e3018f26-951e-464a-82cd-8167569c7da9"
+                                        }
+                                    },
+                                    {
+                                        "id": "0e45bb5c-f5d4-4bce-b1f4-40dc10a462f0",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "6ca1e460-0291-4cdf-8bc0-2a3777fa52a8",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "943815ff-b817-46a9-be44-ebf3b936bd12",
+                                        "command": "EVENT_ACTOR_PUSH",
+                                        "args": {
+                                            "continue": false
+                                        }
+                                    },
+                                    {
+                                        "id": "1683cb0a-f70e-4a31-9396-fb09367670d3",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ae34f9a0-be35-49e7-89a9-60ea9c898aca",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "e12d95a2-12a1-4991-b43d-edf916ebab55",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "9415e8c4-e3a4-4c59-8965-b6d09eff9a2e",
+                    "x": 10,
+                    "y": 14,
+                    "script": [
+                        {
+                            "id": "91077136-e94d-4fd3-bc4a-30834809ced7",
+                            "command": "EVENT_IF_ACTOR_AT_POSITION",
+                            "args": {
+                                "actorId": "$self$",
+                                "x": 10,
+                                "y": 12,
+                                "__collapseElse": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "be776043-2b6b-41b1-a598-2c3917dead96",
+                                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                                        "args": {
+                                            "actorId": "c64037d5-0a96-4f54-a785-960c3a58df29"
+                                        }
+                                    },
+                                    {
+                                        "id": "6cc6e6af-f673-4a31-8b48-55ae6314f5cf",
+                                        "command": "EVENT_ACTOR_PUSH",
+                                        "args": {
+                                            "continue": false
+                                        }
+                                    },
+                                    {
+                                        "id": "d5bbf899-4165-4cd9-9382-d9b645350d85",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "c64037d5-0a96-4f54-a785-960c3a58df29"
+                                        }
+                                    },
+                                    {
+                                        "id": "9efdbd9b-6cf0-4dcb-80c4-30aa0ad4665a",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "1fbf1c67-9d28-4741-bf4e-28f299d15ca2",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "159237e9-c8d1-419d-87f9-407340221251",
+                                        "command": "EVENT_ACTOR_PUSH",
+                                        "args": {
+                                            "continue": false
+                                        }
+                                    },
+                                    {
+                                        "id": "b1e77884-08b2-42d7-a020-53ed4cc23bf7",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "eae464dc-bc7a-4877-8a21-a0eef6c16488",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "stone 2"
+                }
+            ],
             "triggers": [
                 {
                     "trigger": "walk",
                     "id": "50adb378-3b45-4074-ae13-ebf3ad355065",
                     "x": 0,
-                    "y": 7,
+                    "y": 2,
                     "width": 1,
                     "height": 4,
                     "script": [
@@ -20609,7 +20778,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp.png",
-            "_v": 1609968953031
+            "_v": 1610226464427
         },
         {
             "id": "82aa1673-ace2-4cb1-9701-deb13319160f",
@@ -20619,7 +20788,7 @@
             "imageWidth": 256,
             "imageHeight": 232,
             "filename": "campInner.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "bdc2aee2-a8fa-4397-8bd6-ec20ac2ba320",
@@ -20629,7 +20798,7 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "campVarus.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "873f182b-f185-4f93-952d-c46059a5d677",
@@ -20639,7 +20808,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "face.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "e9e6cd40-dc72-4b7b-9bee-64385f9e506b",
@@ -20649,7 +20818,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "gbstudio.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "6ff9fc10-60ad-42c8-9560-baad466d6571",
@@ -20659,7 +20828,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "invertedHat.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
@@ -20669,7 +20838,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -20679,7 +20848,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1609968953032
+            "_v": 1610226464427
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -20689,7 +20858,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1609968953032
+            "_v": 1610226464428
         },
         {
             "id": "828a5b10-e871-4a45-8536-b3187af4c4d9",
@@ -20699,7 +20868,17 @@
             "imageWidth": 256,
             "imageHeight": 192,
             "filename": "wood.png",
-            "_v": 1609968953032
+            "_v": 1610226464428
+        },
+        {
+            "id": "7954b40f-73bb-4df5-b54a-2579cafac7e8",
+            "name": "wood2.2",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "wood2.2.png",
+            "_v": 1610230932640
         },
         {
             "id": "a639fa5d-3b6b-4b41-b4c9-107bc616ce0f",
@@ -20709,7 +20888,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodAxe.png",
-            "_v": 1610142287312
+            "_v": 1610226464428
         },
         {
             "id": "71037164-bcdb-4290-babe-dda6f36609df",
@@ -20719,7 +20898,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodCrossroad.png",
-            "_v": 1610198200881
+            "_v": 1610226464428
         },
         {
             "id": "83432335-fe7b-4a84-8a89-8726d7cffcf6",
@@ -20729,7 +20908,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodDash.png",
-            "_v": 1609968953032
+            "_v": 1610226464428
         },
         {
             "id": "bcb400e8-b040-44f3-a3e3-21c4e217343c",
@@ -20739,7 +20918,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodLeft.png",
-            "_v": 1610128522101
+            "_v": 1610226464428
         },
         {
             "id": "798dacac-cffd-4aba-8fed-b9a34695a394",
@@ -20749,7 +20928,7 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "woodLong.png",
-            "_v": 1610201645009
+            "_v": 1610226464428
         },
         {
             "id": "5cb17b13-f33a-4574-87cc-149678d191a2",
@@ -20759,7 +20938,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodRight.png",
-            "_v": 1609968953032
+            "_v": 1610226464428
         },
         {
             "id": "61d814ef-b07c-422c-afe9-58c73234a014",
@@ -20769,7 +20948,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodT.png",
-            "_v": 1609968953032
+            "_v": 1610226464428
         },
         {
             "id": "3a3961fd-39e2-49ed-8a4e-ff35105dba9f",
@@ -20779,7 +20958,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodTop.png",
-            "_v": 1609968953032
+            "_v": 1610226464428
         }
     ],
     "spriteSheets": [
@@ -20789,7 +20968,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1609968953035
+            "_v": 1610226464432
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -20797,7 +20976,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1609968953035
+            "_v": 1610226464432
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -20805,7 +20984,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "de318713-1231-4b1e-89cf-6451d73afa7c",
@@ -20813,7 +20992,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/varus.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "a4097f09-f3db-4797-80ad-c0538a6fb303",
@@ -20821,7 +21000,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart1.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "f2a03c1a-2d74-412b-bb47-578e06ae55ea",
@@ -20829,7 +21008,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart2.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "418f1fe3-4627-4f4b-8c1d-fa1221289c63",
@@ -20837,7 +21016,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart3.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "d302ad08-c390-4291-8eb4-d6b0ba648a71",
@@ -20845,7 +21024,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart4.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
@@ -20853,7 +21032,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminius.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -20861,7 +21040,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -20869,7 +21048,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "99aa2210-8e21-44b3-bb94-18a8b89f5b45",
@@ -20877,7 +21056,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/teuton.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -20885,7 +21064,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
@@ -20893,7 +21072,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/chief.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -20901,7 +21080,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
@@ -20909,7 +21088,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/teuton.png",
-            "_v": 1609968953036
+            "_v": 1610226464432
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -20917,7 +21096,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -20925,7 +21104,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -20933,7 +21112,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -20941,7 +21120,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -20949,7 +21128,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "62ac4071-1bf3-4768-9534-d387f23523fe",
@@ -20957,7 +21136,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "world/axe.png",
-            "_v": 1610142115655
+            "_v": 1610226464432
+        },
+        {
+            "id": "229f8072-54c3-41de-91fc-f854c70ac850",
+            "name": "world/blackOverlay",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "world/blackOverlay.png",
+            "_v": 1610230975530
         },
         {
             "id": "8c4a4be0-d5e4-463c-a386-bd61c603a3ca",
@@ -20965,7 +21152,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "world/campfire.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -20973,7 +21160,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
@@ -20981,7 +21168,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "world/fire.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -20989,7 +21176,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -20997,7 +21184,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/legionary.png",
-            "_v": 1609968953037
+            "_v": 1610226464432
         },
         {
             "id": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -21005,7 +21192,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/legionaryNoShield.png",
-            "_v": 1609968953037
+            "_v": 1610226464433
         },
         {
             "id": "e12d95a2-12a1-4991-b43d-edf916ebab55",
@@ -21013,7 +21200,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "world/rock.png",
-            "_v": 1609968953037
+            "_v": 1610226464433
         },
         {
             "id": "6bc40b5a-8acd-4020-8fa3-188d974b1781",
@@ -21021,7 +21208,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/teuton.png",
-            "_v": 1609968953037
+            "_v": 1610226464433
         },
         {
             "id": "0188af49-d1ca-4ded-bab4-4450b34a3a4d",
@@ -21029,7 +21216,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/teutonStatic.png",
-            "_v": 1609968953037
+            "_v": 1610226464433
         },
         {
             "id": "c60f32a7-26b5-443d-ba44-d6e162dcb222",
@@ -21037,7 +21224,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "world/treetrunk.png",
-            "_v": 1610199401981
+            "_v": 1610226464433
         },
         {
             "id": "702a0756-d05a-4cd6-81cf-9b4e0d4a4097",
@@ -21045,7 +21232,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/varus.png",
-            "_v": 1609968953037
+            "_v": 1610226464433
         }
     ],
     "music": [
@@ -21053,13 +21240,13 @@
             "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
             "name": "openingTheme",
             "filename": "openingTheme.mod",
-            "_v": 1609968953026
+            "_v": 1610226464421
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1609968953026
+            "_v": 1610226464421
         }
     ],
     "customEvents": [

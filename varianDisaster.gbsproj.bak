@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 5019,
-        "worldScrollY": 622,
-        "zoom": 302.2673401758075,
+        "worldScrollX": 2061,
+        "worldScrollY": 0,
+        "zoom": 132.0914500579238,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -12,7 +12,7 @@
         "startX": 14,
         "startY": 12,
         "startDirection": "up",
-        "startSceneId": "b98ca132-00c6-462d-b0a6-7289599470b0",
+        "startSceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
         "playerSpriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
@@ -16510,20 +16510,58 @@
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "id": "686ea34b-63dd-432d-82a0-fe8d21d9f86a",
-                    "x": 22,
-                    "y": 7,
-                    "animate": false
-                },
-                {
-                    "spriteSheetId": "973d0e8d-8055-49ea-8abb-90b28477da54",
-                    "movementType": "faceInteraction",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
                     "id": "61c9d174-06b3-4f74-ad83-bc7576142813",
                     "x": 6,
-                    "y": 8
+                    "y": 8,
+                    "script": [
+                        {
+                            "id": "0569c137-d9ff-4420-baa4-95445eea4d82",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "8",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "aad27019-eec9-46f6-b71e-c90792e2ef95",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Guard: Varus\nawaits you."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "6da2a060-8621-4d90-a750-65616882583b",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "3add76a4-ebe5-4943-8f32-b8dbb8426e13",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Guard: My\nreplacment is\nlate. My shift",
+                                                "ended an hour ago."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "a28ee061-2268-4fe1-b27a-201bd14fc116",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "79b92f1c-59e2-4025-8b9c-3c32e6ddfea2",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -16533,7 +16571,54 @@
                     "animSpeed": "3",
                     "id": "b5561280-d1d1-4484-9f71-c45c405327f5",
                     "x": 19,
-                    "y": 18
+                    "y": 18,
+                    "script": [
+                        {
+                            "id": "75140ab3-a700-4f82-80c8-38c6578cc857",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "8",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "7b2464c6-172e-4cad-92ea-04857d16ace1",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "7"
+                                        }
+                                    },
+                                    {
+                                        "id": "b719767f-0a20-4d7b-b4ac-808c26fcae1b",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "8ed41cef-4fc2-4f6c-96e7-59eaffa6c8de",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Legionary: I\noversplet. My\nshift started an",
+                                                "hour ago."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "985c6949-1b6b-40e5-a6b6-394b07b0f1ea",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "50f91ff4-cf9f-454f-af68-027c648174a0",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -16543,7 +16628,25 @@
                     "animSpeed": "3",
                     "id": "4c33063f-341a-46ca-8917-e81dfce59068",
                     "x": 11,
-                    "y": 23
+                    "y": 23,
+                    "script": [
+                        {
+                            "id": "af15dc6f-0f52-445f-af65-666b979fc311",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Legionary: Every-\none who enters the\ncamp talks to me,",
+                                    "because my tent is\ndirectly next to\nthe gate. I am so ",
+                                    "sick of it. I just\nwant my peace!"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "ec57d172-7d41-4c35-a9d9-31d3fdc56168",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -16553,7 +16656,25 @@
                     "animSpeed": "3",
                     "id": "2e59d16e-b126-4b08-9e11-5dea20527bbb",
                     "x": 5,
-                    "y": 13
+                    "y": 13,
+                    "script": [
+                        {
+                            "id": "57c72df0-0d18-44fa-bab9-fbe3239ce21a",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Legionary: Man, I\nwish my tent would\nbe directly next ",
+                                    "to the gate, so I\ncould see who is\ncoming and going",
+                                    "and maybe have a\nconbersation."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "2dc8a869-7884-4afb-b8d2-0b492cc29484",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "8c4a4be0-d5e4-463c-a386-bd61c603a3ca",
@@ -16646,7 +16767,23 @@
                     "animSpeed": "3",
                     "id": "4e93a602-317a-4f5b-8b37-ce4dbe2fb449",
                     "x": 15,
-                    "y": 6
+                    "y": 6,
+                    "script": [
+                        {
+                            "id": "397c14d8-be7d-44e8-a17f-3ced2d0d7854",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "He thinks he is\nsome kind of\nmaster chef."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "1ee5f4cf-6bba-4d07-9368-47dbf61e9859",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -16656,7 +16793,23 @@
                     "animSpeed": "3",
                     "id": "86baa6c9-9617-49b4-a8c7-adc352f4963b",
                     "x": 19,
-                    "y": 6
+                    "y": 6,
+                    "script": [
+                        {
+                            "id": "b0564aac-d260-4dbf-9260-d13ef564f17c",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "... and then you\nmash the potatoes."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "24af259d-f627-4daf-b5f9-e1a1fe8a71fd",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ],
             "triggers": [
@@ -16673,8 +16826,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "9279b28a-6e57-4255-9038-16f922262904",
-                                "x": 7,
-                                "y": 12,
+                                "x": 9,
+                                "y": 13,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -16697,8 +16850,8 @@
                             "id": "2429ea24-d597-41f5-a8ea-940f2ebba8db",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "9279b28a-6e57-4255-9038-16f922262904",
-                                "x": 27,
+                                "sceneId": "d534ecab-3622-4339-af14-889b713b70a5",
+                                "x": 10,
                                 "y": 12,
                                 "direction": "up",
                                 "fadeSpeed": "2"
@@ -16862,6 +17015,212 @@
                 }
             ],
             "script": [
+                {
+                    "id": "d45f5c4a-e824-42af-bb54-8ef1d4ebb824",
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "debug",
+                        "__comment": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "0c83eb5e-6971-494c-bc4b-2b0019d9177d",
+                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                "args": {
+                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                                }
+                            },
+                            {
+                                "id": "c45772a6-3d0f-44d7-ad21-02219ec5ae54",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "102"
+                                }
+                            },
+                            {
+                                "id": "a33edfea-b00d-438b-942f-2c9242f8569a",
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "bdbd9ef9-95b3-4136-b4b3-2403d70e9355",
+                                    "__name": "switchPlayer",
+                                    "$variable[0]$": "100",
+                                    "$variable[1]$": "102"
+                                },
+                                "children": {
+                                    "script": [
+                                        {
+                                            "id": "b9e73abf-a304-4eaf-9ecb-e1c1f7ce9262",
+                                            "command": "EVENT_SET_INPUT_SCRIPT",
+                                            "args": {
+                                                "input": "b"
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "id": "800e2e00-78ae-4a5a-ba54-0f490ecd7b6f",
+                                                        "command": "EVENT_IF_TRUE",
+                                                        "args": {
+                                                            "variable": "1",
+                                                            "__collapseElse": false,
+                                                            "__label": "playerIsArminius == true"
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "9c09b44b-46f1-4aef-8428-9e577c0507f5",
+                                                                    "command": "EVENT_IF_TRUE",
+                                                                    "args": {
+                                                                        "variable": "0",
+                                                                        "__collapseElse": false,
+                                                                        "__collapse": false,
+                                                                        "__label": "playerIsJamie"
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "id": "a8c122af-ce96-4fcd-8aad-ed7291239000",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "085ac209-5300-4eee-a673-d3b84b16935a",
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "99b92a1c-59f3-4ae3-9f5d-b2dbde51e5f5",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ],
+                                                                        "false": [
+                                                                            {
+                                                                                "id": "447b3488-aa33-4fef-885a-f5f6b48d226b",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "9ecaa634-8f96-4aef-b0bf-ec3fce72efc4",
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "cd95c4ce-e108-4aba-9c78-07c94038cac6",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "__type": "event"
+                                                                },
+                                                                {
+                                                                    "id": "e576fa8e-d499-4a88-b8fa-5def3663cdd0",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "3658af1d-d95f-4a01-ad3b-65fdb9d496d2",
+                                                                    "command": "EVENT_IF_TRUE",
+                                                                    "args": {
+                                                                        "variable": "0",
+                                                                        "__collapseElse": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "id": "cdaf0f04-0915-476b-a04c-8ed4f966d45d",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "c6e3e9a2-f9ce-4278-a667-005ddd6a69cc",
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "824479fa-2d42-4570-9803-a63b89fdbe5e",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ],
+                                                                        "false": [
+                                                                            {
+                                                                                "id": "2fe5fbce-2d79-4a8a-80a0-8d0fd51cd9e3",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "9a7d1232-16d4-43ee-9c74-49fb5a93493f",
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "9b40769a-6abd-42d3-8b18-b003b068e14e",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "367e0fae-23c7-406a-9c14-5a494a71a036",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "67b6ec12-52ff-424c-9b7c-ec8dbec6164b",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": "bf0a95c4-5704-4ba1-8999-17e2e8b283fd",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "bacdb757-912a-4991-be4f-e4c7853e8fd6",
+                                "command": "EVENT_ADD_FLAGS",
+                                "args": {
+                                    "variable": "101",
+                                    "flag1": true,
+                                    "flag2": false,
+                                    "flag3": false,
+                                    "flag4": false,
+                                    "flag5": false,
+                                    "flag6": false,
+                                    "flag7": false,
+                                    "flag8": false
+                                }
+                            },
+                            {
+                                "id": "f491376c-a9e6-4a63-ac4f-c88399dafcc4",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    },
+                    "__type": "event"
+                },
                 {
                     "id": "bf5e3562-a691-4ba7-babc-00c718d06504",
                     "command": "EVENT_IF_FLAGS_COMPARE",
@@ -17179,53 +17538,26 @@
                 0,
                 0,
                 0,
+                128,
+                255,
+                3,
+                8,
+                224,
+                128,
                 0,
+                8,
+                8,
+                128,
+                128,
                 0,
+                8,
+                8,
+                128,
+                128,
                 0,
-                0,
-                0,
-                0,
-                0,
-                254,
-                15,
-                0,
-                0,
-                2,
-                56,
-                0,
-                0,
-                226,
-                35,
-                0,
-                127,
-                2,
-                32,
-                0,
-                65,
-                2,
-                32,
-                0,
-                65,
-                2,
-                32,
-                0,
-                65,
-                2,
-                32,
-                0,
-                65,
-                62,
-                62,
-                0,
-                99,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                8,
+                248,
+                248,
                 0,
                 0,
                 0,
@@ -17236,8 +17568,8 @@
                 0
             ],
             "id": "9279b28a-6e57-4255-9038-16f922262904",
-            "x": 1617.6898203935136,
-            "y": 31.508438858140483,
+            "x": 1595.9748818519574,
+            "y": 30.32398766496468,
             "actors": [
                 {
                     "spriteSheetId": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
@@ -17246,8 +17578,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "4",
                     "id": "f40e52e0-9f25-4aee-8261-732cd53e6b16",
-                    "x": 5,
-                    "y": 8,
+                    "x": 7,
+                    "y": 9,
                     "animate": true,
                     "name": "Fire1",
                     "startScript": [
@@ -17271,8 +17603,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "4",
                     "id": "e5eb67df-f589-41fe-9008-54a68b95560a",
-                    "x": 9,
-                    "y": 8,
+                    "x": 11,
+                    "y": 9,
                     "animate": true,
                     "script": [
                         {
@@ -17302,8 +17634,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "a707eed4-b06a-4ddc-a7c6-ce89b8f16e35",
-                    "x": 7,
-                    "y": 7,
+                    "x": 9,
+                    "y": 8,
                     "name": "Varus"
                 },
                 {
@@ -17313,8 +17645,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "b654034b-fdbb-4f43-9555-5d1e1b651626",
-                    "x": 7,
-                    "y": 12,
+                    "x": 9,
+                    "y": 13,
                     "name": "Doctor"
                 },
                 {
@@ -17324,8 +17656,8 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
-                    "x": 6,
-                    "y": 12,
+                    "x": 8,
+                    "y": 13,
                     "name": "Jamie"
                 }
             ],
@@ -17333,8 +17665,8 @@
                 {
                     "trigger": "walk",
                     "id": "773fcee6-e12f-4ae8-87c1-aacbd8eb6ae5",
-                    "x": 6,
-                    "y": 13,
+                    "x": 8,
+                    "y": 14,
                     "width": 3,
                     "height": 1,
                     "script": [
@@ -17351,31 +17683,6 @@
                         },
                         {
                             "id": "d968aec6-14a2-4d87-9b61-40902eeb882f",
-                            "command": "EVENT_END"
-                        }
-                    ]
-                },
-                {
-                    "trigger": "walk",
-                    "id": "64304baa-2f0a-4aec-9866-b21c137b8e73",
-                    "x": 26,
-                    "y": 13,
-                    "width": 3,
-                    "height": 1,
-                    "script": [
-                        {
-                            "id": "2f814e9a-0e4a-4372-b5a7-510f47d2614e",
-                            "command": "EVENT_SWITCH_SCENE",
-                            "args": {
-                                "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
-                                "x": 25,
-                                "y": 8,
-                                "direction": "down",
-                                "fadeSpeed": "2"
-                            }
-                        },
-                        {
-                            "id": "2d007d65-c751-4877-9c2d-5c24b0f3d459",
                             "command": "EVENT_END"
                         }
                     ]
@@ -17398,7 +17705,8 @@
                                     "variable": "100",
                                     "__collapseElse": false,
                                     "__disableElse": true,
-                                    "__label": "set player to arminius"
+                                    "__label": "set player to arminius",
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -17476,9 +17784,9 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "player",
-                                                "x": 7,
-                                                "y": 9,
-                                                "__collapse": true,
+                                                "x": 9,
+                                                "y": 11,
+                                                "__collapse": false,
                                                 "__label": "Move to varus"
                                             }
                                         },
@@ -17563,8 +17871,8 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
-                                                "x": 6,
-                                                "y": 10,
+                                                "x": 7,
+                                                "y": 11,
                                                 "__label": "move Jamie"
                                             }
                                         },
@@ -17581,8 +17889,8 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "player",
-                                                "x": 10,
-                                                "y": 9,
+                                                "x": 11,
+                                                "y": 11,
                                                 "__label": "move Arminius"
                                             }
                                         },
@@ -17600,8 +17908,8 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626",
-                                                "x": 8,
-                                                "y": 10,
+                                                "x": 9,
+                                                "y": 11,
                                                 "__label": "move Doctor"
                                             }
                                         },
@@ -17687,8 +17995,8 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "54435011-a764-4a4f-b52b-a6e0a1cf3e3c",
-                                                "x": 6,
-                                                "y": 13
+                                                "x": 8,
+                                                "y": 14
                                             }
                                         },
                                         {
@@ -17703,8 +18011,8 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "b654034b-fdbb-4f43-9555-5d1e1b651626",
-                                                "x": 8,
-                                                "y": 13
+                                                "x": 9,
+                                                "y": 14
                                             }
                                         },
                                         {
@@ -17726,7 +18034,7 @@
                                 "command": "EVENT_GROUP",
                                 "args": {
                                     "__label": "Varus&Arminius dialog",
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -17735,10 +18043,10 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "player",
-                                                "x": 7,
-                                                "y": 11,
+                                                "x": 9,
+                                                "y": 13,
                                                 "__label": "move Arminius",
-                                                "__collapse": true
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -17770,10 +18078,10 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "player",
-                                                "x": 7,
-                                                "y": 9,
+                                                "x": 9,
+                                                "y": 11,
                                                 "__label": "move Arminius",
-                                                "__collapse": true
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -17836,18 +18144,10 @@
                                             "command": "EVENT_ACTOR_MOVE_TO",
                                             "args": {
                                                 "actorId": "player",
-                                                "x": 7,
-                                                "y": 12,
+                                                "x": 9,
+                                                "y": 13,
                                                 "__label": "move Arminius",
-                                                "__collapse": true
-                                            }
-                                        },
-                                        {
-                                            "id": "7ce30175-319f-4238-85ed-0974e62cd9ac",
-                                            "command": "EVENT_ACTOR_HIDE",
-                                            "args": {
-                                                "actorId": "player",
-                                                "__collapse": true
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -17855,6 +18155,17 @@
                                             "command": "EVENT_END"
                                         }
                                     ]
+                                }
+                            },
+                            {
+                                "id": "f5093293-dede-4390-adbb-9865ec24b53c",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "d534ecab-3622-4339-af14-889b713b70a5",
+                                    "x": 10,
+                                    "y": 12,
+                                    "direction": "up",
+                                    "fadeSpeed": "2"
                                 }
                             },
                             {
@@ -21773,7 +22084,8 @@
                     "id": "bcb0339a-403b-44d6-a36c-be34b889e1db",
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "debug"
+                        "__label": "debug",
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -25491,6 +25803,378 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Tent",
+            "backgroundId": "baf837f7-7245-40ab-ac33-6fa20b05d276",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                128,
+                63,
+                0,
+                8,
+                2,
+                128,
+                32,
+                0,
+                8,
+                2,
+                128,
+                32,
+                0,
+                24,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "d534ecab-3622-4339-af14-889b713b70a5",
+            "x": 1782.1249575281834,
+            "y": 32.76371945074354,
+            "actors": [
+                {
+                    "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "956787aa-5dac-47b3-b013-927ebba1ed1e",
+                    "x": 8,
+                    "y": 9,
+                    "name": "Doctor"
+                },
+                {
+                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                    "x": 11,
+                    "y": 9,
+                    "name": "Jamie"
+                }
+            ],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "40a33bd9-2a0a-4b8d-838d-f780251a51d4",
+                    "x": 9,
+                    "y": 13,
+                    "width": 3,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "34cc9fcc-e157-4c90-aa8e-bf5f37fae98a",
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
+                                "x": 25,
+                                "y": 8,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            }
+                        },
+                        {
+                            "id": "3351c6d4-8944-4ac9-bf32-0267c11fd2ff",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "script": [
+                {
+                    "id": "65499553-ee59-416f-90d7-ab87bbd2ca52",
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "8",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "0671f729-9644-41a6-b1cb-e17c14a11b25",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "player",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "20471ebb-23cc-4053-b17e-182ae9d1b154",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Why didn't you\ntell Varus that\nArminius wasn't",
+                                        "fighting those\nteutons but in-\nstead seemed to",
+                                        "be plot ..."
+                                    ],
+                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                    "__label": "Jamie talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "106e82be-9ab2-4f7e-9cd9-027efdcc3d6a",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Pst,Jamie!The\nwalls have ears!\nEspecially when ",
+                                        "they are tent\nwalls.I will ex-\nplain later."
+                                    ],
+                                    "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                    "__label": "Doctor talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "b90de213-ef1d-48ce-a0f5-175c98b15d53",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "player",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "9e445cd2-b2cf-4a6b-bb38-fa4e8292ce82",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "player",
+                                    "direction": "up",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "3b8ec42e-5cf7-4a79-92ae-df5a7203afe2",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "956787aa-5dac-47b3-b013-927ebba1ed1e",
+                                    "direction": "down",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "8b8e0b65-16bc-4ae4-ac54-1d2b55c32575",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                                    "direction": "down",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "69f51093-74f3-4a60-8ad0-c18401e69bf9",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "player",
+                                    "x": 9,
+                                    "y": 11,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "a2dcffe6-d41c-4245-9136-e52479723f94",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "So you are an\nexperienced\nfighter,Jamie?"
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__label": "Arminius talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "1b570099-c4cf-4d59-98e7-4163e5de8453",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Aye!I had not\nmuch choice with\nthose redcoats."
+                                    ],
+                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                    "__label": "Jamie talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "4d9f56d4-78c7-45c0-aed1-23d328e773d6",
+                                "command": "EVENT_ACTOR_EMOTE",
+                                "args": {
+                                    "actorId": "player",
+                                    "emoteId": "1",
+                                    "__label": "Arminius confused",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "807a6868-4fab-41af-9c65-b4cc4bf17d62",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Jamie is a Pict.\nThe tribe which\nbrought Ceasar",
+                                        "so much trouble\nup in Britannia.\nSo he has quite ",
+                                        "a history of\nfighting the\nempire."
+                                    ],
+                                    "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                    "__label": "Doctor Talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "23a91449-c898-4daa-944f-9fc38202054e",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Actually my clan\nis the McLaren\nClan and not the",
+                                        "Picts.The Doctor\nalways mixes\nthese two up.",
+                                        "But the fighting\nthe empire part\nis correct."
+                                    ],
+                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                    "__label": "Jamie talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "9f6895d5-93e6-4333-99c6-d751fcbf27fa",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Ok, you will ac-\ncompany me, Ja-\nmie.Your skills ",
+                                        "might be use-\nfull.Besides I\nhave to make",
+                                        "sure that you\nstick to your\nstory,Doctor."
+                                    ],
+                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                    "__label": "Arminius talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "1e1ef128-b444-4e7c-bfe1-2cf4e561bc84",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "I am not going\nto leave the\nDoctor here."
+                                    ],
+                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                    "__label": "Jamie talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "f93382e0-19d6-44ee-940e-bf568306e1b6",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Go with him,\nJamie.I will be\nalright."
+                                    ],
+                                    "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                    "__label": "Doctor talking",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "1b89cbb7-2006-4e8d-b72d-c6b21a167a12",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "player",
+                                    "x": 9,
+                                    "y": 12,
+                                    "__label": "Arminius leave",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "ff456eb8-7f7c-43f8-bcb2-8c5997a12d07",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "player",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "b4bd6ca4-cd3b-49d6-b6f7-b6105c5039e8",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                                    "x": 10,
+                                    "y": 12,
+                                    "__label": "Jamie leave",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "66ab931d-2e25-4626-9d79-30b1a5a61856",
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                                    "__collapse": false
+                                }
+                            },
+                            {
+                                "id": "c4f5f657-025b-4b2a-ad3f-c29f72aa39e9",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "8",
+                                    "__label": "varusConversation = true"
+                                }
+                            },
+                            {
+                                "id": "e677f7aa-502b-407a-9cd3-94548172c6a9",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
+                                    "x": 25,
+                                    "y": 8,
+                                    "direction": "down",
+                                    "fadeSpeed": "2"
+                                }
+                            },
+                            {
+                                "id": "11e7d22d-b1d5-482c-8bc7-e612773a93b9",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "001228db-1073-4655-b1c8-5e500b9dddbb",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "48a5b2b0-7030-4c87-a86f-fcd270a132b6",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -25687,7 +26371,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp.png",
-            "_v": 1610837159362
+            "_v": 1611586725479
         },
         {
             "id": "82aa1673-ace2-4cb1-9701-deb13319160f",
@@ -25697,17 +26381,17 @@
             "imageWidth": 256,
             "imageHeight": 232,
             "filename": "campInner.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
         },
         {
             "id": "bdc2aee2-a8fa-4397-8bd6-ec20ac2ba320",
             "name": "campVarus",
-            "width": 32,
+            "width": 20,
             "height": 18,
-            "imageWidth": 256,
+            "imageWidth": 160,
             "imageHeight": 144,
             "filename": "campVarus.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
         },
         {
             "id": "873f182b-f185-4f93-952d-c46059a5d677",
@@ -25717,7 +26401,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "face.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
         },
         {
             "id": "e9e6cd40-dc72-4b7b-9bee-64385f9e506b",
@@ -25727,7 +26411,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "gbstudio.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
         },
         {
             "id": "6ff9fc10-60ad-42c8-9560-baad466d6571",
@@ -25737,7 +26421,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "invertedHat.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
         },
         {
             "id": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
@@ -25747,7 +26431,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "opening.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
         },
         {
             "id": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
@@ -25757,7 +26441,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "quizWood.png",
-            "_v": 1610226464427
+            "_v": 1611586725479
+        },
+        {
+            "id": "baf837f7-7245-40ab-ac33-6fa20b05d276",
+            "name": "tent",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "tent.png",
+            "_v": 1611606359399
         },
         {
             "id": "96c7b586-29e5-43c8-80f7-05510d5b5196",
@@ -25767,7 +26461,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1610226464428
+            "_v": 1611586725479
         },
         {
             "id": "828a5b10-e871-4a45-8536-b3187af4c4d9",
@@ -25777,7 +26471,7 @@
             "imageWidth": 256,
             "imageHeight": 192,
             "filename": "wood.png",
-            "_v": 1610226464428
+            "_v": 1611586725479
         },
         {
             "id": "1ea5183f-fe67-4913-842e-eb1034df1a14",
@@ -25787,7 +26481,7 @@
             "imageWidth": 176,
             "imageHeight": 144,
             "filename": "wood2.10.png",
-            "_v": 1610810163686
+            "_v": 1611586725479
         },
         {
             "id": "7954b40f-73bb-4df5-b54a-2579cafac7e8",
@@ -25797,7 +26491,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "wood2.2.png",
-            "_v": 1610293970950
+            "_v": 1611586725480
         },
         {
             "id": "18d64b45-a318-47d9-a6f9-9c67a2216597",
@@ -25807,7 +26501,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "wood2.3.png",
-            "_v": 1610296092426
+            "_v": 1611586725480
         },
         {
             "id": "6a1be551-a6c8-41b7-9377-5bfaa119e7de",
@@ -25817,7 +26511,7 @@
             "imageWidth": 256,
             "imageHeight": 208,
             "filename": "wood2.4.png",
-            "_v": 1610807331975
+            "_v": 1611586725480
         },
         {
             "id": "f5ebe364-9562-413b-85fc-76ac7fd9cf7e",
@@ -25827,7 +26521,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "wood2.5.png",
-            "_v": 1610811093440
+            "_v": 1611586725480
         },
         {
             "id": "3c2154ba-8bd6-4ed3-8481-d0fac5c9d5c8",
@@ -25837,7 +26531,7 @@
             "imageWidth": 208,
             "imageHeight": 208,
             "filename": "wood2.7.png",
-            "_v": 1610901261194
+            "_v": 1611586725480
         },
         {
             "id": "a639fa5d-3b6b-4b41-b4c9-107bc616ce0f",
@@ -25847,7 +26541,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodAxe.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         },
         {
             "id": "71037164-bcdb-4290-babe-dda6f36609df",
@@ -25857,7 +26551,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodCrossroad.png",
-            "_v": 1610746585889
+            "_v": 1611586725480
         },
         {
             "id": "83432335-fe7b-4a84-8a89-8726d7cffcf6",
@@ -25867,7 +26561,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodDash.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         },
         {
             "id": "bcb400e8-b040-44f3-a3e3-21c4e217343c",
@@ -25877,7 +26571,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodLeft.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         },
         {
             "id": "798dacac-cffd-4aba-8fed-b9a34695a394",
@@ -25887,7 +26581,7 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "woodLong.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         },
         {
             "id": "5cb17b13-f33a-4574-87cc-149678d191a2",
@@ -25897,7 +26591,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodRight.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         },
         {
             "id": "61d814ef-b07c-422c-afe9-58c73234a014",
@@ -25907,7 +26601,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodT.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         },
         {
             "id": "3a3961fd-39e2-49ed-8a4e-ff35105dba9f",
@@ -25917,7 +26611,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "woodTop.png",
-            "_v": 1610226464428
+            "_v": 1611586725480
         }
     ],
     "spriteSheets": [
@@ -25927,7 +26621,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/arminius.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "b2685841-123b-40cb-a37d-ec525edcc1ed",
@@ -25935,7 +26629,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/doctor.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
@@ -25943,7 +26637,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/jamie.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "de318713-1231-4b1e-89cf-6451d73afa7c",
@@ -25951,7 +26645,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "portraits/varus.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "a4097f09-f3db-4797-80ad-c0538a6fb303",
@@ -25959,7 +26653,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart1.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "f2a03c1a-2d74-412b-bb47-578e06ae55ea",
@@ -25967,7 +26661,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart2.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "418f1fe3-4627-4f4b-8c1d-fa1221289c63",
@@ -25975,7 +26669,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart3.png",
-            "_v": 1610226464432
+            "_v": 1611586725486
         },
         {
             "id": "d302ad08-c390-4291-8eb4-d6b0ba648a71",
@@ -25983,7 +26677,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "pressStart4.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
@@ -25991,7 +26685,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminius.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "b71c5ed3-09eb-4442-a20c-4de001103ca8",
@@ -25999,7 +26693,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/arminiusEnemy.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
@@ -26007,7 +26701,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/doctor.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "03f0eca4-7491-4f7b-a2d4-8430432b9971",
@@ -26015,7 +26709,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/legionary.png",
-            "_v": 1610832677028
+            "_v": 1611586725487
         },
         {
             "id": "99aa2210-8e21-44b3-bb94-18a8b89f5b45",
@@ -26023,7 +26717,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/chars/teuton.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -26031,7 +26725,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/arminius.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "a84c7b6a-0fcd-44f8-a292-8f7f081d4884",
@@ -26039,7 +26733,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/chief.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "5c41bff0-f8b4-435a-a00a-6eb76cd8ed1a",
@@ -26047,7 +26741,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/doctor.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
@@ -26055,7 +26749,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/names/legionary.png",
-            "_v": 1610831571003
+            "_v": 1611586725487
         },
         {
             "id": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",
@@ -26063,7 +26757,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "quiz/names/teuton.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",
@@ -26071,7 +26765,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmark.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -26079,7 +26773,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkEnd.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
@@ -26087,7 +26781,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkMiddle.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "2c1ef867-a79b-4146-b726-411e51feaa88",
@@ -26095,7 +26789,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "quiz/questionmarkStart.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
@@ -26103,7 +26797,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/arminius.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "62ac4071-1bf3-4768-9534-d387f23523fe",
@@ -26111,7 +26805,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "world/axe.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "229f8072-54c3-41de-91fc-f854c70ac850",
@@ -26119,7 +26813,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "world/blackOverlay.png",
-            "_v": 1610230975530
+            "_v": 1611586725487
         },
         {
             "id": "8c4a4be0-d5e4-463c-a386-bd61c603a3ca",
@@ -26127,7 +26821,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "world/campfire.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -26135,7 +26829,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/doctor.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "9e347e41-9cbe-4018-a5dc-e963626ac66f",
@@ -26143,7 +26837,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "world/fire.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
@@ -26151,7 +26845,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/jamie.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",
@@ -26159,7 +26853,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/legionary.png",
-            "_v": 1610226464432
+            "_v": 1611586725487
         },
         {
             "id": "a54e66bc-4834-4009-b2fc-dbe9ba04400f",
@@ -26167,7 +26861,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/legionaryNoShield.png",
-            "_v": 1610226464433
+            "_v": 1611586725487
         },
         {
             "id": "e12d95a2-12a1-4991-b43d-edf916ebab55",
@@ -26175,7 +26869,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "world/rock.png",
-            "_v": 1610226464433
+            "_v": 1611586725487
         },
         {
             "id": "6bc40b5a-8acd-4020-8fa3-188d974b1781",
@@ -26183,7 +26877,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "world/teuton.png",
-            "_v": 1610226464433
+            "_v": 1611586725487
         },
         {
             "id": "0188af49-d1ca-4ded-bab4-4450b34a3a4d",
@@ -26191,7 +26885,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/teutonStatic.png",
-            "_v": 1610226464433
+            "_v": 1611586725487
         },
         {
             "id": "c60f32a7-26b5-443d-ba44-d6e162dcb222",
@@ -26199,7 +26893,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "world/treetrunk.png",
-            "_v": 1610746855832
+            "_v": 1611586725487
         },
         {
             "id": "69a177d0-c9e4-4dcb-a134-35341a73fc7b",
@@ -26207,7 +26901,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "world/treetrunk1.png",
-            "_v": 1610746896330
+            "_v": 1611586725487
         },
         {
             "id": "702a0756-d05a-4cd6-81cf-9b4e0d4a4097",
@@ -26215,7 +26909,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "world/varus.png",
-            "_v": 1610226464433
+            "_v": 1611586725487
         }
     ],
     "music": [
@@ -26223,13 +26917,13 @@
             "id": "2ae67cb0-4c28-4e3b-9327-87a51d0f3c06",
             "name": "openingTheme",
             "filename": "openingTheme.mod",
-            "_v": 1610226464421
+            "_v": 1611586725472
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1610226464421
+            "_v": 1611586725472
         }
     ],
     "customEvents": [

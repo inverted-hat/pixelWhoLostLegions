@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2061,
-        "worldScrollY": 0,
-        "zoom": 132.0914500579238,
+        "worldScrollX": 3746,
+        "worldScrollY": 35,
+        "zoom": 237.68924291431904,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -12,8 +12,8 @@
         "startX": 14,
         "startY": 12,
         "startDirection": "up",
-        "startSceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
-        "playerSpriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
+        "startSceneId": "b98ca132-00c6-462d-b0a6-7289599470b0",
+        "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3"
     },
@@ -242,12 +242,12 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Jamie: This Rome\nof yours does\nnot look very",
-                                        "impressive,\nDoctor. Where\nare all the",
-                                        "great buildings\nyou told me\nabout?"
+                                        "Jamie:This Rome\nof yours does\nnot look very",
+                                        "impressive,Doc-\ntor.Where are\nall the great",
+                                        "buildings you \nyou told me\nabout?"
                                     ],
                                     "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__comment": false
                                 }
                             },
@@ -256,13 +256,12 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Doctor: Well it\nseems like we've\nlanded in a",
-                                        "misty wood. This\nis definitely\nnot Rome.",
-                                        "I wonder where\nwe are.",
-                                        "Let's go and\nfind out!"
+                                        "Doctor:Well it\nseems like we\nhave landed in a",
+                                        "misty wood.This \nis definitely\nnot Rome.I won-",
+                                        "der where we\nare.Let's go and\nfind out!"
                                     ],
                                     "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__comment": false
                                 }
                             },
@@ -479,8 +478,8 @@
             "height": 18,
             "collisions": [],
             "id": "0d6f16fb-bd7e-4ecf-8a45-76dcf81546dc",
-            "x": 594.6883277585795,
-            "y": 696.4847147447681,
+            "x": 772.8720884316757,
+            "y": 510.4514491962053,
             "actors": [
                 {
                     "spriteSheetId": "99aa2210-8e21-44b3-bb94-18a8b89f5b45",
@@ -2750,7 +2749,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What is the name\nof the first NuWho\n(reboot) episode?"
+                            "What's the name of\nthe first episode\nfrom the reboot?"
                         ],
                         "avatarId": "",
                         "__collapse": true,
@@ -4495,7 +4494,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Arminius\nchallenges you to\na trivia quiz!"
+                            "Arminius chal-\nlenges you to a\ntrivia quiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -4507,7 +4506,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How many times can\na Timelord\nregenerate?"
+                            "How many times can\na Timelord regen-\nerate?"
                         ],
                         "avatarId": "",
                         "__label": "Question 1",
@@ -5992,7 +5991,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Who was a\ncompanion of the\n10th Doctor?"
+                            "Who is a companion\nof the tenth Doc-\ntor? "
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
@@ -7478,7 +7477,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How is the\nDoctor's ship\ncalled?"
+                            "How is the Doc-\ntor's ship called?"
                         ],
                         "avatarId": "",
                         "__label": "Question5",
@@ -8397,7 +8396,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A legionary\nchallenges you to\na trivia quiz!"
+                            "A legionary chal-\nlenges you to a\ntrivia quiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -12288,7 +12287,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A legionary\nchallenges you to\na trivia quiz!"
+                            "A legionary chal-\nlenges you to a\ntrivia quiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -13041,7 +13040,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What is the Time-\nlord's home\nplanet?"
+                            "What is the Time-\nlord's home plan-\net?"
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
@@ -16214,7 +16213,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Guard: It was\nnothing personal.\nNobody is allowed",
+                                                "Guard:It was noth-\ning personal.No-\nbody is allowed",
                                                 "to enter without\nthe correct pass\nphrase."
                                             ],
                                             "avatarId": ""
@@ -16242,7 +16241,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Guard: Halt! What\nis the passphrase?"
+                                                            "Guard:Halt!What is\nthe passphrase?"
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
@@ -16273,7 +16272,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Guard: Ok, that is\none half. What is\nthe second part?"
+                                                                        "Guard:Ok,that is\none half.What is\nthe second part?"
                                                                     ],
                                                                     "avatarId": ""
                                                                 }
@@ -16304,7 +16303,7 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Guard: That is\ncorrect. You may\npass."
+                                                                                    "Guard:That is cor-\nrect.You may pass."
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             }
@@ -16386,7 +16385,7 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Guard: Ok, that is\none half. What is\nthe second part?"
+                                                                                    "Guard:Ok,that is\none half.What is\nthe second part?"
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             },
@@ -16423,7 +16422,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Guard: Halt! What\nis the passphrase?"
+                                                            "Guard:Halt!What is\nthe passphrase?"
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -16443,8 +16442,8 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Guard: That is the\nold passphrase. It\nwas changed",
-                                                            "recently."
+                                                            "Guard:That is the\nold passphrase.It\nwas changed re-",
+                                                            "cently."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -16464,7 +16463,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Guard:No pass-\nphrase, no entry."
+                                                            "Guard:No pass-\nphrase,no entry."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -16528,7 +16527,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Guard: Varus\nawaits you."
+                                                "Guard:Varus awaits\nyou."
                                             ],
                                             "avatarId": ""
                                         }
@@ -16544,8 +16543,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Guard: My\nreplacment is\nlate. My shift",
-                                                "ended an hour ago."
+                                                "Guard:My replace-\nment is late.My\nshift ended an",
+                                                "hour ago."
                                             ],
                                             "avatarId": ""
                                         }
@@ -16601,8 +16600,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Legionary: I\noversplet. My\nshift started an",
-                                                "hour ago."
+                                                "Legionary:I over-\nsplet.My shift\nstarted an hour",
+                                                "ago."
                                             ],
                                             "avatarId": ""
                                         }
@@ -16635,9 +16634,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Legionary: Every-\none who enters the\ncamp talks to me,",
-                                    "because my tent is\ndirectly next to\nthe gate. I am so ",
-                                    "sick of it. I just\nwant my peace!"
+                                    "Legionary:Every-\none who enters the\ncamp talks to me,",
+                                    "because my tent is\ndirectly next to\nthe gate.I am so ",
+                                    "sick of it.I just\nwant my peace!"
                                 ],
                                 "avatarId": ""
                             }
@@ -16663,8 +16662,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Legionary: Man, I\nwish my tent would\nbe directly next ",
-                                    "to the gate, so I\ncould see who is\ncoming and going",
+                                    "Legionary:Man,I\nwish my tent would\nbe directly next ",
+                                    "to the gate,so I\ncould see who is\ncoming and going",
                                     "and maybe have a\nconbersation."
                                 ],
                                 "avatarId": ""
@@ -16720,7 +16719,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Your quiz points\nhave been\nrestored."
+                                                "Your quiz points\nhave been re-\nstored."
                                             ],
                                             "avatarId": ""
                                         }
@@ -16774,7 +16773,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "He thinks he is\nsome kind of\nmaster chef."
+                                    "He thinks he is\nsome kind of mas-\nter chef."
                                 ],
                                 "avatarId": ""
                             }
@@ -17771,8 +17770,8 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Varus: You are\nfinally back\nfrom your patrol",
-                                                    "Tell me have you\nspotted any\nteutons?"
+                                                    "Varus:You are\nfinally back\nfrom your patrol",
+                                                    "Tell me have you\nspotted any teu-\ntons?"
                                                 ],
                                                 "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
                                                 "__label": "Varus talking",
@@ -17795,10 +17794,10 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Indeed I have.\nA small group of\nthem is roaming ",
-                                                    "the woods near\nthe camp. They\neven attacked",
-                                                    "two merchants.\nFortunately we\nwere there to",
-                                                    "save them."
+                                                    "Indeed I have.A\nsmall group of\nthem is roaming ",
+                                                    "the woods near\nthe camp.They e-\nven attacked two",
+                                                    "merchants.Fortu-\nnately we were \nthere to save",
+                                                    "them."
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__label": "Arminius talking",
@@ -17810,7 +17809,7 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Bring them in. I\nwant to question\nthem."
+                                                    "Bring them in.I\nwant to question\nthem."
                                                 ],
                                                 "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
                                                 "__label": "Varus talking",
@@ -17822,8 +17821,8 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "There is no need\nto deal with\nthem. They know",
-                                                    "nothing I\nhaven't already\ntold you."
+                                                    "There is no need\nto deal with\nthem.They know",
+                                                    "nothing I have\nnot already told\nyou."
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__label": "Arminius Talking",
@@ -17925,7 +17924,7 @@
                                 "command": "EVENT_GROUP",
                                 "args": {
                                     "__label": "Varus&Doc dialog",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__comment": false
                                 },
                                 "children": {
@@ -17935,8 +17934,8 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "So Arminius\nsaved you from\nthe teutons?",
-                                                    "Tell me exactly\nwhat happened."
+                                                    "So Arminius\nsaved you from\nthe teutons?Tell",
+                                                    "me exactly what\nhappened."
                                                 ],
                                                 "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
                                                 "__label": "Varus talking",
@@ -17948,17 +17947,16 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "We were on\nour way to Roma\nto deliver some ",
+                                                    "We were on our \nway to Rome to \ndeliver some",
                                                     "valuable goods\nwhen a group of\nteutons tried to",
-                                                    "mug us. Of\ncourse we\nfought back.",
-                                                    "Jamie here is\nquite a capable\nmilitant. But",
-                                                    "they easily\noutnumbered us.\nLuckily right as",
-                                                    "it started to\nlook bad for us\nArminius came",
-                                                    "along to save\nus."
+                                                    "mug us.Of course\nwe fought back.\nJamie here is",
+                                                    "quite a capable\nmilitant.But\nthey easily out-",
+                                                    "numbered us.\nLuckily right as\nit started to",
+                                                    "look bad for us\nArminius came a-\nlong to save us."
                                                 ],
                                                 "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
                                                 "__label": "Doctor talking",
-                                                "__collapse": true
+                                                "__collapse": false
                                             }
                                         },
                                         {
@@ -17966,8 +17964,8 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Valuable goods\nyou say? Show\nthem a tent.",
-                                                    "I will decide\nwhat to do with\nthem later."
+                                                    "Valuable goods\nyou say? Show\nthem a tent. I",
+                                                    "will decide what\nto do with them\nlater."
                                                 ],
                                                 "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
                                                 "__label": "Varus talking",
@@ -18054,7 +18052,7 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "There is more\nthing I need to\ntell you."
+                                                    "There is one\nmore thing I\nneed to tell you"
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__collapse": true,
@@ -18089,9 +18087,9 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "One of the\nsaveges told me\nabout an even",
-                                                    "bigger teuton\ngroup before he\ndied. They are",
-                                                    "planning to raid\nthe area. We\nshould stop them"
+                                                    "One of the sav-\nages told me a-\nbout an even",
+                                                    "bigger teuton\ngroup before he\ndied.They are",
+                                                    "planning to raid\nthe area.We\nshould stop them"
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__label": "Arminius talking",
@@ -18103,7 +18101,7 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Absolutly! Do\nyou know their\nposition?"
+                                                    "Absolutly!Do you\nknow their posi-\ntion?"
                                                 ],
                                                 "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
                                                 "__label": "Varus talking",
@@ -18115,9 +18113,9 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Roughly. There\nare in the\ndirection of our",
-                                                    "winter camp. I\ncould take some\nof my men to",
-                                                    "try spot their\nexact position\nand numbers."
+                                                    "Roughly.They are\nin the direction\nof our winter",
+                                                    "camp.I could \ntake some of my\nmen to try and",
+                                                    "spot their exact\nposition and\nnumbers."
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__label": "Arminius talking",
@@ -18129,9 +18127,9 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Do it! But\nfirst tell the\ncenturio we",
+                                                    "Do it!But first\ntell the cen-\nturio that we",
                                                     "are leaving for\nour winter camp.\nSo our army will",
-                                                    "be directly\nbehind you and\nthese babarians ",
+                                                    "be directly be-\nhind you so\nthese babarians ",
                                                     "have no chance\nto escape."
                                                 ],
                                                 "avatarId": "de318713-1231-4b1e-89cf-6451d73afa7c",
@@ -18352,26 +18350,6 @@
                     }
                 },
                 {
-                    "id": "90d213f0-1e5b-4e8c-bb3c-3515ddcba481",
-                    "command": "EVENT_OVERLAY_SHOW",
-                    "args": {
-                        "color": "black",
-                        "x": 1,
-                        "y": 6,
-                        "__collapse": false
-                    }
-                },
-                {
-                    "id": "1746f7f2-deec-4609-97be-3e9ebc0d153f",
-                    "command": "EVENT_OVERLAY_MOVE_TO",
-                    "args": {
-                        "x": 1,
-                        "y": 11,
-                        "speed": "2",
-                        "__collapse": false
-                    }
-                },
-                {
                     "id": "53c6982b-6466-48d9-8667-41d9794e949c",
                     "command": "EVENT_WAIT",
                     "args": {
@@ -18462,31 +18440,11 @@
                     }
                 },
                 {
-                    "id": "50fa3b92-8e3f-49c9-b077-4c56864be0db",
-                    "command": "EVENT_OVERLAY_SHOW",
-                    "args": {
-                        "color": "black",
-                        "x": 0,
-                        "y": 0,
-                        "__collapse": true
-                    }
-                },
-                {
-                    "id": "fa0cd367-0ee4-4140-b671-ee97bc17e198",
-                    "command": "EVENT_OVERLAY_MOVE_TO",
-                    "args": {
-                        "x": 0,
-                        "y": 18,
-                        "speed": "2",
-                        "__collapse": true
-                    }
-                },
-                {
                     "id": "6fcaf39b-e9fd-412d-bfbf-aa461e6e895b",
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 1,
-                        "__collapse": true
+                        "time": 1.5,
+                        "__collapse": false
                     }
                 },
                 {
@@ -18600,8 +18558,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "This rock is\nquite heavy.\nMaybe you are",
-                                                "able to move it,\nJamie?"
+                                                "This rock is\nquite heavy.May-\nbe you are able",
+                                                "to move it,Jamie\n"
                                             ],
                                             "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed"
                                         }
@@ -18666,8 +18624,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "This rock is\nquite heavy.\nMaybe you are",
-                                                "able to move it,\nJamie?"
+                                                "This rock is\nquite heavy.May-\nbe you are able",
+                                                "to move it,Jamie"
                                             ],
                                             "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed"
                                         }
@@ -18732,8 +18690,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "This rock is\nquite heavy.\nMaybe you are",
-                                                "able to move it,\nJamie?"
+                                                "This rock is\nquite heavy.May-\nbe you are able",
+                                                "to move it,Jamie"
                                             ],
                                             "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed"
                                         }
@@ -19842,7 +19800,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Hello, would you\nmind to tell us\nwhere we are?"
+                                                "Hello,would you\nmind to tell us\nwhere we are?"
                                             ],
                                             "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
                                             "__label": "Doctor talking"
@@ -19853,7 +19811,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Teuton: What a\nstupid question!"
+                                                "Teuton:What a stu-\npid question!"
                                             ],
                                             "avatarId": ""
                                         }
@@ -19885,8 +19843,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Teuton: This is\nthe Teutoburg\nForest. Now leave ",
-                                                "me alone."
+                                                "Teuton:This is\nthe Teutoburg For-\nrest.Now leave me ",
+                                                "alone."
                                             ],
                                             "avatarId": ""
                                         },
@@ -19966,8 +19924,8 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Teuton: Ok ...\nThis is the\nTeutoburg Forest.",
-                                                    "Now leave me\nalone."
+                                                    "Teuton:Ok ...This\nis the Teutoburg\nForest.",
+                                                    "Now leave me alone\n"
                                                 ],
                                                 "avatarId": ""
                                             }
@@ -20500,166 +20458,6 @@
             ],
             "script": [
                 {
-                    "id": "f1d549fd-b660-4b3c-b1f6-a9b2330d893d",
-                    "command": "EVENT_CALL_CUSTOM_EVENT",
-                    "args": {
-                        "customEventId": "bdbd9ef9-95b3-4136-b4b3-2403d70e9355",
-                        "__name": "switchPlayer",
-                        "$variable[0]$": "100"
-                    },
-                    "children": {
-                        "script": [
-                            {
-                                "id": "ed7fe180-0d98-4105-a7cc-de5194384b2a",
-                                "command": "EVENT_SET_INPUT_SCRIPT",
-                                "args": {
-                                    "input": "b"
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "id": "44e4a25f-c1f8-4f69-bca9-f27786f24094",
-                                            "command": "EVENT_IF_TRUE",
-                                            "args": {
-                                                "variable": "1",
-                                                "__collapseElse": false,
-                                                "__label": "playerIsArminius == true"
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "4b8ae4f7-6931-4b37-b973-25a7dd298dcd",
-                                                        "command": "EVENT_IF_TRUE",
-                                                        "args": {
-                                                            "variable": "0",
-                                                            "__collapseElse": false,
-                                                            "__collapse": false,
-                                                            "__label": "playerIsJamie"
-                                                        },
-                                                        "children": {
-                                                            "true": [
-                                                                {
-                                                                    "id": "4adb3d0a-d71e-4b1a-b423-58de8f9a3af0",
-                                                                    "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                    "args": {
-                                                                        "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "560ee2d2-36a0-4799-9d81-d6c0ef3e8787",
-                                                                    "command": "EVENT_SET_FALSE",
-                                                                    "args": {
-                                                                        "variable": "0"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "21803acc-7246-4d4c-a8ca-2f690fe8e6c7",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ],
-                                                            "false": [
-                                                                {
-                                                                    "id": "2307f618-9cc2-4e5c-9d31-97cd23e34390",
-                                                                    "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                    "args": {
-                                                                        "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "8ecc6389-c1e4-48b7-afd9-bada6b334d74",
-                                                                    "command": "EVENT_SET_TRUE",
-                                                                    "args": {
-                                                                        "variable": "0"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "f6dd994c-4822-47a7-be90-3c9b7052853f",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ]
-                                                        },
-                                                        "__type": "event"
-                                                    },
-                                                    {
-                                                        "id": "bf1a876f-9b72-427e-8f87-62676eab3be3",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "id": "f16d5a84-f17c-445e-ab95-1ad565c395a5",
-                                                        "command": "EVENT_IF_TRUE",
-                                                        "args": {
-                                                            "variable": "0",
-                                                            "__collapseElse": false,
-                                                            "__collapse": false
-                                                        },
-                                                        "children": {
-                                                            "true": [
-                                                                {
-                                                                    "id": "9ff73643-7869-42ca-a7e9-928b5860f4b9",
-                                                                    "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                    "args": {
-                                                                        "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "0a39eb2c-48b8-4499-8a67-a69fae9af765",
-                                                                    "command": "EVENT_SET_FALSE",
-                                                                    "args": {
-                                                                        "variable": "0"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "f3e6a499-b1a2-4d62-bb5a-3b6bef4d8f69",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ],
-                                                            "false": [
-                                                                {
-                                                                    "id": "1ed240cf-2a22-45c7-91e5-2537fe0e524b",
-                                                                    "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                    "args": {
-                                                                        "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "7a8d049a-f7fa-4003-96cd-cfdd4c9518b9",
-                                                                    "command": "EVENT_SET_TRUE",
-                                                                    "args": {
-                                                                        "variable": "0"
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "4a572801-909d-4372-8d07-125b9ffee829",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "0dd42ae8-5fdf-4ca7-90c2-88b40636211f",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "id": "f0548ce3-1f6a-4122-a510-9ed599b43f95",
-                                            "command": "EVENT_END"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "id": "bbcafd73-c950-4203-9159-f6ebc1c8c797",
-                                "command": "EVENT_END"
-                            }
-                        ]
-                    },
-                    "__type": "event"
-                },
-                {
                     "id": "2833a6d5-ea59-48b7-8da2-f22b6d4fe051",
                     "command": "EVENT_END"
                 }
@@ -20765,7 +20563,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Your quiz points\nhave been\nrestored."
+                                                "Your quiz points\nhave been re-\nstored."
                                             ],
                                             "avatarId": ""
                                         }
@@ -21090,8 +20888,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Arminius: This\nis the perfect\nplace for an",
-                                                "ambush. The\nromans will have\nto march in a",
+                                                "Arminius:This is\nthe perfect\nplace for an am-",
+                                                "ambush.The ro-\nmans will have\nto march in a",
                                                 "long line so\ntheir numbers\nwill not matter."
                                             ],
                                             "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
@@ -21104,7 +20902,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Teuton: And there\nis not enough\nspace for their ",
+                                                "Teuton:And there \nis not enough\nspace for their ",
                                                 "testudo formation.\nPerfect indeed."
                                             ],
                                             "avatarId": "",
@@ -21242,8 +21040,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Merchants this\ndeep in the\nforest? I do not",
-                                                "believe you!"
+                                                "Merchants this\ndeep in the for-\nest?I do not be-",
+                                                "lieve you!"
                                             ],
                                             "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                             "__collapse": true,
@@ -21415,9 +21213,9 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Well, I'm still\nnot quite sure\nabout you.",
-                                                    "But I can't let\nyou roam around\nhere. You will",
-                                                    "have to come\nwith me. Arrest\nthem!"
+                                                    "Well,I'm still\nnot quite sure\nabout you.",
+                                                    "But I can't let\nyou roam around\nhere.You will",
+                                                    "have to come\nwith me.Arrest\nthem!"
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__collapse": true,
@@ -21484,8 +21282,8 @@
                                             "command": "EVENT_TEXT",
                                             "args": {
                                                 "text": [
-                                                    "Go back tou your\nvillage and\nprepare for",
-                                                    "battle. I will\ncome to see your\nchief later."
+                                                    "Go back to your\nvillage and pre-\npare for battle.",
+                                                    "I will come to\nsee your chief\nlater."
                                                 ],
                                                 "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
                                                 "__label": "Arminius talking",
@@ -21961,7 +21759,7 @@
                                         "args": {
                                             "text": [
                                                 "This rock is\nquite heavy.\nWhat was your",
-                                                "name? Jamie? You\nlook strong.\nPush the rock."
+                                                "name?Jamie?You\nlook strong.\nPush the rock."
                                             ],
                                             "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d"
                                         }
@@ -22002,18 +21800,166 @@
                     "y": 16,
                     "script": [
                         {
-                            "id": "d7c65ab0-e9ee-4d11-941b-003d62acdd36",
-                            "command": "EVENT_TEXT",
+                            "id": "07eb10ae-5cdf-4782-a6c2-6e007fcf69fa",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "Legionary: A large\ngroup of teutons\nhas been seen in",
-                                    "this direction. Do\nnot go there."
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "4f070c70-85f7-4844-ba6f-c7fab9330362",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Legionary:If it is\nan order from Va-\nrus you may pass."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "10402e53-298c-47f2-aa8f-250d07446b68",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "d7c65ab0-e9ee-4d11-941b-003d62acdd36",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Legionary:A large \ngroup of teutons\nhas been seen in",
+                                                "this direction.Do\nnot go there."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "0441d380-5e4d-45b2-965f-536035f959a3",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "8",
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "e5af0e79-4d03-4502-8429-66d4c292dd60",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "I know.They are\nthe reason why I\nam here.Varus",
+                                                            "ordered me to\nscout their ex-\nact numbers and",
+                                                            "position.So let\nme pass!"
+                                                        ],
+                                                        "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2f2fcab3-73a1-4d01-bdd3-327a92f2735f",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Legionary:If it is\nan order from Va-\nrus you may pass."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
+                                                    "id": "a50d15b0-ea2b-45a2-8c52-135fd921a303",
+                                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": 11,
+                                                        "y": 16
+                                                    }
+                                                },
+                                                {
+                                                    "id": "6014368f-b3c1-45b1-96de-d80a38d54e64",
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "direction": "right"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d0b51ec9-b8ef-401d-bfcb-a19afff2089f",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "L0"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "5cc1b3ad-4512-4ef1-9ec4-84900ac74d28",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "8b0a9ccd-852d-40bd-bb59-0ef4c6c13281",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "b82374b5-adb4-4143-a5ee-4b1d308e59bb",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
                             "id": "ac3d22b0-8fd0-4567-aa1b-b68db4f7e514",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "id": "df415082-4fa6-46d9-b165-1eafd10fddc8",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "f1db5ccd-96c6-41d0-a959-55f0c05985c0",
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": 11,
+                                            "y": 16
+                                        }
+                                    },
+                                    {
+                                        "id": "2ad8e4cc-b947-4ff7-b37e-d7a90afa57dd",
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "right"
+                                        }
+                                    },
+                                    {
+                                        "id": "971339bc-6a68-478e-bce8-78645ac16529",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "07b57e3e-6499-4eec-a51b-0ba05c6e2cd4",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "f0ba0848-96c2-42ee-8ef3-00df47a6abe8",
                             "command": "EVENT_END"
                         }
                     ]
@@ -22085,7 +22031,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "debug",
-                        "__comment": true
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -22093,14 +22039,16 @@
                                 "id": "096dea40-03b0-43f0-9325-b9a447eafdc2",
                                 "command": "EVENT_PLAYER_SET_SPRITE",
                                 "args": {
-                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
+                                    "__collapse": true
                                 }
                             },
                             {
                                 "id": "842d27e9-1b9e-4ccc-8ce8-956c6e4edd6b",
                                 "command": "EVENT_SET_TRUE",
                                 "args": {
-                                    "variable": "102"
+                                    "variable": "102",
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -22110,7 +22058,8 @@
                                     "customEventId": "bdbd9ef9-95b3-4136-b4b3-2403d70e9355",
                                     "__name": "switchPlayer",
                                     "$variable[0]$": "100",
-                                    "$variable[1]$": "102"
+                                    "$variable[1]$": "102",
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "script": [
@@ -22276,6 +22225,13 @@
                                     "flag6": false,
                                     "flag7": false,
                                     "flag8": false
+                                }
+                            },
+                            {
+                                "id": "b8ec0efc-ca14-48ba-ba22-59f501e8c3ca",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "8"
                                 }
                             },
                             {
@@ -24064,7 +24020,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Legionary: The new\npassphrase is alea\niacta est."
+                                                            "Legionary:The new\npassphrase is alea\niacta est."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -24129,7 +24085,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Legionary: Of\ncourse. But why\nshould I share it ",
+                                                            "Legionary:Of\ncourse.But why\nshould I share it ",
                                                             "with you?"
                                                         ],
                                                         "avatarId": "",
@@ -24173,7 +24129,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Legionary: I was\nordered to chop\nsome wood. But I",
+                                                "Legionary:I was\nordered to chop\nsome wood.But I",
                                                 "seem to have lost\nmy axe."
                                             ],
                                             "avatarId": ""
@@ -24271,7 +24227,7 @@
                                                         "command": "EVENT_TEXT",
                                                         "args": {
                                                             "text": [
-                                                                "Legionary: Ok, the\nnew passphrase is\nalea iacta est."
+                                                                "Legionary:Ok,the\nnew passphrase is\nalea iacta est."
                                                             ],
                                                             "avatarId": ""
                                                         }
@@ -25256,7 +25212,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Legionary: The new\npassphrase is\nveni, vidi, vici."
+                                                            "Legionary:The new\npassphrase is\nveni, vidi, vici."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -25322,7 +25278,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Legionary: Of\ncourse. But why\nshould I share it ",
+                                                            "Legionary:Of\ncourse.But why\nshould I share it ",
                                                             "with you?"
                                                         ],
                                                         "avatarId": "",
@@ -25366,7 +25322,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Legionary: I am on\npatrol. Leave me\nalone."
+                                                "Legionary:I am on\npatrol.Leave me a-\nlone."
                                             ],
                                             "avatarId": ""
                                         }
@@ -25463,7 +25419,7 @@
                                                         "command": "EVENT_TEXT",
                                                         "args": {
                                                             "text": [
-                                                                "Legionary: Ok, the\nnew passphrase is\nveni, vidi, vici."
+                                                                "Legionary:Ok,the\nnew passphrase is\nveni, vidi, vici."
                                                             ],
                                                             "avatarId": ""
                                                         }
@@ -25622,7 +25578,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Your quiz points\nhave been\nrestored."
+                                                "Your quiz points\nhave been re-\nstored."
                                             ],
                                             "avatarId": ""
                                         }
@@ -26067,7 +26023,7 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Ok, you will ac-\ncompany me, Ja-\nmie.Your skills ",
+                                        "Ok,you will ac-\ncompany me,Ja-\nmie.Your skills ",
                                         "might be use-\nfull.Besides I\nhave to make",
                                         "sure that you\nstick to your\nstory,Doctor."
                                     ],
@@ -26360,6 +26316,10 @@
         {
             "id": "10",
             "name": "entranceCamp"
+        },
+        {
+            "id": "97f9235c-06b3-472c-bff4-f7d6a2ae1cef__L0",
+            "name": "freePassage"
         }
     ],
     "backgrounds": [

@@ -1,21 +1,26 @@
+# Questions and answers
+This is a list of all trivia questions and its answers you have to answer playing the game. 
+
+Correct answers are written in *italic*.
+
 **Teuton**
 
 * Who played the second Doctor? 
-	* Patrick Troughton
+	* *Patrick Troughton*
 	* Matt Smith
 	* Paul McGann
 * Who created the Daleks?
 	* Rassilon
 	* The Master
-	* Davros
+	* *Davros*
 * How is the name of the Doctor's dog?
 	* Mickey
-	* K-9
+	* *K-9*
 	* Snoopy
 * What is the name of the first NuWho (reboot) episode?
 	* The Empty Child
 	* Dalek
-	* Rose
+	* *Rose*
 * Who fought against the Timelords in the Timewar?
 	* The Daleks
 	* The Cybermen
@@ -26,44 +31,44 @@
 * How many times can a Timelord regenerate?
 	* 13 times
 	* 8 times
-	* 12 times
+	* *12 times*
 * Which Baker played the 6th Doctor?
-	* Colin
+	* *Colin*
 	* Tom
 	* Bob
 * Who was a companion of the 10th Doctor?
 	* Bill
 	* Clara
-	* Martha
+	* *Martha*
 * Which planet do the Ice Warriors come from?
 	* Telos
-	* Mars
+	* *Mars*
 	* Skaro
 * How is the Doctor's ship called?
-	* TARDIS
+	* *TARDIS*
 	* STARDIS
 	* Enterprise
 
 **Legionary 1**
 
 * Which race converts human beings into cyborgs?
-	* Cybermen
+	* *Cybermen*
 	* Sontarans
 	* Weeping Angels
 * Of what type is the Doctor’s TARDIS?
 	* 42
-	* 40
+	* *40*
 	* 80
 * Through what does the TARDIS travel?
 	* Hyperspace
-	* Time Vortex
+	* *Time Vortex*
 	* Holo Deck
 * In which story did the second Doctor regenerate?
 	* The End of Time
 	* Logopolis
-	* The War Games
+	* *The War Games*
 * Who played the 11th Doctor?
-	* Matt Smith
+	* *Matt Smith*
 	* Peter Capaldi
 	* Paul McGann
 
@@ -71,29 +76,37 @@
 
 * Who is married to the Doctor?
 	* Missy
-	* River Song
+	* *River Song*
 	* The Rani
 * What is the Timelord's home planet?
-	* Gallifrey
+	* *Gallifrey*
 	* Skaro
 	* Sontar
 * What sonic device does the Doctor use?
 	* Gun
 	* Hammer
-	* Screwdriver
+	* *Screwdriver*
 * In which year did Doctor Who first air on TV?
 	* 2005
-	* 1963
+	* *1963*
 	* 1996 
 * How many hearts does a Timelord have?
 	* One
-	* Two
+	* *Two*
 	* Three
 
 **Backlog**	
 
 * Who created the Yeti?
 * Which alien race can send you back in time?
-* Barbara, the very first companion was the Doctors?
+* Who is the granddaughter of the Doctor?
 * Which metal is toxic to the Cyberman?
+* Which was the first episode in colour?
+* Who was the first showrunner?
+* Which actor was recasted as the first Doctor?
+* Who is the girl that waited?
+* Who established Torchwood?
+* What is the name of the Doctors car?
+* What instrument does the second Doctor play?
+* Who is the leader of unit?
 * 

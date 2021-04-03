@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 25,
+        "worldScrollX": 70,
+        "worldScrollY": 3495,
+        "zoom": 227.72278464585543,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -2096,7 +2096,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How is the name of\nthe Doctor's dog?"
+                            "What is the name\nof the Doctor's\ndog?"
                         ],
                         "avatarId": "",
                         "__collapse": true,
@@ -19660,7 +19660,7 @@
                                             "variable": "100",
                                             "__collapseElse": false,
                                             "__disableElse": true,
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true": [
@@ -19795,7 +19795,7 @@
                         "variable": "3",
                         "__collapseElse": false,
                         "__disableElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -28338,14 +28338,6 @@
                                 "children": {
                                     "true": [
                                         {
-                                            "id": "1c0e166d-8d89-4660-84d1-453174ca99e1",
-                                            "command": "EVENT_PLAYER_SET_SPRITE",
-                                            "args": {
-                                                "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
-                                            },
-                                            "__type": "event"
-                                        },
-                                        {
                                             "id": "f5d37965-1090-43c6-8b3d-11aa193321ac",
                                             "command": "EVENT_TEXT",
                                             "args": {
@@ -29923,14 +29915,6 @@
                                 },
                                 "children": {
                                     "true": [
-                                        {
-                                            "id": "c613bf30-aa4b-4ab4-b797-eefcb88c2937",
-                                            "command": "EVENT_PLAYER_SET_SPRITE",
-                                            "args": {
-                                                "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
-                                                "__collapse": true
-                                            }
-                                        },
                                         {
                                             "id": "dc8e6664-cefd-4646-b37b-53a5a9829132",
                                             "command": "EVENT_TEXT",
@@ -41135,8 +41119,8 @@
                     "id": "e3ae7c55-f2ab-4c08-a758-082ccfa9bdb5",
                     "command": "EVENT_PLAYER_SET_SPRITE",
                     "args": {
-                        "spriteSheetId": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
-                        "__collapse": true
+                        "spriteSheetId": "a42b3c2f-6bd0-4249-a15f-58326ffe18fc",
+                        "__collapse": false
                     }
                 },
                 {
@@ -45231,15 +45215,15 @@
                     "frame": 1
                 },
                 {
-                    "spriteSheetId": "03f0eca4-7491-4f7b-a2d4-8430432b9971",
+                    "spriteSheetId": "533f0bb8-585c-49f8-b756-d09e359c54ff",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "223adf2b-cf4c-4b15-a10c-e20196a67518",
-                    "x": 16,
+                    "x": 15,
                     "y": 11,
-                    "name": "Legionary"
+                    "name": "Varus"
                 },
                 {
                     "spriteSheetId": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -45250,10 +45234,10 @@
                     "id": "b1e6ea89-edd6-429e-9de0-70367e0db775",
                     "x": 17,
                     "y": 9,
-                    "name": "LegionaryHealth1"
+                    "name": "VarusHealth1"
                 },
                 {
-                    "spriteSheetId": "2c1ef867-a79b-4146-b726-411e51feaa88",
+                    "spriteSheetId": "60f47f2b-ba31-4064-abba-5e0a5f05c5dc",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -45261,28 +45245,39 @@
                     "id": "baa791d5-d1b0-4c26-b688-a561064ec7bd",
                     "x": 15,
                     "y": 9,
-                    "name": "LegionaryHealth2"
+                    "name": "VarusHealth2"
                 },
                 {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
+                    "spriteSheetId": "d9aefc13-0578-44bd-b3d1-8b2ae9f0a986",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "bae36188-af7d-47eb-bd5f-b55785e29699",
-                    "x": 15,
+                    "x": 14,
                     "y": 7
                 },
                 {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
+                    "spriteSheetId": "d9aefc13-0578-44bd-b3d1-8b2ae9f0a986",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "dd3f0ef4-bb44-4313-82fb-655fcc5dc367",
-                    "x": 17,
+                    "x": 16,
                     "y": 7,
                     "frame": 1
+                },
+                {
+                    "spriteSheetId": "2c1ef867-a79b-4146-b726-411e51feaa88",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "0e3d04ba-1202-448d-bcba-70eb258bbecd",
+                    "x": 13,
+                    "y": 9,
+                    "name": "VarusHealth3"
                 }
             ],
             "triggers": [],
@@ -45291,8 +45286,8 @@
                     "id": "aac2ad0b-00b4-4b3d-9035-3f14ae5b2015",
                     "command": "EVENT_PLAYER_SET_SPRITE",
                     "args": {
-                        "spriteSheetId": "a6ad01de-f9ad-471b-b79f-444b8ff25c49",
-                        "__collapse": true
+                        "spriteSheetId": "e28f25dc-e226-4cd8-a0c6-f57bba81cfe5",
+                        "__collapse": false
                     }
                 },
                 {
@@ -45338,8 +45333,8 @@
                     "command": "EVENT_SET_VALUE",
                     "args": {
                         "variable": "L2",
-                        "value": 4,
-                        "__collapse": true,
+                        "value": 6,
+                        "__collapse": false,
                         "__label": "Set Enemy Health"
                     }
                 },
@@ -45436,7 +45431,8 @@
                                     "$actor[0]$": "223adf2b-cf4c-4b15-a10c-e20196a67518",
                                     "$actor[1]$": "b1e6ea89-edd6-429e-9de0-70367e0db775",
                                     "$actor[2]$": "baa791d5-d1b0-4c26-b688-a561064ec7bd",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "$actor[3]$": "0e3d04ba-1202-448d-bcba-70eb258bbecd"
                                 },
                                 "children": {
                                     "script": [
@@ -46022,7 +46018,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -46223,7 +46219,8 @@
                                     "$actor[0]$": "223adf2b-cf4c-4b15-a10c-e20196a67518",
                                     "$actor[1]$": "b1e6ea89-edd6-429e-9de0-70367e0db775",
                                     "$actor[2]$": "baa791d5-d1b0-4c26-b688-a561064ec7bd",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "$actor[3]$": "0e3d04ba-1202-448d-bcba-70eb258bbecd"
                                 },
                                 "children": {
                                     "script": [
@@ -46810,7 +46807,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -47010,7 +47007,8 @@
                                     "$actor[0]$": "223adf2b-cf4c-4b15-a10c-e20196a67518",
                                     "$actor[1]$": "b1e6ea89-edd6-429e-9de0-70367e0db775",
                                     "$actor[2]$": "baa791d5-d1b0-4c26-b688-a561064ec7bd",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "$actor[3]$": "0e3d04ba-1202-448d-bcba-70eb258bbecd"
                                 },
                                 "children": {
                                     "script": [
@@ -47797,7 +47795,8 @@
                                     "$actor[0]$": "223adf2b-cf4c-4b15-a10c-e20196a67518",
                                     "$actor[1]$": "b1e6ea89-edd6-429e-9de0-70367e0db775",
                                     "$actor[2]$": "baa791d5-d1b0-4c26-b688-a561064ec7bd",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "$actor[3]$": "0e3d04ba-1202-448d-bcba-70eb258bbecd"
                                 },
                                 "children": {
                                     "script": [
@@ -48543,7 +48542,7 @@
                         "operator": "==",
                         "comparator": 2,
                         "__collapseElse": false,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -48584,7 +48583,8 @@
                                     "$actor[0]$": "223adf2b-cf4c-4b15-a10c-e20196a67518",
                                     "$actor[1]$": "b1e6ea89-edd6-429e-9de0-70367e0db775",
                                     "$actor[2]$": "baa791d5-d1b0-4c26-b688-a561064ec7bd",
-                                    "__collapse": false
+                                    "__collapse": false,
+                                    "$actor[3]$": "0e3d04ba-1202-448d-bcba-70eb258bbecd"
                                 },
                                 "children": {
                                     "script": [
@@ -49592,6 +49592,10 @@
         {
             "id": "16",
             "name": "beatenVarus"
+        },
+        {
+            "id": "eacb09a6-7ebc-40ab-b835-2095e613bf84__L2",
+            "name": "VarusHealth"
         }
     ],
     "backgrounds": [
@@ -50066,6 +50070,14 @@
             "_v": 1615919660435
         },
         {
+            "id": "a42b3c2f-6bd0-4249-a15f-58326ffe18fc",
+            "name": "quiz/chars/jamie",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "quiz/chars/jamie.png",
+            "_v": 1617435882152
+        },
+        {
             "id": "03f0eca4-7491-4f7b-a2d4-8430432b9971",
             "name": "quiz/chars/legionary",
             "numFrames": 2,
@@ -50080,6 +50092,14 @@
             "type": "animated",
             "filename": "quiz/chars/teuton.png",
             "_v": 1615919660435
+        },
+        {
+            "id": "533f0bb8-585c-49f8-b756-d09e359c54ff",
+            "name": "quiz/chars/varus",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "quiz/chars/varus.png",
+            "_v": 1617436486674
         },
         {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
@@ -50128,6 +50148,14 @@
             "type": "animated",
             "filename": "quiz/names/teuton.png",
             "_v": 1615919660435
+        },
+        {
+            "id": "d9aefc13-0578-44bd-b3d1-8b2ae9f0a986",
+            "name": "quiz/names/varus",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "quiz/names/varus.png",
+            "_v": 1617434875483
         },
         {
             "id": "b2021875-eab4-4666-8cb9-4db717ee6d14",

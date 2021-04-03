@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1872,
+        "worldScrollX": 0,
         "worldScrollY": 0,
-        "zoom": 131.01734229177237,
+        "zoom": 25,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -4337,7 +4337,7 @@
         },
         {
             "name": "Game Over",
-            "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
+            "backgroundId": "58c593be-5888-4687-bbfb-5af91f894d31",
             "width": 20,
             "height": 18,
             "collisions": [],
@@ -40950,7 +40950,8 @@
                                 "id": "eb1beeb8-1739-4ff4-93e2-f85612c23b62",
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5
+                                    "time": 0.5,
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -40959,6 +40960,17 @@
                                 "args": {
                                     "time": 0.5,
                                     "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "1753659b-e02b-476c-9fe7-519704f8470c",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "8a1af259-4a84-446e-aa8f-caf38c23a189",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
                                 }
                             },
                             {
@@ -49284,6 +49296,77 @@
                 }
             ],
             "__type": "scene"
+        },
+        {
+            "name": "The End",
+            "backgroundId": "cb00067b-6fd5-4309-96f9-cb9ce246e60b",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "8a1af259-4a84-446e-aa8f-caf38c23a189",
+            "x": 300.9261106033962,
+            "y": 1427.6413674121475,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "45a14764-36cb-4422-b98d-573e1cae225c",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "b1ce9a37-7cda-466a-993f-c0de9ac22055",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "1.2.0",
@@ -49553,6 +49636,16 @@
             "_v": 1615919660427
         },
         {
+            "id": "cb00067b-6fd5-4309-96f9-cb9ce246e60b",
+            "name": "ending",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "ending.png",
+            "_v": 1617433765480
+        },
+        {
             "id": "873f182b-f185-4f93-952d-c46059a5d677",
             "name": "face",
             "width": 20,
@@ -49561,6 +49654,16 @@
             "imageHeight": 144,
             "filename": "face.png",
             "_v": 1615919660428
+        },
+        {
+            "id": "58c593be-5888-4687-bbfb-5af91f894d31",
+            "name": "gameover",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "gameover.png",
+            "_v": 1617433661257
         },
         {
             "id": "e9e6cd40-dc72-4b7b-9bee-64385f9e506b",

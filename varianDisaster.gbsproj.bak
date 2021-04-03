@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
+        "worldScrollX": 1872,
         "worldScrollY": 0,
-        "zoom": 51.81534802168608,
+        "zoom": 131.01734229177237,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -127,17 +127,6 @@
                 }
             ],
             "script": [
-                {
-                    "id": "f6a9a211-08d5-4e9e-bf1a-a18e3c2b51aa",
-                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
-                    "args": {
-                        "speedIn": "0",
-                        "speedOut": "0",
-                        "speed": "3",
-                        "__comment": true,
-                        "__collapse": false
-                    }
-                },
                 {
                     "id": "9fae43be-3316-4eef-a969-ba9fcbd2eb02",
                     "command": "EVENT_IF_FALSE",

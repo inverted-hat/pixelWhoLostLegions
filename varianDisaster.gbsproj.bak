@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3412,
-        "worldScrollY": 2820,
+        "worldScrollX": 1261,
+        "worldScrollY": 2330,
         "zoom": 215.1397398263216,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -33986,36 +33986,25 @@
                     "name": "LegionaryHealth2"
                 },
                 {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
+                    "spriteSheetId": "b8ecf7cd-b152-4367-bae0-7299755f68ca",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "6cb50f9d-b377-4250-84f4-f07a1f3c373a",
-                    "x": 14,
+                    "x": 15,
                     "y": 7
                 },
                 {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
+                    "spriteSheetId": "b8ecf7cd-b152-4367-bae0-7299755f68ca",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "63aad742-d6df-4aeb-ad2c-63f2d0d281c4",
-                    "x": 16,
+                    "x": 17,
                     "y": 7,
                     "frame": 1
-                },
-                {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "id": "2808f4af-eb02-4f7b-9dd7-5f1c43fbed35",
-                    "x": 18,
-                    "y": 7,
-                    "frame": 2
                 }
             ],
             "triggers": [],
@@ -41213,7 +41202,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A legionary chal-\nlenges you to a\ntrivia quiz!"
+                            "The teuton chief\nchallenges you \nto a trivia quiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -41225,7 +41214,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Who is married to\nthe Doctor?"
+                            "Who was no compan-\nion of the second\nDoctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 1",
@@ -41238,9 +41227,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Missy",
-                        "option2": "River Song",
-                        "option3": "The Rani",
+                        "option1": "Zoe",
+                        "option2": "Sarah Jane",
+                        "option3": "Victoria",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -41249,7 +41238,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 1",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -41887,7 +41876,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -42011,7 +42000,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What is the Time-\nlord's home plan-\net?"
+                            "Who is the leader\nof UNIT?"
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
@@ -42024,9 +42013,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gallifrey",
-                        "option2": "Skaro",
-                        "option3": "Sontar",
+                        "option1": "Jack Harkness",
+                        "option2": "Erimem",
+                        "option3": "The Brigadier",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -42045,7 +42034,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 1,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -42675,7 +42664,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -42798,7 +42787,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What sonic device\ndoes the Doctor\nuse?"
+                            "What metal is tox-\nic to the Cyber-\nmen?"
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
@@ -42811,9 +42800,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gun",
-                        "option2": "Hammer",
-                        "option3": "Screwdriver",
+                        "option1": "Gold",
+                        "option2": "Silver",
+                        "option3": "Copper",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -42832,7 +42821,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 3,
+                        "comparator": 1,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -42876,7 +42865,7 @@
                                     "$actor[0]$": "37999b13-5773-41c4-9e74-0ea03661d0f1",
                                     "$actor[1]$": "a3d6f631-fa7e-411c-ad82-80de1ea19263",
                                     "$actor[2]$": "c92b8ad0-d1cc-4bfe-bc8e-307957317cf8",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "script": [
@@ -43463,7 +43452,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -43586,7 +43575,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "In which year did\nDoctor Who first\nair on television?"
+                            "Who is the grand-\ndaughter of the\nDoctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 4",
@@ -43599,9 +43588,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "2005",
-                        "option2": "1963",
-                        "option3": "1996",
+                        "option1": "Barbara",
+                        "option2": "Leela",
+                        "option3": "Susan",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -43620,7 +43609,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -44250,7 +44239,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -44373,7 +44362,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How many hearts\ndoes a Timelord\nhave?"
+                            "Who played the\nthird Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 5",
@@ -44386,9 +44375,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "One",
-                        "option2": "Two",
-                        "option3": "Three",
+                        "option1": "William Hartnell",
+                        "option2": "Peter Davison",
+                        "option3": "Jon Pertwee",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -44407,7 +44396,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },

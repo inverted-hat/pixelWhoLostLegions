@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2710,
-        "worldScrollY": 2672,
+        "worldScrollX": 1437,
+        "worldScrollY": 2786,
         "zoom": 215.1397398263216,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -38924,7 +38924,7 @@
                                 "command": "EVENT_SET_VALUE",
                                 "args": {
                                     "variable": "0",
-                                    "value": 1
+                                    "value": 2
                                 }
                             },
                             {
@@ -39181,7 +39181,7 @@
                                     "actorId": "player",
                                     "x": 9,
                                     "y": 11,
-                                    "__collapse": false
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -39198,7 +39198,8 @@
                                 "args": {
                                     "actorId": "f09aa810-ef14-4089-aa3c-1c67acf8f841",
                                     "x": 10,
-                                    "y": 13
+                                    "y": 13,
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -39266,12 +39267,31 @@
                                 }
                             },
                             {
+                                "id": "ffc03524-2d92-4df1-b55b-185f36033563",
+                                "command": "EVENT_ACTOR_MOVE_TO",
+                                "args": {
+                                    "actorId": "player",
+                                    "x": 8,
+                                    "y": 11,
+                                    "__collapse": true
+                                }
+                            },
+                            {
                                 "id": "10aedd73-f8c6-4ccc-bbb5-77d849016553",
                                 "command": "EVENT_ACTOR_MOVE_TO",
                                 "args": {
                                     "actorId": "f09aa810-ef14-4089-aa3c-1c67acf8f841",
                                     "x": 10,
                                     "y": 11,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "4057ac21-30c0-4254-ab3f-c4543d1294cb",
+                                "command": "EVENT_ACTOR_SET_DIRECTION",
+                                "args": {
+                                    "actorId": "player",
+                                    "direction": "up",
                                     "__collapse": true
                                 }
                             },
@@ -39354,6 +39374,42 @@
                         ],
                         "false": [
                             {
+                                "id": "86c12649-0e84-4bf2-9f76-fb4aea8c50d9",
+                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                "args": {
+                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "9cf7cca0-5616-48f7-b77d-0b1400c61381",
+                                "command": "EVENT_ACTOR_SET_POSITION",
+                                "args": {
+                                    "actorId": "player",
+                                    "x": 8,
+                                    "y": 11,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "52951217-fc1e-4f40-bde2-0e1c6684be79",
+                                "command": "EVENT_ACTOR_SHOW",
+                                "args": {
+                                    "actorId": "f09aa810-ef14-4089-aa3c-1c67acf8f841",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "dad0adc1-0353-4431-8a92-f556d6c3da4c",
+                                "command": "EVENT_ACTOR_SET_POSITION",
+                                "args": {
+                                    "actorId": "f09aa810-ef14-4089-aa3c-1c67acf8f841",
+                                    "x": 10,
+                                    "y": 11,
+                                    "__collapse": true
+                                }
+                            },
+                            {
                                 "id": "79bbc028-232f-4c7a-8ad3-524e23362dc4",
                                 "command": "EVENT_TEXT",
                                 "args": {
@@ -39361,7 +39417,8 @@
                                         "Chief:You are\nquite persuading,\nJamie.Let's slay",
                                         "those roman bas-\ntards!"
                                     ],
-                                    "avatarId": ""
+                                    "avatarId": "",
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -39372,7 +39429,8 @@
                                     "x": 11,
                                     "y": 5,
                                     "direction": "down",
-                                    "fadeSpeed": "2"
+                                    "fadeSpeed": "2",
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -39510,7 +39568,8 @@
                         "text": [
                             "There is the\nDoctor!We have\nto rescue him!"
                         ],
-                        "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04"
+                        "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                        "__collapse": true
                     }
                 },
                 {
@@ -39522,7 +39581,7 @@
                             "guard in the\ndark."
                         ],
                         "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -39530,7 +39589,7 @@
                     "command": "EVENT_SET_TIMER_SCRIPT",
                     "args": {
                         "duration": 0.25,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -40143,16 +40202,6 @@
                 }
             ],
             "script": [
-                {
-                    "id": "58832d18-815c-4a83-9974-8c83a134ff06",
-                    "command": "EVENT_TEXT",
-                    "args": {
-                        "text": [
-                            "Which Doctor wit-\nnessed the crea-\ntion of the Daleks"
-                        ],
-                        "avatarId": ""
-                    }
-                },
                 {
                     "id": "7eafc165-4ed1-4be7-9595-3a324324dd7c",
                     "command": "EVENT_END"
@@ -41202,7 +41251,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A legionary chal-\nlenges you to a\ntrivia quiz!"
+                            "The teuton chief\nchallenges you \nto a trivia quiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -41214,7 +41263,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Who is married to\nthe Doctor?"
+                            "Who was no compan-\nion of the second\nDoctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 1",
@@ -41227,9 +41276,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Missy",
-                        "option2": "River Song",
-                        "option3": "The Rani",
+                        "option1": "Zoe",
+                        "option2": "Sarah Jane",
+                        "option3": "Victoria",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -41238,7 +41287,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 1",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -41876,7 +41925,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -42000,7 +42049,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What is the Time-\nlord's home plan-\net?"
+                            "Who is the leader\nof UNIT?"
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
@@ -42013,9 +42062,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gallifrey",
-                        "option2": "Skaro",
-                        "option3": "Sontar",
+                        "option1": "Jack Harkness",
+                        "option2": "Erimem",
+                        "option3": "The Brigadier",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -42034,7 +42083,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 1,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -42664,7 +42713,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -42787,7 +42836,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What sonic device\ndoes the Doctor\nuse?"
+                            "What metal is tox-\nic to the Cyber-\nmen?"
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
@@ -42800,9 +42849,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gun",
-                        "option2": "Hammer",
-                        "option3": "Screwdriver",
+                        "option1": "Gold",
+                        "option2": "Silver",
+                        "option3": "Copper",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -42821,7 +42870,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 3,
+                        "comparator": 1,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -42865,7 +42914,7 @@
                                     "$actor[0]$": "37999b13-5773-41c4-9e74-0ea03661d0f1",
                                     "$actor[1]$": "a3d6f631-fa7e-411c-ad82-80de1ea19263",
                                     "$actor[2]$": "c92b8ad0-d1cc-4bfe-bc8e-307957317cf8",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "script": [
@@ -43452,7 +43501,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -43575,7 +43624,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "In which year did\nDoctor Who first\nair on television?"
+                            "Who is the grand-\ndaughter of the\nDoctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 4",
@@ -43588,9 +43637,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "2005",
-                        "option2": "1963",
-                        "option3": "1996",
+                        "option1": "Barbara",
+                        "option2": "Leela",
+                        "option3": "Susan",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -43609,7 +43658,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -44239,7 +44288,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "15",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -44362,7 +44411,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How many hearts\ndoes a Timelord\nhave?"
+                            "Who played the\nthird Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 5",
@@ -44375,9 +44424,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "One",
-                        "option2": "Two",
-                        "option3": "Three",
+                        "option1": "William Hartnell",
+                        "option2": "Peter Davison",
+                        "option3": "Jon Pertwee",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -44396,7 +44445,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },

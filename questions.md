@@ -159,7 +159,7 @@ Correct answers are written in *italic*.
 	* Barbara
 	* Leela 
 	* *Susan*
-* Who played the 3rd Doctor?
+* Who played the third Doctor?
 	* William Hartnell
 	* Peter Davison
 	* *Jon Pertwee*

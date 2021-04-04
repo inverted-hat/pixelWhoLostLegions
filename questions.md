@@ -1,5 +1,5 @@
 # Questions and answers
-This is a list of all trivia questions and its answers you have to answer playing the game. 
+This is a list of all trivia questions you have to answer playing the game. 
 
 Correct answers are written in *italic*.
 
@@ -13,11 +13,11 @@ Correct answers are written in *italic*.
 	* Rassilon
 	* The Master
 	* *Davros*
-* How is the name of the Doctor's dog?
+* What is the name of the Doctor's dog?
 	* Mickey
 	* *K-9*
 	* Snoopy
-* What is the name of the first NuWho (reboot) episode?
+* What is the first episode of the 2005 reboot?
 	* The Empty Child
 	* Dalek
 	* *Rose*
@@ -32,11 +32,11 @@ Correct answers are written in *italic*.
 	* 13 times
 	* 8 times
 	* *12 times*
-* Which Baker played the 6th Doctor?
+* Which Baker played the sixth Doctor?
 	* *Colin*
 	* Tom
 	* Bob
-* Who was a companion of the 10th Doctor?
+* Who is a companion of the tenth Doctor?
 	* Bill
 	* Clara
 	* *Martha*
@@ -67,7 +67,7 @@ Correct answers are written in *italic*.
 	* The End of Time
 	* Logopolis
 	* *The War Games*
-* Who played the 11th Doctor?
+* Who played the eleventh Doctor?
 	* *Matt Smith*
 	* Peter Capaldi
 	* Paul McGann
@@ -90,23 +90,107 @@ Correct answers are written in *italic*.
 	* 2005
 	* *1963*
 	* 1996 
+* Who played the tenth Doctor?
+	* Peter Capaldi
+	* *David Tennant*
+	* Peter Davison
+
+**Scout 1**
+
 * How many hearts does a Timelord have?
 	* One
 	* *Two*
 	* Three
+* What instrument does the second Doctor play?
+	* *Recorder*
+	* Guitar
+	* Spoons 
+* Which alien race are clones?
+	* *Sontarans*
+	* Zygons
+	* Kaleds 
+* Who is the girl that waited?
+	* Clara Oswald
+	* Rose Tyler
+	* *Amy Pond* 
+* Who played the seventh Doctor?
+	* Jon Pertwee
+	* William Hartnell
+	* *Sylvester McCoy*
 
-**Backlog**	
+**Scout 2**
+
+* Which episode is set in Paris?
+	* Human Nature
+	* *City of Death*
+	* The Web of Fear 
+* Before travelling with the Doctor Jamie was ...
+	* *a piper*
+	* a boxer
+	* a merchant 
+* Which alien race can send you back in time?
+	* Zarbi
+	* Judoon
+	* *Weeping Angels*
+* What are the Doctor's favorite sweets?
+	* *Jelly babies*
+	* Cadbury
+	* Lollipops
+* Who played the fifth Doctor?
+	* Paul McGann
+	* *Peter Davison*
+	* Colin Baker
+
+**Chief**
+
+* Who was no companion of the 2nd Doctor?
+	* Zoe
+	* *Sarah Jane*
+	* Victoria
+* Who is the leader of UNIT?
+	* Jack Harkness
+	* Erimem
+	* *The Brigadier*
+* What metal is toxic to the Cyberman?
+	* *Gold*
+	* Silver
+	* Copper 
+* Who is the granddaughter of the Doctor?
+	* Barbara
+	* Leela 
+	* *Susan*
+* Who played the 3rd Doctor?
+	* William Hartnell
+	* Peter Davison
+	* *Jon Pertwee*
+
+**Varus**
 
 * Who created the Yeti?
-* Which alien race can send you back in time?
-* Who is the granddaughter of the Doctor?
-* Which metal is toxic to the Cyberman?
-* Which was the first episode in colour?
-* Who was the first showrunner?
-* Which actor was recasted as the first Doctor?
-* Who is the girl that waited?
-* Who established Torchwood?
-* What is the name of the Doctors car?
-* What instrument does the second Doctor play?
-* Who is the leader of unit?
-* 
+	* *Great Intelligence*
+	* Davros
+	* Missy 
+* Who was the first producer?
+	* Steven Moffat
+	* Julie Gardner
+	* *Verity Lambert* 
+* What is the name of the Doctor's car?
+	* CARDIS
+	* *Bessie*
+	* CAR-9 
+* Which alien race are shape shifters?
+	* *Zygons*
+	* Silurians
+	* Autons
+* Which Doctor encounters the Loch Ness monster?
+	* The First
+	* The Eleventh
+	* *The Fourth* 
+* Who brought Doctor Who back in 2005?
+	* *Russel T Davis*
+	* Steven Moffat
+	* Chris Chibnall 
+* Who played the 8th Doctor?
+	* Peter Davison
+	* *Paul McGann*
+	* Jodie Whittaker

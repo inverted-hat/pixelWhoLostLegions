@@ -2,15 +2,15 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 366,
-        "worldScrollY": 1744,
-        "zoom": 161.62921226024628,
+        "worldScrollX": 3412,
+        "worldScrollY": 2820,
+        "zoom": 215.1397398263216,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 11,
-        "startY": 7,
+        "startX": 20,
+        "startY": 13,
         "startDirection": "left",
         "startSceneId": "376f80e7-34b1-4352-b529-896b44b6e12a",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
@@ -565,7 +565,7 @@
             ]
         },
         {
-            "name": "Quiz Teuton 1",
+            "name": "Quiz Teuton",
             "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
             "width": 20,
             "height": 18,
@@ -2842,7 +2842,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What's the name of\nthe first episode\nfrom the reboot?"
+                            "What is the first\nepisode of the \n2005 reboot?"
                         ],
                         "avatarId": "",
                         "__collapse": true,
@@ -3591,7 +3591,7 @@
                             "Who fought against\nthe Timelords in\nthe Timewar?"
                         ],
                         "avatarId": "",
-                        "__collapse": true,
+                        "__collapse": false,
                         "__label": "Question 5"
                     }
                 },
@@ -5350,7 +5350,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Which Baker played\nthe 6th Doctor?"
+                            "Which Baker played\nthe sixth Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
@@ -7583,7 +7583,7 @@
                         ],
                         "avatarId": "",
                         "__label": "Question5",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -11477,7 +11477,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Who played the\n11th Doctor?"
+                            "Who played the\neleventh Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 5",
@@ -13023,7 +13023,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "7",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -13146,7 +13146,7 @@
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -13166,7 +13166,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 2",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "__type": "event"
                 },
@@ -13178,7 +13178,7 @@
                         "operator": "==",
                         "comparator": 1,
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -13888,7 +13888,7 @@
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -13908,7 +13908,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 3",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "__type": "event"
                 },
@@ -13920,7 +13920,7 @@
                         "operator": "==",
                         "comparator": 3,
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -14630,7 +14630,7 @@
                         ],
                         "avatarId": "",
                         "__label": "Question 4",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -14650,7 +14650,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 4",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "__type": "event"
                 },
@@ -14662,7 +14662,7 @@
                         "operator": "==",
                         "comparator": 2,
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -15368,11 +15368,11 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How many hearts\ndoes a Timelord\nhave?"
+                            "Who played the\ntenth Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 5",
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -15381,9 +15381,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "One",
-                        "option2": "Two",
-                        "option3": "Three",
+                        "option1": "Peter Capaldi",
+                        "option2": "David Tennant",
+                        "option3": "Peter Davison",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -15392,7 +15392,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 5",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "__type": "event"
                 },
@@ -15404,7 +15404,7 @@
                         "operator": "==",
                         "comparator": 2,
                         "__collapseElse": false,
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -15992,7 +15992,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "7",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -19805,7 +19805,8 @@
                                 "args": {
                                     "variable": "L0",
                                     "__collapseElse": false,
-                                    "__disableElse": true
+                                    "__disableElse": true,
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -26457,223 +26458,6 @@
                     }
                 },
                 {
-                    "id": "70823ba6-d1da-4b48-a86e-d23ddebc3dc8",
-                    "command": "EVENT_GROUP",
-                    "args": {
-                        "__label": "debug",
-                        "__comment": true,
-                        "__collapse": true
-                    },
-                    "children": {
-                        "true": [
-                            {
-                                "id": "ec6b6271-e12c-4935-b050-a2ac235b7bbc",
-                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                "args": {
-                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "e7b4a85e-34c8-4f3c-9752-8e735481d239",
-                                "command": "EVENT_SET_TRUE",
-                                "args": {
-                                    "variable": "102",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "ec83a0c1-1020-4561-a60d-1dc2489d1eaa",
-                                "command": "EVENT_CALL_CUSTOM_EVENT",
-                                "args": {
-                                    "customEventId": "bdbd9ef9-95b3-4136-b4b3-2403d70e9355",
-                                    "__name": "switchPlayer",
-                                    "$variable[0]$": "100",
-                                    "$variable[1]$": "102",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "script": [
-                                        {
-                                            "id": "bc2522df-23a3-42f0-baf9-4201d3040106",
-                                            "command": "EVENT_SET_INPUT_SCRIPT",
-                                            "args": {
-                                                "input": "b"
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "id": "0f9be093-ba17-4fb4-a77e-e9474a394d81",
-                                                        "command": "EVENT_IF_TRUE",
-                                                        "args": {
-                                                            "variable": "1",
-                                                            "__collapseElse": false,
-                                                            "__label": "playerIsArminius == true"
-                                                        },
-                                                        "children": {
-                                                            "true": [
-                                                                {
-                                                                    "id": "2d4ef588-0c6b-43bd-9368-b53fbea0bfd3",
-                                                                    "command": "EVENT_IF_TRUE",
-                                                                    "args": {
-                                                                        "variable": "0",
-                                                                        "__collapseElse": false,
-                                                                        "__collapse": false,
-                                                                        "__label": "playerIsJamie"
-                                                                    },
-                                                                    "children": {
-                                                                        "true": [
-                                                                            {
-                                                                                "id": "7fe0f87d-e982-4512-8227-b53279d0158f",
-                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                                "args": {
-                                                                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "1ed25777-b837-484d-911b-90542a4f7a43",
-                                                                                "command": "EVENT_SET_FALSE",
-                                                                                "args": {
-                                                                                    "variable": "0"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "37f7aef9-daa3-4d74-b55c-d170c602e5f0",
-                                                                                "command": "EVENT_END"
-                                                                            }
-                                                                        ],
-                                                                        "false": [
-                                                                            {
-                                                                                "id": "091af14d-c8ea-43c1-b401-c672b111bbc5",
-                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                                "args": {
-                                                                                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "0cbbe4cd-c0f4-4f41-ab1e-32f42b146dfb",
-                                                                                "command": "EVENT_SET_TRUE",
-                                                                                "args": {
-                                                                                    "variable": "0"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "f50bbcb9-579f-48f5-aae5-18c3face8545",
-                                                                                "command": "EVENT_END"
-                                                                            }
-                                                                        ]
-                                                                    },
-                                                                    "__type": "event"
-                                                                },
-                                                                {
-                                                                    "id": "48cf37f6-8243-4908-b687-43fa06eb0515",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ],
-                                                            "false": [
-                                                                {
-                                                                    "id": "be5e67f6-a7c7-44c3-ba06-ca895d42fc14",
-                                                                    "command": "EVENT_IF_TRUE",
-                                                                    "args": {
-                                                                        "variable": "0",
-                                                                        "__collapseElse": false,
-                                                                        "__collapse": false
-                                                                    },
-                                                                    "children": {
-                                                                        "true": [
-                                                                            {
-                                                                                "id": "c74c4ec3-06b1-434e-aea1-d1368867e900",
-                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                                "args": {
-                                                                                    "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "73caad37-899b-47fb-a974-220db2aa9d58",
-                                                                                "command": "EVENT_SET_FALSE",
-                                                                                "args": {
-                                                                                    "variable": "0"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "28d6c262-f843-4580-b6b8-cc493c081646",
-                                                                                "command": "EVENT_END"
-                                                                            }
-                                                                        ],
-                                                                        "false": [
-                                                                            {
-                                                                                "id": "b8940ac0-a6bc-4381-9c48-d3493ccb9ec4",
-                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
-                                                                                "args": {
-                                                                                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "d436fb87-bdc9-40dd-9929-bbff995c4ce9",
-                                                                                "command": "EVENT_SET_TRUE",
-                                                                                "args": {
-                                                                                    "variable": "0"
-                                                                                }
-                                                                            },
-                                                                            {
-                                                                                "id": "2752919c-d085-475d-8e9a-7ce9d768f402",
-                                                                                "command": "EVENT_END"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "id": "460d6052-6aa4-404a-9a89-43327c4078a6",
-                                                                    "command": "EVENT_END"
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "id": "7fa9ab9c-268a-4e8e-bb2c-8200c0222e77",
-                                                        "command": "EVENT_END"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "id": "2930f54a-dca7-4579-91be-076ec481e8d6",
-                                            "command": "EVENT_END"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "id": "a8633ae4-ed8b-4ae2-beeb-bb91705b524f",
-                                "command": "EVENT_ADD_FLAGS",
-                                "args": {
-                                    "variable": "101",
-                                    "flag1": true,
-                                    "flag2": false,
-                                    "flag3": false,
-                                    "flag4": false,
-                                    "flag5": false,
-                                    "flag6": false,
-                                    "flag7": false,
-                                    "flag8": false
-                                }
-                            },
-                            {
-                                "id": "dd210156-221d-4fbe-ab77-67dfa397009d",
-                                "command": "EVENT_SET_TRUE",
-                                "args": {
-                                    "variable": "8"
-                                }
-                            },
-                            {
-                                "id": "058722b3-3253-41e6-beee-f751b3412067",
-                                "command": "EVENT_END"
-                            }
-                        ]
-                    },
-                    "__type": "event"
-                },
-                {
                     "id": "30f2e9f9-647f-4fef-9565-352c29d622ec",
                     "command": "EVENT_END"
                 }
@@ -28310,7 +28094,8 @@
                     "args": {
                         "variable": "12",
                         "flag": "0",
-                        "__collapseElse": false
+                        "__collapseElse": false,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -28338,6 +28123,13 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "id": "71eb76f1-5e4f-497f-9036-e35e993f5257",
+                                            "command": "EVENT_PLAYER_SET_SPRITE",
+                                            "args": {
+                                                "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                                            }
+                                        },
+                                        {
                                             "id": "f5d37965-1090-43c6-8b3d-11aa193321ac",
                                             "command": "EVENT_TEXT",
                                             "args": {
@@ -28355,7 +28147,8 @@
                                                 "text": [
                                                     "Scout:Ok, ok ... I\nretreat."
                                                 ],
-                                                "avatarId": ""
+                                                "avatarId": "",
+                                                "__collapse": true
                                             }
                                         },
                                         {
@@ -28364,14 +28157,16 @@
                                             "args": {
                                                 "actorId": "40e8c485-8be3-46d1-b2ca-7617e517368e",
                                                 "x": 9,
-                                                "y": 0
+                                                "y": 0,
+                                                "__collapse": true
                                             }
                                         },
                                         {
                                             "id": "694118d0-f819-4da4-843d-f48fc75cfa9e",
                                             "command": "EVENT_ACTOR_HIDE",
                                             "args": {
-                                                "actorId": "40e8c485-8be3-46d1-b2ca-7617e517368e"
+                                                "actorId": "40e8c485-8be3-46d1-b2ca-7617e517368e",
+                                                "__collapse": true
                                             }
                                         },
                                         {
@@ -28386,7 +28181,8 @@
                                                 "flag5": false,
                                                 "flag6": false,
                                                 "flag7": false,
-                                                "flag8": false
+                                                "flag8": false,
+                                                "__collapse": true
                                             }
                                         },
                                         {
@@ -29888,7 +29684,8 @@
                     "args": {
                         "variable": "12",
                         "flag": "1",
-                        "__collapseElse": false
+                        "__collapseElse": false,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -29915,6 +29712,13 @@
                                 },
                                 "children": {
                                     "true": [
+                                        {
+                                            "id": "4cc085eb-a3c3-4680-8d51-582b20562c07",
+                                            "command": "EVENT_PLAYER_SET_SPRITE",
+                                            "args": {
+                                                "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                                            }
+                                        },
                                         {
                                             "id": "dc8e6664-cefd-4646-b37b-53a5a9829132",
                                             "command": "EVENT_TEXT",
@@ -29998,7 +29802,7 @@
             ]
         },
         {
-            "name": "Quiz Legionary 3",
+            "name": "Quiz Scout 1",
             "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
             "width": 20,
             "height": 18,
@@ -30073,36 +29877,25 @@
                     "name": "LegionaryHealth2"
                 },
                 {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
+                    "spriteSheetId": "b8ecf7cd-b152-4367-bae0-7299755f68ca",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "30961629-2db1-4655-a9c9-7301d3901174",
-                    "x": 14,
+                    "x": 15,
                     "y": 7
                 },
                 {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
+                    "spriteSheetId": "b8ecf7cd-b152-4367-bae0-7299755f68ca",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "05d5666f-3fe6-43d8-99eb-54d9f513575b",
-                    "x": 16,
+                    "x": 17,
                     "y": 7,
                     "frame": 1
-                },
-                {
-                    "spriteSheetId": "33551721-0f85-4943-bb6e-a3ac64ca2f5c",
-                    "movementType": "static",
-                    "direction": "down",
-                    "moveSpeed": "1",
-                    "animSpeed": "3",
-                    "id": "e0f8c135-4587-4c0b-b916-1f391bc97cd2",
-                    "x": 18,
-                    "y": 7,
-                    "frame": 2
                 }
             ],
             "triggers": [],
@@ -30168,7 +29961,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A legionary chal-\nlenges you to a\ntrivia quiz!"
+                            "A scout challenges\nyou to a trivia\nquiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -30180,7 +29973,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Who is married to\nthe Doctor?"
+                            "How many hearts\ndoes a Timelord\nhave?"
                         ],
                         "avatarId": "",
                         "__label": "Question 1",
@@ -30193,9 +29986,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Missy",
-                        "option2": "River Song",
-                        "option3": "The Rani",
+                        "option1": "One",
+                        "option2": "Two",
+                        "option3": "Three",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -30842,7 +30635,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "13",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -30966,7 +30759,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What is the Time-\nlord's home plan-\net?"
+                            "What instrument\ndoes the second\nDoctor play?"
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
@@ -30979,9 +30772,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gallifrey",
-                        "option2": "Skaro",
-                        "option3": "Sontar",
+                        "option1": "Recorder",
+                        "option2": "Guitar",
+                        "option3": "Spoons",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -31630,7 +31423,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "13",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -31753,7 +31546,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What sonic device\ndoes the Doctor\nuse?"
+                            "Which alien race\nare clones?"
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
@@ -31766,9 +31559,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gun",
-                        "option2": "Hammer",
-                        "option3": "Screwdriver",
+                        "option1": "Sontarans",
+                        "option2": "Zygons",
+                        "option3": "Kaleds",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -31787,7 +31580,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 3,
+                        "comparator": 1,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -32417,7 +32210,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "13",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -32540,7 +32333,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "In which year did\nDoctor Who first\nair on television?"
+                            "Who is the girl\nthat waited?"
                         ],
                         "avatarId": "",
                         "__label": "Question 4",
@@ -32553,9 +32346,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "2005",
-                        "option2": "1963",
-                        "option3": "1996",
+                        "option1": "Clara Oswald",
+                        "option2": "Rose Tyler",
+                        "option3": "Amy Pond",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -32574,7 +32367,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -33204,7 +32997,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "13",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -33327,7 +33120,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How many hearts\ndoes a Timelord\nhave?"
+                            "Who played the\nseventh Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 5",
@@ -33340,9 +33133,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "One",
-                        "option2": "Two",
-                        "option3": "Three",
+                        "option1": "Jon Pertwee",
+                        "option2": "William Hartnell",
+                        "option3": "Sylvester McCoy",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -33361,7 +33154,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 3,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -34118,7 +33911,7 @@
             "__type": "scene"
         },
         {
-            "name": "Quiz Legionary 4",
+            "name": "Quiz Scout 2",
             "backgroundId": "9f2dc250-0237-48a5-ac21-bfc65bef41e8",
             "width": 20,
             "height": 18,
@@ -34288,7 +34081,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "A legionary chal-\nlenges you to a\ntrivia quiz!"
+                            "A scout challenges\nyou to a trivia\nquiz!"
                         ],
                         "avatarId": "",
                         "__label": "Start",
@@ -34300,7 +34093,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Who is married to\nthe Doctor?"
+                            "Which episode is\nset in Paris?"
                         ],
                         "avatarId": "",
                         "__label": "Question 1",
@@ -34313,9 +34106,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Missy",
-                        "option2": "River Song",
-                        "option3": "The Rani",
+                        "option1": "Human Nature",
+                        "option2": "City of Death",
+                        "option3": "The Web of Fear",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -34962,7 +34755,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -35086,7 +34879,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What is the Time-\nlord's home plan-\net?"
+                            "Before travelling\nwith the Doctor\nJamie was a..."
                         ],
                         "avatarId": "",
                         "__label": "Question 2",
@@ -35099,9 +34892,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gallifrey",
-                        "option2": "Skaro",
-                        "option3": "Sontar",
+                        "option1": "piper",
+                        "option2": "boxer",
+                        "option3": "merchant",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -35750,7 +35543,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -35873,7 +35666,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "What sonic device\ndoes the Doctor\nuse?"
+                            "Which alien race\ncan send you back \nin time?"
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
@@ -35886,9 +35679,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "Gun",
-                        "option2": "Hammer",
-                        "option3": "Screwdriver",
+                        "option1": "Zarbi",
+                        "option2": "Judoon",
+                        "option3": "Weeping Angels",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -36537,7 +36330,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -36660,7 +36453,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "In which year did\nDoctor Who first\nair on television?"
+                            "What are the Doc-\ntor's favorite\nsweets?"
                         ],
                         "avatarId": "",
                         "__label": "Question 4",
@@ -36673,9 +36466,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "2005",
-                        "option2": "1963",
-                        "option3": "1996",
+                        "option1": "Jelly Babies",
+                        "option2": "Cadbury",
+                        "option3": "Lollipops",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -36694,7 +36487,7 @@
                     "args": {
                         "variable": "L0",
                         "operator": "==",
-                        "comparator": 2,
+                        "comparator": 1,
                         "__collapseElse": false,
                         "__collapse": true
                     },
@@ -37324,7 +37117,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -37447,11 +37240,11 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "How many hearts\ndoes a Timelord\nhave?"
+                            "Who played the\nfifth Doctor?"
                         ],
                         "avatarId": "",
                         "__label": "Question 5",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -37460,9 +37253,9 @@
                     "args": {
                         "variable": "L0",
                         "items": 3,
-                        "option1": "One",
-                        "option2": "Two",
-                        "option3": "Three",
+                        "option1": "Paul McGann",
+                        "option2": "Peter Davison",
+                        "option3": "Colin Baker",
                         "option4": "",
                         "option5": "",
                         "option6": "",
@@ -37471,7 +37264,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 5",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "__type": "event"
                 },
@@ -38111,7 +37904,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "14",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [
@@ -38579,7 +38372,8 @@
                         "variable": "12",
                         "flag": "2",
                         "__collapseElse": false,
-                        "__disableElse": true
+                        "__disableElse": true,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -38922,6 +38716,239 @@
                             "command": "EVENT_END"
                         }
                     ]
+                }
+            ],
+            "script": [
+                {
+                    "id": "ee170883-85de-442f-984e-121d757a725b",
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "debug",
+                        "__comment": true,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "3c10420c-f870-4f74-8bec-e3370ce3104a",
+                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                "args": {
+                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "e54513ba-23ee-4849-871c-a22ac8302580",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "102",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "2d40f86f-2065-4d92-8a81-bc3f85a8bc51",
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "bdbd9ef9-95b3-4136-b4b3-2403d70e9355",
+                                    "__name": "switchPlayer",
+                                    "$variable[0]$": "100",
+                                    "$variable[1]$": "102",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "script": [
+                                        {
+                                            "id": "accb72d8-64e1-4f09-ae93-72976e7b7ff2",
+                                            "command": "EVENT_SET_INPUT_SCRIPT",
+                                            "args": {
+                                                "input": "b"
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "id": "6a77d5b9-430d-4efa-858f-c644c7f737ac",
+                                                        "command": "EVENT_IF_TRUE",
+                                                        "args": {
+                                                            "variable": "1",
+                                                            "__collapseElse": false,
+                                                            "__label": "playerIsArminius == true"
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "id": "7f39186a-198a-467f-bf69-0c0cfd0c345b",
+                                                                    "command": "EVENT_IF_TRUE",
+                                                                    "args": {
+                                                                        "variable": "0",
+                                                                        "__collapseElse": false,
+                                                                        "__collapse": false,
+                                                                        "__label": "playerIsJamie"
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "id": "835c1cc7-7796-4ffa-90fe-a4cc9700c542",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "f384de1b-3e1c-4f2a-852d-4abe50aa6b47",
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "5525a233-bf7c-45e9-964a-2f50982d7a10",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ],
+                                                                        "false": [
+                                                                            {
+                                                                                "id": "458a089b-eb30-4651-ac36-5519359e911e",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "e99b60dc-196d-4af7-8764-d5083287452d",
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "0c2d0b13-c9ba-4c56-b82c-b2a7a946e327",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "__type": "event"
+                                                                },
+                                                                {
+                                                                    "id": "b0aaf16f-a8d1-4605-b52d-f171800c2d35",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "id": "ebd1460e-aa10-43ac-bf66-283ef0625ebc",
+                                                                    "command": "EVENT_IF_TRUE",
+                                                                    "args": {
+                                                                        "variable": "0",
+                                                                        "__collapseElse": false,
+                                                                        "__collapse": false
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "id": "dc1db6b6-781f-4bcb-b9ef-fed8bbe1a896",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "a1972ab9-83d4-4dcf-a165-be61c64de43a",
+                                                                                "command": "EVENT_SET_FALSE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "6e7b93b2-8efd-4659-ad06-640247f4aa65",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ],
+                                                                        "false": [
+                                                                            {
+                                                                                "id": "97445eb5-10fc-47f4-9c7e-d290089c555c",
+                                                                                "command": "EVENT_PLAYER_SET_SPRITE",
+                                                                                "args": {
+                                                                                    "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "370868b7-4482-46f6-aa23-bddfe4e7de27",
+                                                                                "command": "EVENT_SET_TRUE",
+                                                                                "args": {
+                                                                                    "variable": "0"
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                "id": "78227bbf-e46a-4a2f-936d-71d5b87c1fa4",
+                                                                                "command": "EVENT_END"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "id": "fd528d08-98c0-4731-95d3-cf687d0351f2",
+                                                                    "command": "EVENT_END"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "6e1c01cf-b047-4e4f-8bb4-5f8a9e7b865b",
+                                                        "command": "EVENT_END"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "id": "98a9d3f1-af70-4081-b4e5-364949591881",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "9bac51bb-f39c-43a6-9a39-42052b20de5f",
+                                "command": "EVENT_ADD_FLAGS",
+                                "args": {
+                                    "variable": "101",
+                                    "flag1": true,
+                                    "flag2": false,
+                                    "flag3": false,
+                                    "flag4": false,
+                                    "flag5": false,
+                                    "flag6": false,
+                                    "flag7": false,
+                                    "flag8": false,
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "61a54a04-1647-4bca-814e-59727581e7b0",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "8",
+                                    "__collapse": true
+                                }
+                            },
+                            {
+                                "id": "eaf2879c-99cf-412f-a827-101326b37ab4",
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "0",
+                                    "value": 1
+                                }
+                            },
+                            {
+                                "id": "b4b32526-332d-42f2-a91d-c5a09c1bf9af",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "82d571e5-9eba-4e1f-bf4b-3cc09c3ce076",
+                    "command": "EVENT_END"
                 }
             ]
         },
@@ -40128,6 +40155,16 @@
             ],
             "script": [
                 {
+                    "id": "58832d18-815c-4a83-9974-8c83a134ff06",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Which Doctor wit-\nnessed the crea-\ntion of the Daleks"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
                     "id": "7eafc165-4ed1-4be7-9595-3a324324dd7c",
                     "command": "EVENT_END"
                 }
@@ -41212,7 +41249,7 @@
                         "cancelOnB": true,
                         "layout": "dialogue",
                         "__label": "Answer 1",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -45215,7 +45252,7 @@
                     "frame": 1
                 },
                 {
-                    "spriteSheetId": "03f0eca4-7491-4f7b-a2d4-8430432b9971",
+                    "spriteSheetId": "533f0bb8-585c-49f8-b756-d09e359c54ff",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -45223,7 +45260,7 @@
                     "id": "223adf2b-cf4c-4b15-a10c-e20196a67518",
                     "x": 15,
                     "y": 11,
-                    "name": "Legionary"
+                    "name": "Varus"
                 },
                 {
                     "spriteSheetId": "a09b2462-1bce-443b-bbf2-5546e3aaba80",
@@ -49567,7 +49604,7 @@
         },
         {
             "id": "14",
-            "name": "beatenLegionary4"
+            "name": "beatenScout2"
         },
         {
             "id": "bf48c07e-c6c5-406d-8b29-f20ceb5a7bb9__L2",
@@ -49579,7 +49616,7 @@
         },
         {
             "id": "13",
-            "name": "beatenLegionary3"
+            "name": "beatenScout1"
         },
         {
             "id": "15",
@@ -50094,6 +50131,14 @@
             "_v": 1615919660435
         },
         {
+            "id": "533f0bb8-585c-49f8-b756-d09e359c54ff",
+            "name": "quiz/chars/varus",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "quiz/chars/varus.png",
+            "_v": 1617436486674
+        },
+        {
             "id": "8622efd1-5470-45ab-aa7b-d3331e163205",
             "name": "quiz/names/arminius",
             "numFrames": 2,
@@ -50132,6 +50177,14 @@
             "type": "actor",
             "filename": "quiz/names/legionary.png",
             "_v": 1615919660435
+        },
+        {
+            "id": "b8ecf7cd-b152-4367-bae0-7299755f68ca",
+            "name": "quiz/names/scout",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "quiz/names/scout.png",
+            "_v": 1617550257822
         },
         {
             "id": "968536cf-e8d9-43c2-b6ad-ff76aaeb621f",

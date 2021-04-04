@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 101,
-        "worldScrollY": 2493,
-        "zoom": 173.60410626232624,
+        "worldScrollX": 0,
+        "worldScrollY": 1704,
+        "zoom": 131.02446945011616,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -46409,7 +46409,7 @@
                         ],
                         "avatarId": "",
                         "__label": "Question 3",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -50045,7 +50045,7 @@
                         "$variable[0]$": "0",
                         "$variable[1]$": "L2",
                         "$variable[2]$": "16",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "script": [

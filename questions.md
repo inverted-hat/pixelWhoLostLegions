@@ -174,10 +174,6 @@ Correct answers are written in *italic*.
 	* Steven Moffat
 	* Julie Gardner
 	* *Verity Lambert* 
-* What is the name of the Doctor's car?
-	* CARDIS
-	* *Bessie*
-	* CAR-9 
 * Which alien race are shape shifters?
 	* *Zygons*
 	* Silurians
@@ -186,11 +182,15 @@ Correct answers are written in *italic*.
 	* The First
 	* The Eleventh
 	* *The Fourth* 
+* What is the name of the Doctor's car?
+	* CARDIS
+	* *Bessie*
+	* CAR-9 
 * Who brought Doctor Who back in 2005?
 	* *Russel T Davis*
 	* Steven Moffat
 	* Chris Chibnall 
-* Who played the 8th Doctor?
+* Who played the eight Doctor?
 	* Peter Davison
 	* *Paul McGann*
 	* Jodie Whittaker

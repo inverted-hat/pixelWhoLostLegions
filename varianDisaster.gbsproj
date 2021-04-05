@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1719,
-        "worldScrollY": 0,
-        "zoom": 131.02446945011616,
+        "worldScrollX": 4890,
+        "worldScrollY": 457,
+        "zoom": 312.21928376704454,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -17603,10 +17603,10 @@
                 8,
                 224,
                 128,
-                0,
+                112,
                 8,
                 8,
-                128,
+                135,
                 128,
                 0,
                 8,
@@ -17984,7 +17984,7 @@
                                 "command": "EVENT_GROUP",
                                 "args": {
                                     "__label": "Varus&Doc dialog",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__comment": false
                                 },
                                 "children": {
@@ -18216,6 +18216,14 @@
                                 }
                             },
                             {
+                                "id": "ca1f2490-3794-4752-926f-d35b3085589c",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "8",
+                                    "__collapse": true
+                                }
+                            },
+                            {
                                 "id": "f5093293-dede-4390-adbb-9865ec24b53c",
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
@@ -18223,7 +18231,8 @@
                                     "x": 10,
                                     "y": 12,
                                     "direction": "up",
-                                    "fadeSpeed": "2"
+                                    "fadeSpeed": "2",
+                                    "__collapse": true
                                 }
                             },
                             {
@@ -25590,267 +25599,305 @@
             ],
             "script": [
                 {
-                    "id": "65499553-ee59-416f-90d7-ab87bbd2ca52",
+                    "id": "f8425694-9ea0-4d0b-9f55-cb023cbf109c",
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "8",
-                        "__collapseElse": false,
-                        "__collapse": false
+                        "__collapseElse": false
                     },
                     "children": {
                         "true": [
                             {
-                                "id": "0671f729-9644-41a6-b1cb-e17c14a11b25",
+                                "id": "21ade74a-f599-460f-aeef-9d85eaaad5b2",
                                 "command": "EVENT_ACTOR_HIDE",
                                 "args": {
-                                    "actorId": "player",
-                                    "__collapse": true
+                                    "actorId": "956787aa-5dac-47b3-b013-927ebba1ed1e"
                                 }
                             },
                             {
-                                "id": "20471ebb-23cc-4053-b17e-182ae9d1b154",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Why didn't you\ntell Varus that\nArminius wasn't",
-                                        "fighting those\nteutons but in-\nstead seemed to",
-                                        "be plot ..."
-                                    ],
-                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
-                                    "__label": "Jamie talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "106e82be-9ab2-4f7e-9cd9-027efdcc3d6a",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Pst,Jamie!The\nwalls have ears!\nEspecially when ",
-                                        "they are tent\nwalls.I will ex-\nplain later."
-                                    ],
-                                    "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
-                                    "__label": "Doctor talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "b90de213-ef1d-48ce-a0f5-175c98b15d53",
-                                "command": "EVENT_ACTOR_SHOW",
-                                "args": {
-                                    "actorId": "player",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "9e445cd2-b2cf-4a6b-bb38-fa4e8292ce82",
-                                "command": "EVENT_ACTOR_SET_DIRECTION",
-                                "args": {
-                                    "actorId": "player",
-                                    "direction": "up",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "3b8ec42e-5cf7-4a79-92ae-df5a7203afe2",
-                                "command": "EVENT_ACTOR_SET_DIRECTION",
-                                "args": {
-                                    "actorId": "956787aa-5dac-47b3-b013-927ebba1ed1e",
-                                    "direction": "down",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "8b8e0b65-16bc-4ae4-ac54-1d2b55c32575",
-                                "command": "EVENT_ACTOR_SET_DIRECTION",
-                                "args": {
-                                    "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
-                                    "direction": "down",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "69f51093-74f3-4a60-8ad0-c18401e69bf9",
-                                "command": "EVENT_ACTOR_MOVE_TO",
-                                "args": {
-                                    "actorId": "player",
-                                    "x": 9,
-                                    "y": 11,
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "a2dcffe6-d41c-4245-9136-e52479723f94",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "So you are an\nexperienced\nfighter,Jamie?"
-                                    ],
-                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
-                                    "__label": "Arminius talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "1b570099-c4cf-4d59-98e7-4163e5de8453",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Aye!I had not\nmuch choice with\nthose redcoats."
-                                    ],
-                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
-                                    "__label": "Jamie talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "4d9f56d4-78c7-45c0-aed1-23d328e773d6",
-                                "command": "EVENT_ACTOR_EMOTE",
-                                "args": {
-                                    "actorId": "player",
-                                    "emoteId": "1",
-                                    "__label": "Arminius confused",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "807a6868-4fab-41af-9c65-b4cc4bf17d62",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Jamie is a Pict.\nThe tribe which\nbrought Ceasar",
-                                        "so much trouble\nup in Britannia.\nSo he has quite ",
-                                        "a history of\nfighting the\nempire."
-                                    ],
-                                    "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
-                                    "__label": "Doctor Talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "23a91449-c898-4daa-944f-9fc38202054e",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Actually my clan\nis the McLaren\nClan and not the",
-                                        "Picts.The Doctor\nalways mixes\nthese two up.",
-                                        "But the fighting\nthe empire part\nis correct."
-                                    ],
-                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
-                                    "__label": "Jamie talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "9f6895d5-93e6-4333-99c6-d751fcbf27fa",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Ok,you will ac-\ncompany me,Ja-\nmie.Your skills ",
-                                        "might be use-\nfull.Besides I\nhave to make",
-                                        "sure that you\nstick to your\nstory,Doctor."
-                                    ],
-                                    "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
-                                    "__label": "Arminius talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "1e1ef128-b444-4e7c-bfe1-2cf4e561bc84",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "I am not going\nto leave the\nDoctor here."
-                                    ],
-                                    "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
-                                    "__label": "Jamie talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "f93382e0-19d6-44ee-940e-bf568306e1b6",
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Go with him,\nJamie.I will be\nalright."
-                                    ],
-                                    "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
-                                    "__label": "Doctor talking",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "1b89cbb7-2006-4e8d-b72d-c6b21a167a12",
-                                "command": "EVENT_ACTOR_MOVE_TO",
-                                "args": {
-                                    "actorId": "player",
-                                    "x": 9,
-                                    "y": 12,
-                                    "__label": "Arminius leave",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "ff456eb8-7f7c-43f8-bcb2-8c5997a12d07",
-                                "command": "EVENT_ACTOR_HIDE",
-                                "args": {
-                                    "actorId": "player",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "b4bd6ca4-cd3b-49d6-b6f7-b6105c5039e8",
-                                "command": "EVENT_ACTOR_MOVE_TO",
-                                "args": {
-                                    "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
-                                    "x": 10,
-                                    "y": 12,
-                                    "__label": "Jamie leave",
-                                    "__collapse": true
-                                }
-                            },
-                            {
-                                "id": "66ab931d-2e25-4626-9d79-30b1a5a61856",
-                                "command": "EVENT_ACTOR_HIDE",
-                                "args": {
-                                    "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
-                                    "__collapse": false
-                                }
-                            },
-                            {
-                                "id": "c4f5f657-025b-4b2a-ad3f-c29f72aa39e9",
-                                "command": "EVENT_SET_TRUE",
-                                "args": {
-                                    "variable": "8",
-                                    "__label": "varusConversation = true"
-                                }
-                            },
-                            {
-                                "id": "e677f7aa-502b-407a-9cd3-94548172c6a9",
-                                "command": "EVENT_SWITCH_SCENE",
-                                "args": {
-                                    "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
-                                    "x": 25,
-                                    "y": 8,
-                                    "direction": "down",
-                                    "fadeSpeed": "2"
-                                }
-                            },
-                            {
-                                "id": "11e7d22d-b1d5-482c-8bc7-e612773a93b9",
-                                "command": "EVENT_END"
-                            }
-                        ],
-                        "false": [
-                            {
-                                "id": "0875790e-194e-48f2-93a1-efad18e4f56b",
+                                "id": "6d33a628-f0c4-4eb9-b9e8-bc483fcd8dd8",
                                 "command": "EVENT_ACTOR_HIDE",
                                 "args": {
                                     "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18"
                                 }
                             },
                             {
-                                "id": "001228db-1073-4655-b1c8-5e500b9dddbb",
+                                "id": "17e03df3-a95c-4ed5-80cc-74ab34bb4ae3",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "65499553-ee59-416f-90d7-ab87bbd2ca52",
+                                "command": "EVENT_IF_FALSE",
+                                "args": {
+                                    "variable": "17",
+                                    "__collapseElse": false,
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "id": "0671f729-9644-41a6-b1cb-e17c14a11b25",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "player",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "20471ebb-23cc-4053-b17e-182ae9d1b154",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Why didn't you\ntell Varus that\nArminius wasn't",
+                                                    "fighting those\nteutons but in-\nstead seemed to",
+                                                    "be plot ..."
+                                                ],
+                                                "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                                "__label": "Jamie talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "106e82be-9ab2-4f7e-9cd9-027efdcc3d6a",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Pst,Jamie!The\nwalls have ears!\nEspecially when ",
+                                                    "they are tent\nwalls.I will ex-\nplain later."
+                                                ],
+                                                "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                                "__label": "Doctor talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "b90de213-ef1d-48ce-a0f5-175c98b15d53",
+                                            "command": "EVENT_ACTOR_SHOW",
+                                            "args": {
+                                                "actorId": "player",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "9e445cd2-b2cf-4a6b-bb38-fa4e8292ce82",
+                                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                                            "args": {
+                                                "actorId": "player",
+                                                "direction": "up",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "3b8ec42e-5cf7-4a79-92ae-df5a7203afe2",
+                                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                                            "args": {
+                                                "actorId": "956787aa-5dac-47b3-b013-927ebba1ed1e",
+                                                "direction": "down",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "8b8e0b65-16bc-4ae4-ac54-1d2b55c32575",
+                                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                                            "args": {
+                                                "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                                                "direction": "down",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "69f51093-74f3-4a60-8ad0-c18401e69bf9",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 9,
+                                                "y": 11,
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "a2dcffe6-d41c-4245-9136-e52479723f94",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "So you are an\nexperienced\nfighter,Jamie?"
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__label": "Arminius talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "1b570099-c4cf-4d59-98e7-4163e5de8453",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Aye!I had not\nmuch choice with\nthose redcoats."
+                                                ],
+                                                "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                                "__label": "Jamie talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "4d9f56d4-78c7-45c0-aed1-23d328e773d6",
+                                            "command": "EVENT_ACTOR_EMOTE",
+                                            "args": {
+                                                "actorId": "player",
+                                                "emoteId": "1",
+                                                "__label": "Arminius confused",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "807a6868-4fab-41af-9c65-b4cc4bf17d62",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Jamie is a Pict.\nThe tribe which\nbrought Ceasar",
+                                                    "so much trouble\nup in Britannia.\nSo he has quite ",
+                                                    "a history of\nfighting the\nempire."
+                                                ],
+                                                "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                                "__label": "Doctor Talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "23a91449-c898-4daa-944f-9fc38202054e",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Actually my clan\nis the McLaren\nClan and not the",
+                                                    "Picts.The Doctor\nalways mixes\nthese two up.",
+                                                    "But the fighting\nthe empire part\nis correct."
+                                                ],
+                                                "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                                "__label": "Jamie talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "9f6895d5-93e6-4333-99c6-d751fcbf27fa",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Ok,you will ac-\ncompany me,Ja-\nmie.Your skills ",
+                                                    "might be use-\nfull.Besides I\nhave to make",
+                                                    "sure that you\nstick to your\nstory,Doctor."
+                                                ],
+                                                "avatarId": "97817720-fc9f-46cc-9c56-ae5947f56c5d",
+                                                "__label": "Arminius talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "1e1ef128-b444-4e7c-bfe1-2cf4e561bc84",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "I am not going\nto leave the\nDoctor here."
+                                                ],
+                                                "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                                "__label": "Jamie talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "f93382e0-19d6-44ee-940e-bf568306e1b6",
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    "Go with him,\nJamie.I will be\nalright."
+                                                ],
+                                                "avatarId": "b2685841-123b-40cb-a37d-ec525edcc1ed",
+                                                "__label": "Doctor talking",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "1b89cbb7-2006-4e8d-b72d-c6b21a167a12",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "player",
+                                                "x": 9,
+                                                "y": 12,
+                                                "__label": "Arminius leave",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "ff456eb8-7f7c-43f8-bcb2-8c5997a12d07",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "player",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "b4bd6ca4-cd3b-49d6-b6f7-b6105c5039e8",
+                                            "command": "EVENT_ACTOR_MOVE_TO",
+                                            "args": {
+                                                "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                                                "x": 10,
+                                                "y": 12,
+                                                "__label": "Jamie leave",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "66ab931d-2e25-4626-9d79-30b1a5a61856",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "c4f5f657-025b-4b2a-ad3f-c29f72aa39e9",
+                                            "command": "EVENT_SET_TRUE",
+                                            "args": {
+                                                "variable": "8",
+                                                "__label": "varusConversation = true",
+                                                "__collapse": false
+                                            }
+                                        },
+                                        {
+                                            "id": "e677f7aa-502b-407a-9cd3-94548172c6a9",
+                                            "command": "EVENT_SWITCH_SCENE",
+                                            "args": {
+                                                "sceneId": "f139295d-9d30-487d-822b-31ba2698cd95",
+                                                "x": 25,
+                                                "y": 8,
+                                                "direction": "down",
+                                                "fadeSpeed": "2",
+                                                "__collapse": true
+                                            }
+                                        },
+                                        {
+                                            "id": "11e7d22d-b1d5-482c-8bc7-e612773a93b9",
+                                            "command": "EVENT_END"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "id": "0875790e-194e-48f2-93a1-efad18e4f56b",
+                                            "command": "EVENT_ACTOR_HIDE",
+                                            "args": {
+                                                "actorId": "e9efc261-7a91-4138-bcef-e5d64b228b18"
+                                            }
+                                        },
+                                        {
+                                            "id": "001228db-1073-4655-b1c8-5e500b9dddbb",
+                                            "command": "EVENT_END"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "431155cc-32c6-484d-8a6a-8e3b040d34ec",
                                 "command": "EVENT_END"
                             }
                         ]
@@ -50496,6 +50543,10 @@
         {
             "id": "eacb09a6-7ebc-40ab-b835-2095e613bf84__L2",
             "name": "VarusHealth"
+        },
+        {
+            "id": "17",
+            "name": "arminiusConversation"
         }
     ],
     "backgrounds": [

@@ -2,20 +2,21 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 4890,
-        "worldScrollY": 457,
-        "zoom": 312.21928376704454,
+        "worldScrollX": 1360,
+        "worldScrollY": 976,
+        "zoom": 407.4970114901662,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 16,
-        "startY": 10,
+        "startX": 18,
+        "startY": 6,
         "startDirection": "left",
         "startSceneId": "376f80e7-34b1-4352-b529-896b44b6e12a",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
-        "startAnimSpeed": "3"
+        "startAnimSpeed": "3",
+        "cartType": "1B"
     },
     "scenes": [
         {
@@ -346,52 +347,63 @@
             "y": 229.0956028624885,
             "actors": [
                 {
-                    "spriteSheetId": "a4097f09-f3db-4797-80ad-c0538a6fb303",
+                    "spriteSheetId": "dfbe884f-3a86-4990-88b7-b92808d9ffd5",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "1",
-                    "id": "6b90aa13-5359-4749-b40c-ad07d88f5e5a",
-                    "x": 6,
-                    "y": 13,
-                    "frame": 0,
+                    "animSpeed": "2",
+                    "id": "4eb3e22a-2a98-4af1-9976-3150ec29d8fe",
+                    "x": 15,
+                    "y": 11,
                     "animate": true
                 },
                 {
-                    "spriteSheetId": "f2a03c1a-2d74-412b-bb47-578e06ae55ea",
+                    "spriteSheetId": "dfbe884f-3a86-4990-88b7-b92808d9ffd5",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "1",
-                    "id": "663508ed-a9bc-4dfa-a414-525428e93f39",
-                    "x": 8,
-                    "y": 13,
-                    "frame": 0,
-                    "animate": true
+                    "animSpeed": "2",
+                    "id": "82a173ed-9d66-43db-a351-0b759255238d",
+                    "x": 3,
+                    "y": 15,
+                    "animate": true,
+                    "__type": "actor"
                 },
                 {
-                    "spriteSheetId": "418f1fe3-4627-4f4b-8c1d-fa1221289c63",
+                    "spriteSheetId": "dfbe884f-3a86-4990-88b7-b92808d9ffd5",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "1",
-                    "id": "bdd7ee91-e2c9-4c80-bd6a-c858dc1056e3",
-                    "x": 10,
-                    "y": 13,
-                    "frame": 0,
-                    "animate": true
+                    "animSpeed": "2",
+                    "id": "5e093723-60bd-4546-aa8e-0e5bbf9b8704",
+                    "x": 3,
+                    "y": 6,
+                    "animate": true,
+                    "__type": "actor"
                 },
                 {
-                    "spriteSheetId": "d302ad08-c390-4291-8eb4-d6b0ba648a71",
+                    "spriteSheetId": "dfbe884f-3a86-4990-88b7-b92808d9ffd5",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "1",
-                    "id": "3328e923-f577-47af-a569-5309c7d7486f",
-                    "x": 12,
-                    "y": 13,
-                    "frame": 0,
-                    "animate": true
+                    "animSpeed": "2",
+                    "id": "2fb9df0a-5b4c-42a6-bd4d-af5ae32e4655",
+                    "x": 14,
+                    "y": 1,
+                    "animate": true,
+                    "__type": "actor"
+                },
+                {
+                    "spriteSheetId": "dfbe884f-3a86-4990-88b7-b92808d9ffd5",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "2",
+                    "id": "e5037561-395f-4d29-8285-a9054e89ec99",
+                    "x": 16,
+                    "y": 6,
+                    "animate": true,
+                    "__type": "actor"
                 }
             ],
             "triggers": [],
@@ -50688,7 +50700,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title.png",
-            "_v": 1615919660428
+            "_v": 1617816278657
         },
         {
             "id": "6afd7a64-a240-40f1-ae3f-263428305993",
@@ -51171,6 +51183,14 @@
             "type": "actor",
             "filename": "quiz/questionmarkStartLight.png",
             "_v": 1615919660435
+        },
+        {
+            "id": "dfbe884f-3a86-4990-88b7-b92808d9ffd5",
+            "name": "star",
+            "numFrames": 4,
+            "type": "animated",
+            "filename": "star.png",
+            "_v": 1617816850158
         },
         {
             "id": "9f49b1e3-a9d1-4ab9-8e58-b48658a5b152",

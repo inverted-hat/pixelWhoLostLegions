@@ -3,16 +3,16 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 0,
-        "worldScrollY": 1124,
-        "zoom": 102.51912295818329,
+        "worldScrollY": 0,
+        "zoom": 57.68858081102371,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 18,
-        "startY": 6,
+        "startX": 20,
+        "startY": 13,
         "startDirection": "left",
-        "startSceneId": "8a1af259-4a84-446e-aa8f-caf38c23a189",
+        "startSceneId": "376f80e7-34b1-4352-b529-896b44b6e12a",
         "playerSpriteSheetId": "549e9a9a-a578-42a0-8305-8473de07e743",
         "startMoveSpeed": "1",
         "startAnimSpeed": "3",
@@ -39097,19 +39097,11 @@
                     }
                 },
                 {
-                    "id": "9d012149-9256-4421-9630-3fe2a14d80b4",
-                    "command": "EVENT_ACTOR_HIDE",
-                    "args": {
-                        "actorId": "player",
-                        "__collapse": true
-                    }
-                },
-                {
                     "id": "90d945e0-ddc6-4936-b2f5-49e66ac2cca2",
                     "command": "EVENT_PLAYER_SET_SPRITE",
                     "args": {
-                        "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
-                        "__collapse": true
+                        "spriteSheetId": "33a5ae8c-ab5b-4b82-a7fd-90ef8b22f0b3",
+                        "__collapse": false
                     }
                 },
                 {
@@ -39160,7 +39152,7 @@
                     "command": "EVENT_SET_TIMER_SCRIPT",
                     "args": {
                         "duration": 0.25,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "script": [
@@ -39432,14 +39424,15 @@
                                                 "text": [
                                                     "I can't let the\nDoctor down!"
                                                 ],
-                                                "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04"
+                                                "avatarId": "cd8ff423-46cb-49b9-826f-9625cfbe4e04",
+                                                "__collapse": true
                                             }
                                         },
                                         {
-                                            "id": "dd8e002c-fad0-40e1-bd8e-a34f3d9a9162",
-                                            "command": "EVENT_ACTOR_SHOW",
+                                            "id": "577f0d75-4a41-47e6-83be-40eb2445ec98",
+                                            "command": "EVENT_PLAYER_SET_SPRITE",
                                             "args": {
-                                                "actorId": "player",
+                                                "spriteSheetId": "5f7dfa71-b488-47a5-b3b6-b3932ff41b35",
                                                 "__collapse": true
                                             }
                                         },
@@ -50849,7 +50842,7 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "ambush.png",
-            "_v": 1618057856163
+            "_v": 1618667227707
         },
         {
             "id": "c5b54f65-0f62-4250-adad-e5b9d751fbe4",
@@ -50929,7 +50922,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "gbstudio.png",
-            "_v": 1618057856164
+            "_v": 1618331552702
         },
         {
             "id": "868f067b-e0f0-48c6-8e4e-89240a806ae3",
@@ -50949,7 +50942,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "invertedHat.png",
-            "_v": 1618057856164
+            "_v": 1618331317374
         },
         {
             "id": "2fb57b86-30d6-4d2d-8b5b-5d9a37d108aa",
@@ -51552,6 +51545,14 @@
             "type": "actor_animated",
             "filename": "world/jamie.png",
             "_v": 1618057856177
+        },
+        {
+            "id": "33a5ae8c-ab5b-4b82-a7fd-90ef8b22f0b3",
+            "name": "world/jamieTree",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "world/jamieTree.png",
+            "_v": 1618667132810
         },
         {
             "id": "973d0e8d-8055-49ea-8abb-90b28477da54",

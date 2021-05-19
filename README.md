@@ -9,5 +9,24 @@ Experience a thrilling story based on true historical events and characters, sol
 ### Credits
 **Code and Graphics** inverted-hat<br>
 **Music** ???<br>
-**Fonts** [m3x6 by Daniel Linssen](https://managore.itch.io/m3x6) and [Thaleah by Tiny Worlds](https://tinyworlds.itch.io/free-pixel-font-thaleah)<br>
-**Tools** [GB Studio](https://www.gbstudio.dev/), [Aseprite](https://www.aseprite.org/) and [Tiled](https://www.mapeditor.org/)
+**Fonts**
+[m3x6 by Daniel Linssen]
+(https://managore.itch.io/m3x6) and
+[Thaleah by Tiny Worlds]
+(https://tinyworlds.itch.io/free-pixel-font-thaleah)<br>
+**Tools**
+[GB Studio]
+(https://www.gbstudio.dev/),
+[Aseprite]
+(https://www.aseprite.org/) and
+[Tiled]
+(https://www.mapeditor.org/)
+
+### License
+The code (GB Studio project) and graphics/sprites are licensed under the
+[MIT License]
+(LICENSE.md).
+
+The music is licensed under the
+[CC BY 4.0 License]
+(https://creativecommons.org/licenses/by/4.0/).

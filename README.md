@@ -8,7 +8,7 @@ Experience a thrilling story based on true historical events and characters, sol
 
 ### Credits
 **Code and Graphics** inverted-hat<br>
-**Music** ???<br>
+**Music** JP<br>
 **Fonts**
 [m3x6 by Daniel Linssen]
 (https://managore.itch.io/m3x6) and
